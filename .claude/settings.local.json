@@ -6,7 +6,8 @@
       "WebFetch(domain:translate.google.com)",
       "WebFetch(domain:minercamp.com)",
       "WebFetch(domain:www-curseforge-com.translate.goog)",
-      "WebFetch(domain:mc-addons.com)"
+      "WebFetch(domain:mc-addons.com)",
+      "Bash(py:*)"
     ]
   }
 }

@@ -9,9 +9,7 @@
     },
 
     "component_groups": {
-      "managed": {
-        "minecraft:managed_village_wild": {}
-      },
+      "managed": {},
       "despawning": {
         "minecraft:type_family": {
           "family": [ "village_wild", "village_wild_despawning", "mob" ]

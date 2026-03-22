@@ -9,9 +9,7 @@
     },
 
     "component_groups": {
-      "managed": {
-        "minecraft:managed_village_ice": {}
-      },
+      "managed": {},
       "despawning": {
         "minecraft:type_family": {
           "family": [ "village_ice", "village_ice_despawning", "mob" ]
