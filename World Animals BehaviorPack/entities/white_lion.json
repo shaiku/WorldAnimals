@@ -190,7 +190,8 @@
               "max_dist": 16
             }
           ]
-        },
+        }
+      },
 
       "minecraft:white_lion_tame": {
         "minecraft:is_tamed": {
