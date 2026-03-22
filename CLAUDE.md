@@ -103,7 +103,50 @@ npm run build    # Create .mcaddon for distribution
 
 Test in-game:
 - `/summon worldanimals:<entity_name>` to test specific entities
-- `/function worldanimals_refresh` to refresh all entities (preserves tamed/equipped state)
-- `/function worldanimals_despawnall` to cleanly remove all addon entities
+- `/scriptevent worldanimals:refresh` to re-create all addon entities (preserves tame/armor state)
+- `/scriptevent worldanimals:despawnall` to remove all addon entities cleanly
 - Place/break each block type
 - Craft items and verify recipes
+- Check content log for errors after loading (`%APPDATA%/Minecraft Bedrock/Users/Shared/logs/`)
+
+## Migration Notes (HCF to 1.21.20+)
+
+This addon was migrated from Holiday Creator Features to stable Bedrock 1.21.20+ APIs. Key lessons:
+
+### Block Migration
+- `run_command` in entity events → `queue_command` (modern replacement)
+- Block `on_player_placing` rotation events → `minecraft:placement_direction` trait with `y_rotation_offset: 180`
+- Block `on_interact`/`queued_ticking`/`on_player_destroyed` → Script API custom components via `system.beforeEvents.startup`
+- Custom components using `onTick` require `minecraft:tick` component declared on the block
+
+### Item Migration (1.12/1.16.100 → 1.21.20)
+- `minecraft:hand_equipped`, `minecraft:foil`, `minecraft:render_offsets`, `minecraft:stacked_by_data`, `minecraft:can_destroy_in_creative`, `minecraft:mining_speed` → remove entirely
+- `minecraft:armor` → removed (deprecated in 1.21.20)
+- `minecraft:food.saturation_modifier` must be numeric (not string like `"normal"`) — use: poor=0.2, low=0.6, normal=1.2, good=1.6, max=2.4
+- `minecraft:food` requires `minecraft:use_modifiers: { use_duration: 1.6 }` as a sibling component
+- `minecraft:food.effects` → removed (not valid in 1.21.20)
+- `minecraft:icon: { texture: "x" }` → `minecraft:icon: "x"` (short form)
+- `minecraft:damage: N` → `minecraft:damage: { value: N }`
+- `minecraft:creative_category` in components → `menu_category` in description
+- Items missing `minecraft:icon` will show no icon (old 1.12 format auto-derived icons; 1.21.20 requires explicit)
+- `on_dig` in `minecraft:digger` → remove (not valid)
+- `on_hurt_entity` in `minecraft:weapon` → remove (not valid)
+- Item `events` section → remove entirely (item events removed with HCF)
+
+### Entity Fixes
+- `minecraft:fall_damage` and `minecraft:celebrate` → removed from schema, delete them
+- `run_command` in entity events → `queue_command`
+- Large animals need `minecraft:knockback_resistance: { value: 1.0 }` to prevent flying when hit
+- Only one `minecraft:navigation.*` component allowed per entity — remove duplicates
+
+### Resource Pack
+- `RP/texts/languages.json` MUST exist listing language codes or lang files won't load
+- Item translations: modern format is `item.namespace:id=Name` (no `.name` suffix), but keep both old and new format for compatibility
+- Animation controllers reference short names that must be defined in every entity's `animations` block — if an entity uses a controller, it must map ALL short names that controller references
+- Vanilla animation controllers (wolf.sitting, polarbear.baby, llama.move, dolphin.general) require specific short names: `wolf_sitting`, `baby_transform`, `look_at_target`, `general`, `walk`
+- `sound_definitions.json` needs `format_version: "1.20.20"` wrapper
+- Render controllers from vanilla (e.g., `controller.render.wolf`) may have been updated with new texture expectations — create addon-specific controllers instead
+
+### Recipe Migration
+- Remove all `"data": 0` entries
+- Non-zero data values need flattening to modern item names (e.g., `minecraft:wool` data 11 → `minecraft:blue_wool`)
