@@ -1,0 +1,30 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "World Animals BehaviorPack",
+    "description": "Created by ArathNido",
+    "uuid": "e565160d-ee5d-7469-228c-898982013b1b",
+    "version": [2, 0, 0],
+    "min_engine_version": [1, 21, 20]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "551968b1-9a7b-e763-70ef-e99d1f6d63eb",
+      "version": [2, 0, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "e7164c58-1656-41c8-b390-5a8d1d1739d2",
+      "entry": "scripts/main.js",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "2.0.0"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldanimals:reptil_skin",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "reptil_skin",
+			"minecraft:use_animation": "eat"
+		}
+	}
+}

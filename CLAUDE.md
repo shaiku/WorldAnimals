@@ -4,69 +4,84 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **Minecraft Bedrock Edition addon** called "World Animals", created by ArathNido. It adds 70+ real-world animals, custom blocks, items, recipes, and world generation features. The addon uses Bedrock's native component system exclusively — there is no JavaScript/TypeScript scripting.
+This is a **Minecraft Bedrock Edition addon** called "World Animals", created by ArathNido. It adds 70+ real-world animals, custom blocks, items, recipes, and world generation features. Migrated to Bedrock 1.21.20+ stable APIs (no Holiday Creator Features).
 
-Minimum engine version: 1.17.0 (main packs), 1.20.30 (structure generation pack).
+Minimum engine version: 1.21.20. Uses `@minecraft/server` v2.0.0 Script API for custom block components.
+
+## Environment
+
+- Python is invoked with `py` (not `python` or `python3`) on this system.
+- Deploy to Minecraft: `npm run deploy` (copies BP/, RP/, BP_structures/ to `%APPDATA%/Minecraft Bedrock/Users/Shared/games/com.mojang` development packs)
+- Build .mcaddon: `npm run build` (creates dist/worldanimals_v2.0.0.mcaddon)
 
 ## Architecture
 
-The project consists of three separate addon packs:
+Three separate addon packs with short directory names:
 
-### 1. World Animals BehaviorPack (server-side data)
-- **entities/** — Entity behavior definitions (~79 files). Some organized in subdirectories (chimpanzee/, crab/, hyena/, iguana/, stork/). Each entity uses the `worldanimals:` namespace identifier.
-- **blocks/** — Custom blocks (bananas, gemstone ores/blocks, furniture). Has an `update/` subdirectory for block variants.
-- **items/** — Custom items (~115 files) organized by category: saddles/, scarf/, armor/, astronaut/, butterfly/, rhyno_armor/, ruby_armor/, elephant_armor/, citrine_armor/, reptil_armor/.
-- **recipes/** — Crafting recipes (~104 files), organized into subdirectories by material/entity type.
-- **loot_tables/** — Drop tables (~81 files) split into `blocks/` and `entities/` subdirectories.
-- **spawn_rules/** — Biome-specific spawn conditions (~78 files), generally 1:1 with entities.
-- **animations/** — Server-side animation timelines (command-based effects, e.g., big_cat.json, bird.json).
-- **animation_controllers/** — Server-side animation state machines.
-- **features/** and **feature_rules/** — World generation for custom ores (citrine, ruby) and trees (palm, banana).
-- **trading/** — Custom villager trade tables for ice and wild village NPCs.
-- **structures/** — Structure template files (.mcstructure) for world generation.
+### BP/ — Behavior Pack
+- **scripts/main.js** — Script API custom components (ore_xp, turkey_eat, palm_sapling)
+- **entities/** — Entity behavior definitions (~75 files). Some in subdirectories (chimpanzee/, crab/, hyena/, iguana/, stork/). Namespace: `worldanimals:`
+- **blocks/** — Custom blocks (12 files): bananas, coco_3d, sofa, carpet, ores, gem blocks, cooked turkey, palm sapling
+- **items/** — Custom items (~115 files) organized by category: saddles/, scarf/, armor/, astronaut/, butterfly/, rhyno_armor/, ruby_armor/, elephant_armor/, citrine_armor/, reptil_armor/
+- **recipes/** — Crafting recipes (~104 files)
+- **loot_tables/** — Drop tables split into blocks/ and entities/ subdirectories
+- **spawn_rules/** — Biome-specific spawn conditions (~78 files)
+- **features/** and **feature_rules/** — World generation for custom ores and trees
+- **trading/** — Custom villager trade tables
+- **structures/** — Structure template files (.mcstructure)
 
-### 2. World Animals TexturePack (client-side resources)
-- **entity/** — Client-side entity definitions (render bindings, textures, geometry references).
-- **models/entity/** — Geometry models (~115 .geo.json files). Subdirectories: armor/, elytra/, morph/.
-- **animations/** — Client-side skeletal animations (~65 files).
-- **animation_controllers/** — Client-side animation state machines. Has elytras/ subdirectory.
-- **render_controllers/** — Render controller definitions (~32 files) handling variants, equipment layers.
-- **textures/** — Entity and block texture images.
-- **attachables/** — First-person item/armor rendering (citrine armor, ruby armor, reptil armor, etc.).
-- **sounds/** and **sounds.json** — Custom sound definitions.
-- **blocks.json** — Block texture atlas mappings.
-- **materials/** — Custom material/shader definitions.
-- **particles/** — Particle effect definitions.
+### RP/ — Resource/Texture Pack
+- **entity/** — Client-side entity definitions
+- **models/entity/** — Geometry models. Subdirectories: armor/, elytra/, morph/
+- **animations/** — Client-side skeletal animations
+- **render_controllers/** — Render controllers for variants and equipment
+- **textures/** — Entity and block texture images
+- **attachables/** — First-person item/armor rendering
+- **sounds/** — Sound files and sound_definitions.json (format 1.20.20)
+- **sounds.json** — Entity sound event mappings
+- **blocks.json** — Block sound assignments
 
-### 3. World Animals [Structure generation] BehaviorPack (supplementary)
-- Separate pack (min engine 1.20.30) dedicated to structure template features and feature rules.
-- Contains its own features/ and feature_rules/ for structure placement.
+### BP_structures/ — Structure Generation Behavior Pack
+- Separate pack for structure template features and feature rules
+
+## Script API (BP/scripts/main.js)
+
+Uses `@minecraft/server` v2.0.0 with `system.beforeEvents.startup`. Three custom components:
+
+| Component | Blocks | Behavior |
+|---|---|---|
+| `worldanimals:ore_xp` | 4 ore blocks | Spawn XP orb on player break |
+| `worldanimals:turkey_eat` | cooked_turkey | Cycle slice state, play burp, give saturation, destroy at end |
+| `worldanimals:palm_sapling` | palm_sapling | Bone meal growth (25% chance), auto-grow on tick |
 
 ## Key Patterns
 
-- **Entity namespace:** All custom entities use `worldanimals:` prefix (e.g., `worldanimals:lion`, `worldanimals:elephant`).
-- **Naming convention:** snake_case throughout all filenames and identifiers.
-- **Entity variants:** Component groups handle age (baby/adult), gender (male/female), and visual variants. Babies typically use 0.5–0.7 scale.
-- **Breeding system:** Most animals support breeding via `minecraft:breedable` with specific food items.
-- **Equipment system:** Many large animals support saddles, armor, and accessories via layered render controllers and attachable models.
-- **Format versions:** Entity definitions use format_version 1.13.0 or 1.16.0. Features use 1.13.0. Manifests use format_version 2.
-- **Cross-pack consistency:** Entity identifiers, item identifiers, loot table paths, and spawn rule filenames must stay in sync across both packs.
+- **Entity namespace:** `worldanimals:` prefix throughout
+- **Naming convention:** snake_case for all filenames and identifiers
+- **Rotation system:** Blocks use `minecraft:placement_direction` trait with `y_rotation_offset: 180`
+- **Entity variants:** Component groups handle age, gender, and visual variants
+- **Cross-pack consistency:** Entity/item/block identifiers, loot table paths, and spawn rule filenames must stay in sync across BP and RP
 
 ## Working With Entities
 
 Adding or modifying an entity typically requires changes in multiple locations:
-1. **BehaviorPack/entities/** — Server behavior (components, AI, health, loot)
-2. **TexturePack/entity/** — Client definition (model, texture, animation bindings)
-3. **TexturePack/models/entity/** — Geometry model (.geo.json)
-4. **TexturePack/textures/** — Texture image files
-5. **TexturePack/animations/** — Client animations
-6. **TexturePack/render_controllers/** — Render controller (if entity needs variant rendering)
-7. **BehaviorPack/spawn_rules/** — Spawn conditions (biome, light, herd size)
-8. **BehaviorPack/loot_tables/entities/** — Death/interaction drops
+1. **BP/entities/** — Server behavior (components, AI, health, loot)
+2. **RP/entity/** — Client definition (model, texture, animation bindings)
+3. **RP/models/entity/** — Geometry model (.geo.json)
+4. **RP/textures/** — Texture image files
+5. **RP/animations/** — Client animations
+6. **RP/render_controllers/** — Render controller (if entity needs variant rendering)
+7. **BP/spawn_rules/** — Spawn conditions (biome, light, herd size)
+8. **BP/loot_tables/entities/** — Death/interaction drops
 
 ## Testing
 
-There is no automated test suite. Testing is done by loading the addon into Minecraft Bedrock Edition. To test:
-1. Copy/symlink the three pack directories into the Minecraft Bedrock `development_behavior_packs` and `development_resource_packs` folders.
-2. Create or edit a world with the packs enabled.
-3. Use `/summon worldanimals:<entity_name>` to test specific entities.
+```bash
+npm run deploy   # Copy to Minecraft development packs
+npm run build    # Create .mcaddon for distribution
+```
+
+Test in-game:
+- `/summon worldanimals:<entity_name>` to test specific entities
+- Place/break each block type
+- Craft items and verify recipes

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "worldanimals:green_flag"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABB",
+			"ABB",
+			"A "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stick"
+			},
+			"B": {
+				"item": "minecraft:lime_wool"
+			}
+		},
+		"result": {
+			"item": "worldanimals:green_flag",
+			"count": 1
+		}
+	}
+}

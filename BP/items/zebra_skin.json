@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldanimals:zebra_skin",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "zebra_skin",
+			"minecraft:use_animation": "eat"
+		}
+	}
+}

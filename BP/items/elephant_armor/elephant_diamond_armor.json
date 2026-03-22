@@ -1,0 +1,17 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldanimals:elephant_diamond_armor",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.equipment"
+			}
+		},
+		"components": {
+			"tag:elephant_diamond_armor": {},
+			"minecraft:icon": "elephant_diamond_armor",
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

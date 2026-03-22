@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldanimals:feline_tooth",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "feline_tooth",
+			"minecraft:use_animation": "eat"
+		}
+	}
+}

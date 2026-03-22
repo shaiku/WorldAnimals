@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "worldanimals:purple_scarf"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"BAB",
+			" B "
+		],
+		"key": {
+			"A": {
+				"item": "worldanimals:white_scarf"
+			},
+			"B": {
+				"item": "minecraft:purple_dye"
+			}
+		},
+		"result": {
+			"item": "worldanimals:purple_scarf",
+			"count": 1
+		}
+	}
+}

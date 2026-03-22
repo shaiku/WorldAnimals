@@ -1,0 +1,23 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "worldanimals:citrine_2"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"A"
+		],
+		"key": {
+			"A": {
+				"item": "worldanimals:citrine_block"
+			}
+		},
+		"result": {
+			"item": "worldanimals:citrine",
+			"count": 9
+		}
+	}
+}

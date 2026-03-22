@@ -1,0 +1,9 @@
+{
+  "name": "worldanimals",
+  "version": "2.0.0",
+  "description": "World Animals addon for Minecraft Bedrock",
+  "scripts": {
+    "deploy": "node deploy.mjs",
+    "build": "node build.mjs"
+  }
+}

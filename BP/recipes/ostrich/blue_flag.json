@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "worldanimals:blue_flag"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABB",
+			"ABB",
+			"A "
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:stick"
+			},
+			"B": {
+				"item": "minecraft:blue_wool"
+			}
+		},
+		"result": {
+			"item": "worldanimals:blue_flag",
+			"count": 1
+		}
+	}
+}

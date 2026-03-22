@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldanimals:pearl",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "pearl",
+			"minecraft:use_animation": "eat"
+		}
+	}
+}

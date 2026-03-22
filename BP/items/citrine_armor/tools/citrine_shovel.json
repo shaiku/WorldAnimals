@@ -1,0 +1,72 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldanimals:citrine_shovel",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.shovel"
+			}
+		},
+		"components": {
+			"minecraft:icon": "citrine_shovel",
+			"minecraft:durability": {
+				"max_durability": 1900
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"worldanimals:citrine",
+							"worldanimals:citrine_shovel"
+						],
+						"repair_amount": 10
+					}
+				]
+			},
+			"minecraft:max_stack_size": 1,
+			"minecraft:damage": {
+				"value": 6
+			},
+			"minecraft:enchantable": {
+				"value": 22,
+				"slot": "shovel"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": {
+							"tags": "q.any_tag('dirt', 'sand', 'gravel', 'grass', 'snow')"
+						},
+						"speed": 8
+					},
+					{
+						"block": "minecraft:concretePowder",
+						"speed": 8
+					},
+					{
+						"block": "minecraft:mycelium",
+						"speed": 8
+					},
+					{
+						"block": "minecraft:podzol",
+						"speed": 8
+					},
+					{
+						"block": "minecraft:snow",
+						"speed": 8
+					},
+					{
+						"block": "minecraft:clay",
+						"speed": 8
+					}
+				],
+				"on_dig": {
+					"event": "minecraft:break",
+					"target": "self"
+				}
+			}
+		}
+	}
+}

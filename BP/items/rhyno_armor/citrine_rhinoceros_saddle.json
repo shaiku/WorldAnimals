@@ -1,0 +1,15 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldanimals:citrine_rhinoceros_saddle",
+			"menu_category": {
+				"category": "nature"
+			}
+		},
+		"components": {
+			"minecraft:icon": "citrine_rhinoceros_saddle",
+			"minecraft:use_animation": "eat"
+		}
+	}
+}

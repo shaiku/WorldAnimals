@@ -1,0 +1,61 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worldanimals:palm_sapling",
+			"menu_category": {
+				"category": "nature",
+				"group": "itemGroup.search"
+			}
+		},
+		"components": {
+			"minecraft:geometry": "geometry.palm_sapling",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "palm_sapling",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:collision_box": false,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:red_sand",
+							"minecraft:sand",
+							"minecraft:grass_block",
+							"minecraft:dirt"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/dead_tree_sapling_block.json",
+			"minecraft:flammable": {
+				"catch_chance_modifier": 0,
+				"destroy_chance_modifier": 0
+			},
+			"minecraft:light_emission": 0,
+			"minecraft:light_dampening": 0,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.5
+			},
+			"minecraft:map_color": "#bbbbbb",
+			"worldanimals:palm_sapling": {}
+		}
+	}
+}

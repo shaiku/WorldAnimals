@@ -1,0 +1,28 @@
+{
+	"format_version": "1.12",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "worldanimals:black_scarf"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" B ",
+			"BAB",
+			" B "
+		],
+		"key": {
+			"A": {
+				"item": "worldanimals:white_scarf"
+			},
+			"B": {
+				"item": "minecraft:black_dye"
+			}
+		},
+		"result": {
+			"item": "worldanimals:black_scarf",
+			"count": 1
+		}
+	}
+}

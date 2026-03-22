@@ -1,0 +1,50 @@
+{
+	"format_version": "1.21.20",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldanimals:pearl_sword",
+			"menu_category": {
+				"category": "equipment",
+				"group": "itemGroup.name.sword"
+			}
+		},
+		"components": {
+			"minecraft:durability": {
+				"max_durability": 2000
+			},
+			"minecraft:icon": "pearl_sword",
+			"minecraft:max_stack_size": 1,
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"worldanimals:pearl",
+							"worldanimals:pearl_sword"
+						],
+						"repair_amount": 10
+					}
+				]
+			},
+			"minecraft:damage": {
+				"value": 12.5
+			},
+			"minecraft:enchantable": {
+				"value": 14,
+				"slot": "sword"
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:web",
+						"speed": 15
+					},
+					{
+						"block": "minecraft:bamboo",
+						"speed": 10
+					}
+				]
+			}
+		}
+	}
+}
