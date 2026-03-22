@@ -29,7 +29,7 @@
         }
       ],
       "render_controllers": [
-        "controller.render.wolf"
+        "controller.render.hyenas_2"
       ],
       "spawn_egg": {
         "texture": "egg_hyenas_2",
