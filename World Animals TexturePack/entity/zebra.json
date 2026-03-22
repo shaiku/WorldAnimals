@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:zebra",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/zebra"
+      },
+      "geometry": { "default": "geometry.zebra" },
+      "animations": {
+        "setup": "animation.zebra.setup",
+        "walk": "animation.zebra.walk",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_zebra",
+        "texture_index": 0
+      }
+    }
+  }
+}

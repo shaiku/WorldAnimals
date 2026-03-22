@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "worldanimals:cooked_turkey"
+    },
+
+    
+    "tags": ["furnace", "smoker", "campfire", "blast_furnace"],
+    "input": "worldanimals:prepared_raw_turkey",
+    "output": "worldanimals:cooked_turkey"
+  }
+  
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "worldanimals:shrimp_cooked"
+    },
+
+    
+    "tags": ["furnace", "smoker", "campfire", "blast_furnace"],
+    "input": "worldanimals:shrimp_raw",
+    "output": "worldanimals:shrimp_cooked"
+  }
+  
+}

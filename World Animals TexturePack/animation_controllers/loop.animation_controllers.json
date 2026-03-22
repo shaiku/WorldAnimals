@@ -1,0 +1,13 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers": {
+		"controller.animation.loop": {
+			"initial_state": "loop",
+			"states": {
+				"loop": {
+					"animations": [ "loop" ]
+				}
+			}
+		}
+	}
+}

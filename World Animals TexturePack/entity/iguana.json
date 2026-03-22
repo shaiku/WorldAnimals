@@ -1,0 +1,32 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:iguana",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/iguana/iguana",
+        "blue": "textures/entity/iguana/blue_iguana"
+      },
+      "geometry": { "default": "geometry.iguana" },
+      "animations": {
+        "setup": "animation.llama.setup",
+        "walk": "animation.iguana.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.iguana.sit",
+        "baby_transform": "animation.llama.baby_transform"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.iguana" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_iguana",
+        "texture_index": 0
+      }
+    }
+  }
+}

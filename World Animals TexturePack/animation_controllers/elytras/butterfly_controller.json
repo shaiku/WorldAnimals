@@ -1,0 +1,26 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.butterfly.fly" : {
+			"initial_state" : "default",
+			"states" : {
+				"butterfly_on" : {
+					"animations" : [ "butterfly_on" ],
+					"transitions" : [
+						{
+							"butterfly_off" : "!query.is_gliding"
+						}
+					]
+				},
+				"butterfly_off" : {
+					"animations" : [ "butterfly_off" ],
+					"transitions" : [
+						{
+							"butterfly_on" : "query.is_gliding"
+						}
+					]
+				}
+			}
+		}
+			}
+		}

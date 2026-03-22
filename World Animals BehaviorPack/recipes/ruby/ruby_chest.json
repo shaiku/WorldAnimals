@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:ruby_chest"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A A",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:ruby"
+      }
+    },
+    "result": {
+      "item": "worldanimals:ruby_chest",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

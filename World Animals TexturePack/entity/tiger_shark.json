@@ -1,0 +1,34 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:tiger_shark",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/shark_v2/tiger_shark_v2"
+      },
+      "geometry": { "default": "geometry.shark_v2" },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animations": {
+        "setup": "animation.shark_v2.idle",
+		"attack": "animation.shark_v2.attack",
+        "walk": "animation.shark_v2.walk"
+      },
+      "animation_controllers": [
+	    { "attack": "controller.animation.animals.attack" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_tiger_shark",
+        "texture_index": 0
+      }
+    }
+  }
+}

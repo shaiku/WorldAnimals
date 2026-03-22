@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:ruby_pickaxe"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AAA",
+      " B",
+      " B"
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:ruby"
+      },
+	    "B": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "worldanimals:ruby_pickaxe",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:iron_rhinoceros_saddle"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A C",
+      "ADD",
+	  "B B"
+    ],
+    "key": {
+	    "A": {
+        "item": "minecraft:iron_ingot"
+      },
+      "B": {
+        "item": "minecraft:iron_ingot"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "D": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "worldanimals:iron_rhinoceros_saddle",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

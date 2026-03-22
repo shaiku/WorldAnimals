@@ -1,0 +1,45 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worldanimals:zebra_carpet",
+			"register_to_creative_menu": true,
+			"is_experimental": true
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.search"
+			},
+            "minecraft:geometry": "geometry.zebra_carpet",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "zebra_carpet",
+                    "render_method": "alpha_test"
+                }
+            },     
+            "minecraft:pick_collision":{
+                "origin":[-8.0, 0.0, -8.0],
+                "size":[16, 1, 16]
+            },
+			"minecraft:entity_collision":{
+                "origin":[-8.0, 0.0, -8.0],
+                "size":[16, 1, 16]
+			},
+
+            "minecraft:loot": "loot_tables/blocks/zebra_carpet.json",
+          
+			"minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0.0,
+
+            
+			"minecraft:destroy_time": 0.5,
+			"minecraft:friction": 0.6,
+			"minecraft:map_color": "#bbbbbb"
+        }
+	}
+}

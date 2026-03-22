@@ -1,0 +1,35 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.cooked_turkey_3",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "plato",
+					"pivot": [0, 0, 1],
+					"cubes": [
+						{"origin": [-8, 0, -10], "size": [16, 1, 20], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "pavo",
+					"parent": "plato",
+					"pivot": [0, 1, -1],
+					"cubes": [
+						{"origin": [-5, 1, 0], "size": [10, 8, 6], "uv": [6, 27]},
+						{"origin": [-7, 1, 0], "size": [2, 2, 2], "uv": [0, 27]},
+						{"origin": [0.5, 8.5, 1], "size": [4, 1, 4], "inflate": 0.25, "uv": [40, 38]},
+						{"origin": [-4.5, 8.5, 1], "size": [4, 1, 4], "inflate": 0.25, "uv": [38, 27]}
+					]
+				}
+			]
+		}
+	]
+}

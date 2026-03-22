@@ -1,0 +1,50 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.new_lion.default": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.default"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 0" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    },
+    "controller.render.female_lion.default": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.female_lion"
+          ]
+        }
+      },
+      "geometry": "Geometry.female_lion",
+      "part_visibility": [
+        { "*": "query.variant == 1" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    },
+    "controller.render.new_lion.saddle": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.saddle"
+          ]
+        }
+      },
+      "geometry": "Geometry.saddle",
+      "part_visibility": [
+        { "*": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    }
+  }
+}

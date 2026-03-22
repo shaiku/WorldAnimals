@@ -1,0 +1,48 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.crocodile_mask.idle": {
+			"loop": true,
+			"bones": {
+				"crocodrile_0": {
+					"position": [0, 1, 1],
+					"scale": 1.5
+				},
+				"crocodrile_2": {
+					"rotation": [0, 0, 0],
+					"position": [0, -1, 0],
+					"scale": 1.15
+				},
+				"crocodrile_3": {
+					"rotation": [-25, 0, 0],
+					"position": [0, 1.4, 0]
+				}
+			}
+		},
+		"animation.crocodile_mask.run": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"crocodrile_2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, 1.9, 0],
+						"0.5": [0, 0, 0]
+					}
+				},
+				"crocodrile_3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.25": [25, 0, 0],
+						"0.5": [0, 0, 0]
+					},
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.25": [0, -0.3, 0],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

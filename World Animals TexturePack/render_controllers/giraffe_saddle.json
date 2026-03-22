@@ -1,0 +1,13 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.giraffe.saddle": {
+      "geometry": "Geometry.saddle",
+      "part_visibility": [
+        { "*": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "worldanimals:sugar_cubes",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "sugar_cubes",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

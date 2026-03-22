@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:pearl_sword"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A",
+      "A",
+      "B"
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:pearl"
+      },
+	    "B": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "worldanimals:pearl_sword",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

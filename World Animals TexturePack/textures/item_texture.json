@@ -1,0 +1,595 @@
+{
+  "resource_pack_name": "world animals resource",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "ostrich_egg": {
+      "textures": "textures/items/ostrich_egg"
+    },
+    "egg_dove": {
+      "textures": "textures/items/egg_dove"
+    },
+    "african_penguin_egg": {
+      "textures": "textures/items/african_penguin_egg"
+    },
+    "real_penguin_egg": {
+      "textures": "textures/items/real_penguin_egg"
+    },
+    "blue_penguin_egg": {
+      "textures": "textures/items/blue_penguin_egg"
+    },
+    "emperor_penguin_egg": {
+      "textures": "textures/items/emperor_penguin_egg"
+    },
+    "bag_items": {
+      "textures": "textures/items/bag_items"
+    },
+    "egg_eagle": {
+      "textures": "textures/items/egg_eagle"
+    },
+    "egg_stork": {
+      "textures": "textures/items/egg_stork"
+    },
+    "egg_vulture": {
+      "textures": "textures/items/egg_vulture"
+    },
+    "gold_bone_meal": {
+      "textures": "textures/items/gold_bone_meal"
+    },
+    "egg_seagull": {
+      "textures": "textures/items/egg_seagull"
+    },
+    "egg_turkey": {
+      "textures": "textures/items/egg_turkey"
+    },
+    "cooked_turkey": {
+      "textures": "textures/items/cooked_turkey"
+    },
+    "prepared_raw_turkey": {
+      "textures": "textures/items/prepared_raw_turkey"
+    },
+    "raw_turkey": {
+      "textures": "textures/items/raw_turkey"
+    },
+    "egg_lucienaga": {
+      "textures": "textures/items/egg_lucienaga"
+    },
+    "swordfish": {
+      "textures": "textures/items/swordfish"
+    },
+    "citrine_swordfish": {
+      "textures": "textures/items/citrine_swordfish"
+    },
+    "diamond_swordfish": {
+      "textures": "textures/items/diamond_swordfish"
+    },
+    "gold_swordfish": {
+      "textures": "textures/items/gold_swordfish"
+    },
+    "ruby_swordfish": {
+      "textures": "textures/items/ruby_swordfish"
+    },
+    "cooked_duck": {
+      "textures": "textures/items/cooked_duck"
+    },
+    "raw_duck": {
+      "textures": "textures/items/raw_duck"
+    },
+    "egg_cyanocitta_cristata": {
+      "textures": "textures/items/egg_cyanocitta_cristata"
+    },
+    "red_flag": {
+      "textures": "textures/items/red_flag"
+    },
+    "blue_flag": {
+      "textures": "textures/items/blue_flag"
+    },
+    "orange_flag": {
+      "textures": "textures/items/orange_flag"
+    },
+    "yellow_flag": {
+      "textures": "textures/items/yellow_flag"
+    },
+    "green_flag": {
+      "textures": "textures/items/green_flag"
+    },
+    "elephant_amethyst_armor": {
+      "textures": "textures/items/elephant_armor/amethyst"
+    },
+    "elephant_reptil_armor": {
+      "textures": "textures/items/elephant_armor/reptil"
+    },
+    "elephant_ruby_armor": {
+      "textures": "textures/items/elephant_armor/ruby"
+    },
+    "elephant_citrine_armor": {
+      "textures": "textures/items/elephant_armor/citrine"
+    },
+    "elephant_diamond_armor": {
+      "textures": "textures/items/elephant_armor/diamond"
+    },
+    "elephant_emerald_armor": {
+      "textures": "textures/items/elephant_armor/emerald"
+    },
+    "elephant_gold_armor": {
+      "textures": "textures/items/elephant_armor/gold"
+    },
+    "elephant_iron_armor": {
+      "textures": "textures/items/elephant_armor/iron"
+    },
+    "elephant_netherite_armor": {
+      "textures": "textures/items/elephant_armor/netherite"
+    },
+    "feline_tooth": {
+      "textures": "textures/items/feline_tooth"
+    },
+    "butterfly_elytra2": {
+      "textures": "textures/items/butterfly2"
+    },
+    "butterfly_elytra3": {
+      "textures": "textures/items/butterfly3"
+    },
+    "butterfly_elytra4": {
+      "textures": "textures/items/butterfly4"
+    },
+    "butterfly_elytra1": {
+      "textures": "textures/items/butterfly1"
+    },
+    "butterfly_elytra0": {
+      "textures": "textures/items/butterfly0"
+    },
+    "egg_red_panda": {
+      "textures": "textures/items/egg_red_panda"
+    },
+    "egg_raccoon": {
+      "textures": "textures/items/egg_raccoon"
+    },
+    "egg_ant": {
+      "textures": "textures/items/egg_ant"
+    },
+    "egg_old_camel": {
+      "textures": "textures/items/egg_old_camel"
+    },
+    "camel_saddle": {
+      "textures": "textures/items/camel_saddle"
+    },
+    "egg_chimpanzee": {
+      "textures": "textures/items/egg_chimpanzee"
+    },
+    "astronaut_0": {
+      "textures": "textures/items/astronaut_0"
+    },
+    "astronaut_1": {
+      "textures": "textures/items/astronaut_1"
+    },
+    "astronaut_2": {
+      "textures": "textures/items/astronaut_2"
+    },
+    "astronaut_3": {
+      "textures": "textures/items/astronaut_3"
+    },
+    "white_scarf": {
+      "textures": "textures/items/scarf/white"
+    },
+    "yellow_scarf": {
+      "textures": "textures/items/scarf/yellow"
+    },
+    "magenta_scarf": {
+      "textures": "textures/items/scarf/magenta"
+    },
+    "orange_scarf": {
+      "textures": "textures/items/scarf/orange"
+    },
+    "pink_scarf": {
+      "textures": "textures/items/scarf/pink"
+    },
+    "purple_scarf": {
+      "textures": "textures/items/scarf/purple"
+    },
+    "red_scarf": {
+      "textures": "textures/items/scarf/red"
+    },
+    "lime_scarf": {
+      "textures": "textures/items/scarf/lime"
+    },
+    "brown_scarf": {
+      "textures": "textures/items/scarf/brown"
+    },
+    "cian_scarf": {
+      "textures": "textures/items/scarf/cian"
+    },
+    "green_scarf": {
+      "textures": "textures/items/scarf/green"
+    },
+    "light_blue_scarf": {
+      "textures": "textures/items/scarf/light_blue"
+    },
+    "light_gray_scarf": {
+      "textures": "textures/items/scarf/light_gray"
+    },
+    "blue_scarf": {
+      "textures": "textures/items/scarf/blue"
+    },
+    "gray_scarf": {
+      "textures": "textures/items/scarf/gray"
+    },
+    "black_scarf": {
+      "textures": "textures/items/scarf/black"
+    },
+    "egg_caracal": {
+      "textures": "textures/items/egg_caracal"
+    },
+    "egg_duck": {
+      "textures": "textures/items/egg_duck"
+    },
+    "egg_village_ice": {
+      "textures": "textures/items/egg_village_ice"
+    },
+    "egg_mammoth": {
+      "textures": "textures/items/egg_mammoth"
+    },
+    "shark_melee": {
+      "textures": "textures/items/shark_melee"
+    },
+    "shark_spear": {
+      "textures": "textures/items/shark_spear"
+    },
+    "syringe": {
+      "textures": "textures/items/syringe"
+    },
+    "mammoth_dna": {
+      "textures": "textures/items/mammoth_dna"
+    },
+    "elephant_dna": {
+      "textures": "textures/items/elephant_dna"
+    },
+    "coco": {
+      "textures": "textures/items/coco"
+    },
+    "split_coconut": {
+      "textures": "textures/items/split_coconut"
+    },
+    "egg_lantern_fish": {
+      "textures": "textures/items/egg_lantern_fish"
+    },
+    "lantern_fish_item": {
+      "textures": "textures/items/lantern_fish_item"
+    },
+    "egg_tucan": {
+      "textures": "textures/items/egg_tucan"
+    },
+    "egg_butterfly": {
+      "textures": "textures/items/egg_butterfly"
+    },
+    "zebra_skin": {
+      "textures": "textures/items/zebra_skin"
+    },
+    "safari_hat": {
+      "textures": "textures/items/safari_hat"
+    },
+    "egg_hyenas": {
+      "textures": "textures/items/egg_hyenas"
+    },
+    "egg_hyenas_2": {
+      "textures": "textures/items/egg_hyenas_2"
+    },
+    "egg_blue_iguana": {
+      "textures": "textures/items/egg_blue_iguana"
+    },
+    "egg_iguana": {
+      "textures": "textures/items/egg_iguana"
+    },
+    "egg_land_turtle": {
+      "textures": "textures/items/egg_land_turtle"
+    },
+    "egg_snake": {
+      "textures": "textures/items/egg_snake"
+    },
+    "citrine_sword": {
+      "textures": "textures/items/citrine_sword"
+    },
+    "citrine_shovel": {
+      "textures": "textures/items/citrine_shovel"
+    },
+    "citrine_pickaxe": {
+      "textures": "textures/items/citrine_pickaxe"
+    },
+    "citrine_axe": {
+      "textures": "textures/items/citrine_axe"
+    },
+    "citrine_hoe": {
+      "textures": "textures/items/citrine_hoe"
+    },
+    "citrine_chest": {
+      "textures": "textures/items/citrine_chest"
+    },
+    "citrine_helmet": {
+      "textures": "textures/items/citrine_helmet"
+    },
+    "citrine_legs": {
+      "textures": "textures/items/citrine_legs"
+    },
+    "citrine_boots": {
+      "textures": "textures/items/citrine_boots"
+    },
+
+    "reptil_rhinoceros_saddle": {
+      "textures": "textures/items/armor_rhinoceros/reptil_rhinoceros_saddle"
+    },
+    "pearl_sword": {
+      "textures": "textures/items/pearl_sword"
+    },
+    "citrine": {
+      "textures": "textures/items/citrine"
+    },
+    "pearl": {
+      "textures": "textures/items/pearl"
+    },
+    "shark_sword": {
+      "textures": "textures/items/shark_sword"
+    },
+    "shark_tooth": {
+      "textures": "textures/items/shark_tooth"
+    },
+    "ruby_sword": {
+      "textures": "textures/items/ruby_sword"
+    },
+    "ruby_shovel": {
+      "textures": "textures/items/ruby_shovel"
+    },
+    "ruby_pickaxe": {
+      "textures": "textures/items/ruby_pickaxe"
+    },
+    "ruby_axe": {
+      "textures": "textures/items/ruby_axe"
+    },
+    "ruby_hoe": {
+      "textures": "textures/items/ruby_hoe"
+    },
+    "ruby_chest": {
+      "textures": "textures/items/ruby_chest"
+    },
+    "ruby_helmet": {
+      "textures": "textures/items/ruby_helmet"
+    },
+    "ruby_legs": {
+      "textures": "textures/items/ruby_legs"
+    },
+    "ruby_boots": {
+      "textures": "textures/items/ruby_boots"
+    },
+    "reptil_chest": {
+      "textures": "textures/items/reptil_chest"
+    },
+    "reptil_helmet": {
+      "textures": "textures/items/reptil_helmet"
+    },
+    "reptil_legs": {
+      "textures": "textures/items/reptil_legs"
+    },
+    "reptil_boots": {
+      "textures": "textures/items/reptil_boots"
+    },
+    "cheese": {
+      "textures": "textures/items/cheese"
+    },
+    "taco_rat": {
+      "textures": "textures/items/taco_rat"
+    },
+    "shrimp_cooked": {
+      "textures": "textures/items/shrimp_cooked"
+    },
+    "shrimp_raw": {
+      "textures": "textures/items/shrimp_raw"
+    },
+    "raw_rat": {
+      "textures": "textures/items/raw_rat"
+    },
+    "breaded_shrimp": {
+      "textures": "textures/items/breaded_shrimp"
+    },
+    "cooked_rat": {
+      "textures": "textures/items/cooked_rat"
+    },
+    "egg_flamingo": {
+      "textures": "textures/items/egg_flamingo"
+    },
+    "egg_rat": {
+      "textures": "textures/items/egg_rat"
+    },
+    "egg_village_wild": {
+      "textures": "textures/items/egg_village_wild"
+    },
+    "egg_pink_dolphin": {
+      "textures": "textures/items/egg_pink_dolphin"
+    },
+    "cooked_ostrich_leg": {
+      "textures": "textures/items/cooked_ostrich_leg"
+    },
+    "crab_cooked": {
+      "textures": "textures/items/crab_cooked"
+    },
+    "crab_raw": {
+      "textures": "textures/items/crab_raw"
+    },
+    "raw_ostrich_leg": {
+      "textures": "textures/items/raw_ostrich_leg"
+    },
+    "egg_crab": {
+      "textures": "textures/items/egg_crab"
+    },
+    "egg_goat": {
+      "textures": "textures/items/egg_goat"
+    },
+    "egg_orca": {
+      "textures": "textures/items/egg_orca"
+    },
+    "egg_shrimp": {
+      "textures": "textures/items/egg_shrimp"
+    },
+    "egg_dark_dolphin": {
+      "textures": "textures/items/egg_dark_dolphin"
+    },
+    "egg_swordfish": {
+      "textures": "textures/items/egg_swordfish"
+    },
+     "egg_white_shark": {
+      "textures": "textures/items/egg_white_shark"
+    },
+     "egg_tiger_shark": {
+      "textures": "textures/items/egg_tiger_shark"
+    },
+     "egg_shark": {
+      "textures": "textures/items/egg_shark"
+    },
+    "egg_wild_boar": {
+      "textures": "textures/items/egg_wild_boar"
+    },
+    "big_cat_saddle": {
+      "textures": "textures/items/big_cat_saddle"
+    },
+    "giraffe_saddle": {
+      "textures": "textures/items/giraffe_saddle"
+    },
+    "elephant_saddle": {
+      "textures": "textures/items/elephant_saddle"
+    },
+    "ostrich_saddle": {
+      "textures": "textures/items/ostrich_saddle"
+    },
+    "egg_gorilla": {
+      "textures": "textures/items/egg_gorilla"
+    },
+    "egg_ostrich": {
+      "textures": "textures/items/egg_ostrich"
+    },
+    "egg_kiwi": {
+      "textures": "textures/items/egg_kiwi"
+    },
+    "egg_pelican": {
+      "textures": "textures/items/egg_pelican"
+    },
+    "egg_deer": {
+      "textures": "textures/items/egg_deer"
+    },
+    "egg_giraffe": {
+      "textures": "textures/items/egg_giraffe"
+    },
+    "egg_erizo": {
+      "textures": "textures/items/egg_erizo"
+    },
+    "egg_white_deer": {
+      "textures": "textures/items/egg_white_deer"
+    },
+    "egg_bear": {
+      "textures": "textures/items/egg_bear"
+    },
+    "egg_black_bear": {
+      "textures": "textures/items/egg_black_bear"
+    },
+    "banana": {
+      "textures": "textures/items/banana"
+    },
+    "collar": {
+      "textures": "textures/items/gold_bone"
+    },
+    "ruby": {
+      "textures": "textures/items/ruby"
+    },
+    "diamond_rhinoceros_saddle": {
+      "textures": "textures/items/armor_rhinoceros/diamond_rhinoceros_saddle"
+    },
+    "iron_rhinoceros_saddle": {
+      "textures": "textures/items/armor_rhinoceros/iron_rhinoceros_saddle"
+    },
+    "gold_rhinoceros_saddle": {
+      "textures": "textures/items/armor_rhinoceros/gold_rhinoceros_saddle"
+    },
+    "citrine_rhinoceros_saddle": {
+      "textures": "textures/items/armor_rhinoceros/citrine_rhinoceros_saddle"
+    },
+    "emerald_rhinoceros_saddle": {
+      "textures": "textures/items/armor_rhinoceros/emerald_rhinoceros_saddle"
+    },
+    "netherite_rhinoceros_saddle": {
+      "textures": "textures/items/armor_rhinoceros/netherite_rhinoceros_saddle"
+    },
+    "ruby_rhinoceros_saddle": {
+      "textures": "textures/items/armor_rhinoceros/ruby_rhinoceros_saddle"
+    },
+    "hat": {
+      "textures": "textures/items/hat"
+    },
+    "reptil_skin": {
+      "textures": "textures/items/reptil_skin"
+    },
+    "sugar_cubes": {
+      "textures": "textures/items/sugar_cubes"
+    },
+    "egg_penguin": {
+      "textures": "textures/items/egg_penguin"
+    },
+    "egg_penguin_two": {
+      "textures": "textures/items/egg_penguin_two"
+    },
+    "egg_blue_penguin": {
+      "textures": "textures/items/egg_blue_penguin"
+    },
+    "egg_penguin_african": {
+      "textures": "textures/items/egg_penguin_african"
+    },
+    "egg_lion": {
+      "textures": "textures/items/egg_lion"
+    },
+    "egg_seal": {
+      "textures": "textures/items/egg_seal"
+    },
+    "egg_ornintorrinco": {
+      "textures": "textures/items/egg_ornintorrinco"
+    },
+    "egg_ornintorrinco_original": {
+      "textures": "textures/items/egg_ornintorrinco_original"
+    },
+    "egg_zebra": {
+      "textures": "textures/items/egg_zebra"
+    },
+    "egg_african_elephant": {
+      "textures": "textures/items/egg_african_elephant"
+    },
+    "egg_asian_elephant": {
+      "textures": "textures/items/egg_asian_elephant"
+    },
+    "egg_crocodile": {
+      "textures": "textures/items/egg_crocodile"
+    },
+    "egg_komodo_dragon": {
+      "textures": "textures/items/egg_komodo_dragon"
+    },
+    "egg_panther": {
+      "textures": "textures/items/egg_panther"
+    },
+    "egg_leopard": {
+      "textures": "textures/items/egg_leopard"
+    },
+    "egg_snow_leopard": {
+      "textures": "textures/items/egg_snow_leopard"
+    },
+    "egg_white_tiger": {
+      "textures": "textures/items/egg_white_tiger"
+    },
+    "egg_cougar": {
+      "textures": "textures/items/egg_cougar"
+    },
+    "egg_tiger": {
+      "textures": "textures/items/egg_tiger"
+    },
+    "egg_blue_crab": {
+      "textures": "textures/items/egg_blue_crab"
+    },
+    "egg_cougar": {
+      "textures": "textures/items/egg_cougar"
+    },
+     "egg_rhinoceros": {
+	"textures": "textures/items/egg_rhinoceros"
+   }
+  }
+}

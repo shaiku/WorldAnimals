@@ -1,0 +1,30 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:orange_flag"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ABB",
+      "ABB",
+	  "A "
+    ],
+    "key": {
+	  "A": {
+        "item": "minecraft:stick"
+      },
+      "B": {
+        "item": "minecraft:wool",
+            "data": 1
+      }
+    },
+    "result": {
+      "item": "worldanimals:orange_flag",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

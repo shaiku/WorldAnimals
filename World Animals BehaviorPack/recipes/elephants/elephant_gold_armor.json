@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:elephant_gold_armor"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ABA",
+      "ABA",
+	  "AAA"
+    ],
+    "key": {
+	  "A": {
+        "item": "minecraft:gold_ingot"
+      },
+      "B": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "worldanimals:elephant_gold_armor",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

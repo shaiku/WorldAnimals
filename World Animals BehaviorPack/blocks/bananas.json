@@ -1,0 +1,48 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:block": {
+    "description": {
+      "identifier": "worldanimals:bananas",
+      "register_to_creative_menu": true,
+      "is_experimental": true
+    },
+        "components": {
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.search"
+			},
+            "minecraft:geometry": "geometry.bananas",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "bananas",
+                    "render_method": "alpha_test"
+                }
+            },   		
+            "minecraft:pick_collision":{
+                "origin":[-8.0, 0.0, -8.0],
+                "size":[16, 16, 16]
+            },
+			"minecraft:entity_collision":{
+                "origin":[0.0, 0.0, 0.0],
+                "size":[0, 0, 0]
+			},
+			"minecraft:on_player_placing": {
+                "event": "michiaddon:place_facing"
+            },
+
+            "minecraft:loot": "loot_tables/blocks/bananas.json",
+          
+			"minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0.0,
+
+            
+			"minecraft:destroy_time": 0.5,
+			"minecraft:friction": 0.9,
+			"minecraft:map_color": "#bbbbbb"
+        }
+    }
+}

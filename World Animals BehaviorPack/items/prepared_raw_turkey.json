@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "worldanimals:prepared_raw_turkey",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "prepared_raw_turkey",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

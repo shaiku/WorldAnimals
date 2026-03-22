@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:elephant_diamond_armor"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ABA",
+      "ABA",
+	  "AAA"
+    ],
+    "key": {
+	  "A": {
+        "item": "minecraft:diamond"
+      },
+      "B": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "worldanimals:elephant_diamond_armor",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

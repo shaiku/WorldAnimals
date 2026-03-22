@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "worldanimals:cheese"
+    },
+
+    
+    "tags": ["furnace", "smoker", "campfire", "blast_furnace"],
+    "input": "minecraft:bucket:1",
+    "output": "worldanimals:cheese"
+  }
+  
+}

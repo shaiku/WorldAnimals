@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_furnace": {
+    "description": {
+    "identifier": "worldanimals:cooked_crab"
+    },
+
+    
+    "tags": ["furnace", "smoker", "campfire", "blast_furnace"],
+    "input": "worldanimals:raw_crab",
+    "output": "worldanimals:cooked_crab"
+  }
+  
+}

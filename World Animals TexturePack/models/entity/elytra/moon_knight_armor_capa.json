@@ -1,0 +1,87 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.moon_knight_armor_capa",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "capa",
+					"pivot": [0, 24, 2.3],
+					"rotation": [5, 0, 0],
+					"cubes": [
+						{"origin": [-6, 2.4, 1.8], "size": [12, 22, 1], "inflate": -0.4, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "capa11",
+					"parent": "capa",
+					"pivot": [-5.6, 2.8, 2.3],
+					"rotation": [0, 0, 20],
+					"cubes": [
+						{"origin": [-13.175, 2.4, 1.8], "size": [8, 21, 1], "inflate": -0.425, "uv": [18, 50]}
+					]
+				},
+				{
+					"name": "capa3",
+					"parent": "capa11",
+					"pivot": [-12.6, 2.8, 2.3],
+					"rotation": [0, 0, 27.5],
+					"cubes": [
+						{"origin": [-20.175, 2.4, 1.8], "size": [8, 15, 1], "inflate": -0.45, "uv": [40, 78]}
+					]
+				},
+				{
+					"name": "capa4",
+					"parent": "capa3",
+					"pivot": [-19.6, 2.8, 2.3],
+					"rotation": [0, 0, 17.5],
+					"cubes": [
+						{"origin": [-27.175, 2.4, 1.8], "size": [8, 6, 1], "inflate": -0.475, "uv": [94, 79]},
+						{"origin": [-28.775, 2.275, 1.8], "size": [8, 11, 1], "inflate": -0.476, "pivot": [-19.6, 2.8, 2.3], "rotation": [0, 0, 30], "uv": [0, 85]},
+						{"origin": [-34.175, 2.1, 1.8], "size": [8, 4, 1], "inflate": -0.475, "pivot": [-19.6, 2.8, 2.3], "rotation": [0, 0, 2.5], "uv": [96, 19]},
+						{"origin": [-35.8, -3.8, 1.8], "size": [4, 3, 1], "inflate": -0.4745, "pivot": [-19.6, 2.8, 2.3], "rotation": [0, 0, 27.5], "uv": [12, 77]},
+						{"origin": [-35.075, 6.1, 1.8], "size": [10, 3, 1], "inflate": -0.476, "pivot": [-19.6, 2.8, 2.3], "rotation": [0, 0, -10], "uv": [56, 44]}
+					]
+				},
+				{
+					"name": "capa00",
+					"parent": "capa",
+					"pivot": [5.6, 2.8, 2.3],
+					"rotation": [0, 0, -20],
+					"cubes": [
+						{"origin": [5.2, 2.4, 1.8], "size": [8, 21, 1], "inflate": -0.425, "uv": [0, 50]}
+					]
+				},
+				{
+					"name": "capa2",
+					"parent": "capa00",
+					"pivot": [12.6, 2.8, 2.3],
+					"rotation": [0, 0, -27.5],
+					"cubes": [
+						{"origin": [12.2, 2.4, 1.8], "size": [8, 15, 1], "inflate": -0.45, "uv": [22, 73]}
+					]
+				},
+				{
+					"name": "capa5",
+					"parent": "capa2",
+					"pivot": [19.6, 2.8, 2.3],
+					"rotation": [0, 0, -17.5],
+					"cubes": [
+						{"origin": [19.2, 2.4, 1.8], "size": [8, 6, 1], "inflate": -0.475, "uv": [94, 36]},
+						{"origin": [20.8, 2.1, 1.8], "size": [8, 11, 1], "inflate": -0.476, "pivot": [19.6, 2.8, 2.3], "rotation": [0, 0, -30], "uv": [58, 83]},
+						{"origin": [26.2, 2.2, 1.8], "size": [8, 4, 1], "inflate": -0.475, "pivot": [19.6, 2.8, 2.3], "rotation": [0, 0, -2.5], "uv": [95, 45]},
+						{"origin": [31.8, -3.7, 1.8], "size": [4, 3, 1], "inflate": -0.4745, "pivot": [19.6, 2.8, 2.3], "rotation": [0, 0, -27.5], "uv": [0, 77]},
+						{"origin": [25.1, 6.2, 1.8], "size": [10, 3, 1], "inflate": -0.476, "pivot": [19.6, 2.8, 2.3], "rotation": [0, 0, 10], "uv": [24, 24]}
+					]
+				}
+			]
+		}
+	]
+}

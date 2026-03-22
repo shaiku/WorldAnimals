@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:duck",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/duck_v2/duck_v2",
+		"baby": "textures/entity/duck_v2/baby_duck"
+      },
+      "geometry": { "default": "geometry.duck_v2" },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animations": {
+        "loop": "animation.duck_v2.idle",
+		"attack": "animation.duck_v2.attack",
+        "walk": "animation.duck_v2.walk",
+		"ground": "animation.duck_v2.no_fly",
+        "fly": "animation.duck_v2.fly",
+        "water": "animation.duck_v2.on_water",
+        "baby_transform": "animation.duck_v2.baby"
+      },
+      "animation_controllers": [
+		{ "loop": "controller.animation.loop" },
+		{ "walk": "controller.animation.birds.walk" },
+	    { "attack": "controller.animation.animals.attack" },
+        { "baby": "controller.animation.llama.baby" },
+        { "fly": "controller.animation.pelican.fly" },
+        { "water": "controller.animation.pelican.water" },
+        { "ground": "controller.animation.pelican.ground" }
+      ],
+      "render_controllers": [ "controller.render.duck", "controller.render.baby_duck" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_duck",
+        "texture_index": 0
+      }
+    }
+  }
+}

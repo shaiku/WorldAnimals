@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:pink_dolphin",
+      "materials": { "default": "dolphin" },
+      "textures": {
+        "default": "textures/entity/dolphin/pink_dolphin_v2"
+      },
+      "geometry": {
+        "default": "geometry.pink_dolphin_v2"
+      },
+      "animations": {
+        "setup": "animation.pink_dolphin_v2.idle",
+        "walk": "animation.pink_dolphin_v2.walk"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.llama.move" }
+      ],
+      "render_controllers": [ "controller.render.dolphin" ],
+      "spawn_egg": {
+        "texture": "egg_pink_dolphin",
+        "texture_index": 0
+      }
+    }
+  }
+}

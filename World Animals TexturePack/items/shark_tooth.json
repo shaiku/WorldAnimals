@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "worldanimals:shark_tooth",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "shark_tooth",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:snake_coral",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/snake/snake_coral"
+      },
+      "geometry": { "default": "geometry.snake_coral" },
+      "animations": {
+        "setup": "animation.snake_v2.idle2",
+		"attack": "animation.snake_v2.attack",
+        "walk": "animation.snake_v2.walk"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" },
+				{
+					"attack": "controller.animation.animals.attack"
+				}
+      ],
+      "render_controllers": [ "controller.render.dolphin" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_snake",
+        "texture_index": 0
+      }
+    }
+  }
+}

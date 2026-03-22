@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.ironman_glider": {
+      "geometry": "Geometry.ironman_glider",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.ironman_glider", "Texture.enchanted" ]
+    },
+    "controller.render.ironman_mark2_glider": {
+      "geometry": "Geometry.ironman_glider",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.ironman_mark2_glider", "Texture.enchanted" ]
+    },
+    "controller.render.ironman_mark4_glider": {
+      "geometry": "Geometry.ironman_glider",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.ironman_mark4_glider", "Texture.enchanted" ]
+    },
+    "controller.render.ironman_mark5_glider": {
+      "geometry": "Geometry.ironman_glider",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.ironman_mark5_glider", "Texture.enchanted" ]
+    },
+    "controller.render.ironman_mark1_glider": {
+      "geometry": "Geometry.ironman_glider",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.ironman_mark1_glider", "Texture.enchanted" ]
+    },
+    "controller.render.ironman_glider_war_machine_mark1": {
+      "geometry": "Geometry.ironman_glider",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.ironman_glider_war_machine_mark1", "Texture.enchanted" ]
+    }
+  }
+}

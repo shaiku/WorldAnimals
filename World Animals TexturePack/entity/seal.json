@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:seal",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/seal/seal",
+		"seal_0": "textures/entity/seal/seal_0",
+		"baby": "textures/entity/seal/seal_baby"
+      },
+      "geometry": { "default": "geometry.seal" },
+      "animations": {
+		"baby_transform": "animation.seal.baby",
+        "setup": "animation.seal.idle",
+		"wolf_sitting": "animation.seal.sit",
+        "walk": "animation.seal.walk",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+	    { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.seal", "controller.render.seal_0", "controller.render.seal.baby" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_seal",
+        "texture_index": 0
+      }
+    }
+  }
+}

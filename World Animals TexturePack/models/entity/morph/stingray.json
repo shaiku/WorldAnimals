@@ -1,0 +1,97 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.stingray",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 1.5,
+				"visible_bounds_offset": [0, 0.25, 0]
+			},
+			"bones": [
+				{
+					"name": "into_morph",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "stingray",
+					"parent": "into_morph",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-6, 0, -6], "size": [12, 1, 12], "inflate": 0.25, "uv": [0, 0]},
+						{"origin": [-3.5, 1.25, -6], "size": [7, 1, 7], "uv": [29, 33]},
+						{"origin": [-2, 1.25, 1], "size": [4, 1, 5], "pivot": [0, 2.25, 1], "rotation": [-10, 0, 0], "uv": [0, 35]},
+						{"origin": [1, 2, -3], "size": [2, 2, 1], "pivot": [2, 3, -2.5], "rotation": [0, -27.5, 0], "uv": [0, 13]},
+						{"origin": [-3, 2, -3], "size": [2, 2, 1], "pivot": [-2, 3, -2.5], "rotation": [0, 27.5, 0], "uv": [6, 5]}
+					]
+				},
+				{
+					"name": "hueso1",
+					"parent": "stingray",
+					"pivot": [0, 0, 6],
+					"cubes": [
+						{"origin": [-2, 0, 6], "size": [4, 1, 4], "inflate": -0.25, "uv": [13, 35]}
+					]
+				},
+				{
+					"name": "hueso2",
+					"parent": "hueso1",
+					"pivot": [0, 0, 9.75],
+					"cubes": [
+						{"origin": [-1.5, 0, 9], "size": [3, 1, 4], "inflate": -0.275, "uv": [36, 0]}
+					]
+				},
+				{
+					"name": "hueso3",
+					"parent": "hueso2",
+					"pivot": [0, 0.5, 12.75],
+					"cubes": [
+						{"origin": [-1, 0, 12], "size": [2, 1, 4], "inflate": -0.3, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "hueso4",
+					"parent": "hueso3",
+					"pivot": [0, 0.5, 15.5],
+					"cubes": [
+						{"origin": [-0.5, 0, 15], "size": [1, 1, 4], "inflate": -0.36, "uv": [0, 5]}
+					]
+				},
+				{
+					"name": "ala1",
+					"parent": "stingray",
+					"pivot": [6, 0, 0],
+					"cubes": [
+						{"origin": [6, 0, -5], "size": [8, 1, 10], "uv": [0, 24]}
+					]
+				},
+				{
+					"name": "ala1_1",
+					"parent": "ala1",
+					"pivot": [14, 0, 0],
+					"cubes": [
+						{"origin": [14, 0, -4], "size": [6, 1, 8], "uv": [26, 13]}
+					]
+				},
+				{
+					"name": "ala2",
+					"parent": "stingray",
+					"pivot": [-6, 0, 0],
+					"cubes": [
+						{"origin": [-14, 0, -5], "size": [8, 1, 10], "uv": [0, 13]}
+					]
+				},
+				{
+					"name": "ala2_1",
+					"parent": "ala2",
+					"pivot": [-14, 0, 0],
+					"cubes": [
+						{"origin": [-20, -0.00684, -4], "size": [6, 1, 8], "uv": [26, 24]}
+					]
+				}
+			]
+		}
+	]
+}

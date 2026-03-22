@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.emperor_penguin": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.default"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "!query.is_baby" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    },
+    "controller.render.baby_emperor_penguin": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.baby_penguin"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.is_baby" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    }
+  }
+}

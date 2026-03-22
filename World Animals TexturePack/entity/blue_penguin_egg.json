@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "worldanimals:blue_penguin_egg",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/penguin/blue_penguin_egg"
+			},
+			"geometry": {
+				"default": "geometry.penguin_egg"
+			},
+			"animations": {
+				"loop": "animation.penguin_egg.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "blue_penguin_egg",
+				"texture_index": 0
+			}
+		}
+	}
+}

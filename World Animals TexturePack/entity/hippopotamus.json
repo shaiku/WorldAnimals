@@ -1,0 +1,44 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:hippopotamus",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/hippopotamus"
+      },
+      "geometry": { "default": "geometry.hippopotamus" },
+      "animations": {
+        "setup": "animation.hippopotamus.idle",
+        "look_at_target": "animation.common.look_at_target",
+        "walk": "animation.hippopotamus.walk",
+		"attack": "animation.hippopotamus.attack",
+		"casting": "animation.hippopotamus.celebrate",
+		"celebrating": "animation.hippopotamus.celebrate",
+		"riding.legs": "animation.hippopotamus.celebrate",
+        "wolf_sitting": "animation.hippopotamus.sit"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+				{
+					"attack": "controller.animation.animals.attack"
+				},
+				{
+					"general": "controller.animation.subaru_duck.general" 
+				}
+      ],
+      "render_controllers": [ "controller.render.dolphin" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_wild_boar",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:squirrel",
+      "materials": { "default": "slime" },
+      "textures": {
+        "blue": "textures/entity/squirrel",
+        "green": "textures/entity/squirrel",
+        "red_blue": "textures/entity/squirrel",
+        "yellow_blue": "textures/entity/squirrel",
+        "grey": "textures/entity/squirrel"
+      },
+      "geometry": { "default": "geometry.squirrel" },
+      "animations": {
+        "setup": "animation.squirrel.setup",
+        "walk": "animation.squirrel.walk",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" }
+      ],
+      "render_controllers": [ "controller.render.parrot" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_bear",
+        "texture_index": 0
+      }
+    }
+  }
+}

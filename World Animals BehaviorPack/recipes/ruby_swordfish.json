@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:ruby_swordfish"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " B ",
+      "BAB",
+	  " B "
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:weapon_swordfish"
+      },
+      "B": {
+        "item": "worldanimals:ruby"
+      }
+    },
+    "result": {
+      "item": "worldanimals:ruby_swordfish",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

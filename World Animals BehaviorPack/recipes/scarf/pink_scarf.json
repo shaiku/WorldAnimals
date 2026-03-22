@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:pink_scarf"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " B ",
+      "BAB",
+	  " B "
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:white_scarf"
+      },
+      "B": {
+        "item": "minecraft:pink_dye"
+      }
+    },
+    "result": {
+      "item": "worldanimals:pink_scarf",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

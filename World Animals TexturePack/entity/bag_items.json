@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "worldanimals:bag_items",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/stork"
+			},
+			"geometry": {
+				"default": "geometry.bag_items"
+			},
+			"animations": {
+				"loop": "animation.bag_items.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "bag_items",
+				"texture_index": 0
+			}
+		}
+	}
+}

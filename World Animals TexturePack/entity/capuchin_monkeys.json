@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:capuchin_monkeys",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/capuchin_monkey/capuchin_monkey"
+      },
+      "geometry": { "default": "geometry.capuchin_monkey" },
+      "animations": {
+		  "wolf_sitting": "animation.capuchin_monkey.sit",
+        "setup": "animation.capuchin_monkey.idle",
+        "walk": "animation.capuchin_monkey.walk",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+	  { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_ornintorrinco_original",
+        "texture_index": 0
+      }
+    }
+  }
+}

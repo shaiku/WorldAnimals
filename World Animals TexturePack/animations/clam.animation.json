@@ -1,0 +1,20 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.clam.idle": {
+			"loop": true,
+			"animation_length": 7.8,
+			"bones": {
+				"bone2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"2.6": [0, 0, 0],
+						"4.0333": [-50, 0, 0],
+						"6.4333": [-50, 0, 0],
+						"7.8": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

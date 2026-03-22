@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:giraffe",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/giraffe/giraffe_v2"
+      },
+      "geometry": { "default": "geometry.giraffe_v2", "saddle": "geometry.giraffe_saddle" },
+      "animations": {
+        "setup": "animation.giraffe_v2.idle",
+        "walk": "animation.giraffe_v2.walk",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.skeleton", "controller.render.giraffe.saddle" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_giraffe",
+        "texture_index": 0
+      }
+    }
+  }
+}

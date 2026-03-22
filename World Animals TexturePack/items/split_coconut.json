@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "worldanimals:split_coconut",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "split_coconut",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

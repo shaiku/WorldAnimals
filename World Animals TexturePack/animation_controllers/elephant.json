@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0-beta.1",
+  "animation_controllers": {
+    "controller.animation.elephant.setup": {
+      "states": {
+        "default": {
+          "animations": {
+            "setup": {}
+          }
+        }
+      }
+    },
+    "controller.animation.elephant.baby": {
+      "states": {
+        "baby": {
+          "parameters": [ "Entity.Flags.BABY" ],
+          "animations": {
+            "baby_transform": [
+              {
+                "0.0": 0.0,
+                "1.0": 1.0
+              }
+            ]
+          }
+        }
+      }
+    },
+    "controller.animation.elephant.move": {
+      "states": {
+        "default": {
+          "parameters": [ "Entity.Member.WalkSpeed" ],
+          "animations": {
+            "walk": [
+              {
+                "0.0": 0.0,
+                "2.0": 2.0
+              }
+            ],
+            "look_at_target": {}
+          }
+        }
+      }
+    }
+  }
+}

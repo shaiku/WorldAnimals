@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "worldanimals:iron_ostrich_saddle",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "iron_ostrich_saddle",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

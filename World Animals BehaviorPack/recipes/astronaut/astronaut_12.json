@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:astronaut_12"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " D ",
+      "CAC",
+      "CBC"
+    ],
+    "key": {
+	    "A": {
+        "item": "minecraft:leather_chestplate"
+      },
+      "B": {
+        "item": "minecraft:leather_leggings"
+      },
+      "C": {
+        "item": "minecraft:lapis_lazuli"
+      },
+      "D": {
+        "item": "minecraft:iron_helmet"
+      }
+    },
+    "result": {
+      "item": "worldanimals:astronaut_1",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

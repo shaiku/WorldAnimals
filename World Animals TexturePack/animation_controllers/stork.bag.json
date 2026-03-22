@@ -1,0 +1,25 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.stork.bag" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"bag" : "!q.is_sheared"
+						}
+					]
+				},
+				"bag" : {
+					"animations" : [ "bag_off" ],
+					"transitions" : [
+						{
+							"default" : "q.is_sheared"
+						}
+					]
+				}
+			}
+		}
+	}
+}

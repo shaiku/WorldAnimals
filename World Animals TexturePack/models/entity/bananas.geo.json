@@ -1,0 +1,60 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bananas",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "bananas",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "banana",
+					"parent": "bananas",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [-15, 0, 0], "size": [15, 16, 1], "inflate": 0, "uv": [1, 17]},
+						{"origin": [-7.5, 0, -7.5], "size": [15, 16, 1], "inflate": 0, "pivot": [-0.5, 8, -7], "rotation": [0, -90, 0], "uv": [1, 0]}
+					]
+				},
+				{
+					"name": "banana2",
+					"parent": "bananas",
+					"pivot": [0, 0, 0],
+					"rotation": [-180, 0, 180],
+					"cubes": [
+						{"origin": [-15, 0, 0], "size": [15, 16, 1], "inflate": 0, "uv": [1, 17]},
+						{"origin": [-7.5, 0, -7.5], "size": [15, 16, 1], "inflate": 0, "pivot": [-0.5, 8, -7], "rotation": [0, -90, 0], "uv": [1, 0]}
+					]
+				},
+				{
+					"name": "banana3",
+					"parent": "bananas",
+					"pivot": [0, 0, 0],
+					"rotation": [-180, 45, 180],
+					"cubes": [
+						{"origin": [-15, 0, 0], "size": [15, 16, 1], "inflate": 0, "uv": [1, 17]},
+						{"origin": [-7.5, 0, -7.5], "size": [15, 16, 1], "inflate": 0, "pivot": [-0.5, 8, -7], "rotation": [0, -90, 0], "uv": [1, 0]}
+					]
+				},
+				{
+					"name": "banana4",
+					"parent": "bananas",
+					"pivot": [0, 0, 0],
+					"rotation": [0, -45, 0],
+					"cubes": [
+						{"origin": [-15, 0, 0], "size": [15, 16, 1], "inflate": 0, "uv": [1, 17]},
+						{"origin": [-7.5, 0, -7.5], "size": [15, 16, 1], "inflate": 0, "pivot": [-0.5, 8, -7], "rotation": [0, -90, 0], "uv": [1, 0]}
+					]
+				}
+			]
+		}
+	]
+}

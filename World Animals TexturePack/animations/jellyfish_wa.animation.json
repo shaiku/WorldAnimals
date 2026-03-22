@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.jellyfish_wa.idle": {
+			"loop": true,
+			"animation_length": 10.04167,
+			"bones": {
+				"jelly": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"10.0417": [0, 360, 0]
+					}
+				}
+			}
+		},
+		"animation.jellyfish_wa.walk": {
+			"loop": true,
+			"bones": {
+				"jelly": {
+					"rotation": [0, 0, -22.5]
+				}
+			}
+		}
+	}
+}

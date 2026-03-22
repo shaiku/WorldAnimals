@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:cyanocitta_cristata",
+      "materials": { "default": "parrot"},
+      "textures": {
+        "default": "textures/entity/cyanocitta_cristata"
+      },
+      "geometry": {
+        "default": "geometry.cyanocitta_cristata"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.state = query.is_dancing ? 3 : (query.is_sitting ? 2 : (!query.is_on_ground && !query.is_jumping && !query.is_riding ? 0 : 1));",
+          "variable.dance.x = Math.cos(query.life_time * 57.3 * 20.0);",
+          "variable.dance.y = -Math.sin(query.life_time * 57.3 * 20.0);",
+          "variable.wing_flap = ((math.sin(query.wing_flap_position * 57.3) + 1) * query.wing_flap_speed);"
+        ]
+      },
+      "animations": {
+        "moving": "animation.cyanocitta_cristata.idle",
+		"walk": "animation.cyanocitta_cristata.walk",
+        "wolf_sitting": "animation.cyanocitta_cristata.sit",
+        "fly": "animation.cyanocitta_cristata.fly",
+		
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+	  { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "loop": "controller.animation.loop" },
+        { "walk": "controller.animation.birds.walk" },
+        { "look_at_target": "controller.animation.animal.look_at_target" },
+        { "fly": "controller.animation.turkey.fly" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "spawn_egg": {
+        "texture": "egg_cyanocitta_cristata",
+        "texture_index": 0
+      }
+    }
+  }
+}

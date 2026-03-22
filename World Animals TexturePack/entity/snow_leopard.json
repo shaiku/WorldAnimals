@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:snow_leopard",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/big_cats/snow_leopard_v2",
+		"saddle": "textures/entity/big_cats/lion_saddle"
+      },
+      "geometry": { 
+		"default": "geometry.tiger_v2",
+	    "saddle": "geometry.lion_saddle"
+	  },
+      "animations": {
+        "setup": "animation.lion_v2.idle",
+        "walk": "animation.lion_v2.walk",
+		"attack": "animation.lion_v2.attack",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.lion_v2.sit",
+        "baby_transform": "animation.lion_v2.baby"
+      },
+      "animation_controllers": [
+	    { "attack": "controller.animation.animals.attack"},
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.new_lion.default", "controller.render.new_lion.saddle" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_snow_leopard",
+        "texture_index": 0
+      }
+    }
+  }
+}

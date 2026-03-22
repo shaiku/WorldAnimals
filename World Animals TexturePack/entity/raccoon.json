@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:raccoon",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/raccoon"
+      },
+      "geometry": { "default": "geometry.raccoon" },
+      "animations": {
+        "setup": "animation.raccoon.idle",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.raccoon.sit",
+        "baby_transform": "animation.llama.baby_transform"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.dolphin" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_raccoon",
+        "texture_index": 0
+      }
+    }
+  }
+}

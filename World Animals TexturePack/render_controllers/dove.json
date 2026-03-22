@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.dove_0": {
+		"textures": [ "Texture.dove_0" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 0" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.dove": {
+		"textures": [ "Texture.dove" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 1" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    }
+  }
+}

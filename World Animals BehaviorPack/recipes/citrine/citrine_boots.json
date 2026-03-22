@@ -1,0 +1,25 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:citrine_boots"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A A",
+      "A A"
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:citrine"
+      }
+    },
+    "result": {
+      "item": "worldanimals:citrine_boots",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

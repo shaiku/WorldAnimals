@@ -1,0 +1,37 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.deer_0": {
+		"textures": [ "Texture.default" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 0" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.deer_1": {
+		"textures": [ "Texture.deer_1" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 1" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.deer_2": {
+		"textures": [ "Texture.deer_2" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 2" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.deer_3": {
+		"textures": [ "Texture.deer_3" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 3" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    }
+  }
+}

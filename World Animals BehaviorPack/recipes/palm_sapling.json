@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:palm_sapling"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A"
+    ],
+    "key": {
+	    "A": {
+        "item": "fortniteaddon:banana"
+      }
+    },
+    "result": {
+      "item": "worldanimals:palm_sapling",
+        "data": 0,
+      "count": 4
+    }
+  }
+}

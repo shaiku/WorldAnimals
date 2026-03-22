@@ -1,0 +1,90 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.elephant": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Texture.default" ]
+    },
+    "controller.render.elephant.saddle": {
+		"textures": [ "Texture.saddle" ],
+      "geometry": "Geometry.saddle",
+      "part_visibility": [
+        { "*": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.elephant.ruby": {
+      "textures": [ "Texture.ruby" ],
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.variant == 1" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.elephant.amethyst": {
+      "textures": [ "Texture.amethyst" ],
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.variant == 2" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.elephant.citrine": {
+      "textures": [ "Texture.citrine" ],
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.variant == 3" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.elephant.diamond": {
+      "textures": [ "Texture.diamond" ],
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.variant == 4" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.elephant.emerald": {
+      "textures": [ "Texture.emerald" ],
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.variant == 5" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.elephant.golden": {
+      "textures": [ "Texture.golden" ],
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.variant == 6" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.elephant.iron": {
+      "textures": [ "Texture.iron" ],
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.variant == 7" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.elephant.netherite": {
+      "textures": [ "Texture.netherite" ],
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.variant == 8" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.elephant.reptil": {
+      "textures": [ "Texture.reptil" ],
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.variant == 9" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    }
+  }
+}

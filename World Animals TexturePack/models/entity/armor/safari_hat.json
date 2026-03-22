@@ -1,0 +1,34 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.safari_hat",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "head",
+					"pivot": [0, 24, 0],
+					"mirror": true,
+					"cubes": [
+						{"origin": [-3.5, 32.5, -3.5], "size": [7, 3, 7], "uv": [0, 31]},
+						{"origin": [-3, 35.5, -3], "size": [6, 1, 6], "uv": [0, 45]},
+						{"origin": [-0.5, 35.7, -0.5], "size": [1, 1, 1], "uv": [7, 47]},
+						{"origin": [-5, 32.05, -5], "size": [10, 1, 10], "inflate": -0.25, "uv": [0, 10]},
+						{"origin": [-4, 32.05, -5.5], "size": [8, 1, 1], "inflate": -0.25, "uv": [46, 46]},
+						{"origin": [-4, 32.05, 4.5], "size": [8, 1, 1], "inflate": -0.25, "uv": [46, 44]},
+						{"origin": [4.5, 32.05, -4], "size": [1, 1, 8], "inflate": -0.25, "uv": [46, 0]},
+						{"origin": [5, 32.05, -3], "size": [1, 1, 6], "inflate": -0.25, "uv": [0, 0]},
+						{"origin": [-6, 32.05, -3], "size": [1, 1, 6], "inflate": -0.25, "uv": [0, 0]},
+						{"origin": [-5.5, 32.05, -4], "size": [1, 1, 8], "inflate": -0.25, "uv": [46, 0]}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.vulture": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.default"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "!query.is_baby" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    },
+    "controller.render.baby_vulture": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.baby"
+          ]
+        }
+      },
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.is_baby" }
+      ],
+      "materials": [ { "*": "Material.default" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    }
+  }
+}

@@ -1,0 +1,1167 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "worldanimals:rhinoceros",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "minecraft:rhinoceros_0": {
+        "minecraft:variant": { "value": 0 }
+      },
+      "minecraft:rhinoceros_1": {
+        "minecraft:variant": { "value": 1 }
+      },
+      "minecraft:interacciones": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:reptil_rhinoceros_saddle"},
+                "event": "minecraft:reptil_armor_on"
+              },
+              "interact_text": "action.interact.armadura",
+              "use_item": true,
+              "play_sounds": "armor.equip_leather"
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:gold_rhinoceros_saddle"},
+                "event": "minecraft:gold_armor_on"
+              },
+              "interact_text": "action.interact.armadura",
+              "use_item": true,
+              "play_sounds": "armor.equip_gold"
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:iron_rhinoceros_saddle"},
+                "event": "minecraft:iron_armor_on"
+              },
+              "interact_text": "action.interact.armadura",
+              "use_item": true,
+              "play_sounds": "armor.equip_iron"
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:diamond_rhinoceros_saddle"},
+                "event": "minecraft:diamond_armor_on"
+              },
+              "interact_text": "action.interact.armadura",
+              "use_item": true,
+              "play_sounds": "armor.equip_diamond"
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:citrine_rhinoceros_saddle"},
+                "event": "minecraft:citrine_armor_on"
+              },
+              "interact_text": "action.interact.armadura",
+              "use_item": true,
+              "play_sounds": "armor.equip_gold"
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:ruby_rhinoceros_saddle"},
+                "event": "minecraft:ruby_armor_on"
+              },
+              "interact_text": "action.interact.armadura",
+              "use_item": true,
+              "play_sounds": "armor.equip_gold"
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:emerald_rhinoceros_saddle"},
+                "event": "minecraft:emerald_armor_on"
+              },
+              "interact_text": "action.interact.armadura",
+              "use_item": true,
+              "play_sounds": "armor.equip_diamond"
+            },
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:netherite_rhinoceros_saddle"},
+                "event": "minecraft:netherite_armor_on"
+              },
+              "interact_text": "action.interact.armadura",
+              "use_item": true,
+              "play_sounds": "armor.equip_diamond"
+            }
+          ]
+        }
+      },
+      "minecraft:removearmor": {
+        "minecraft:spell_effects": {
+          "remove_effects": [
+            "resistance",
+            "speed",
+            "strenght",
+            "jump",
+            "night_vision",
+            "regeneration",
+            "absorption"
+          ]
+        },
+        "minecraft:attack": {
+          "damage": 9
+        }
+      },
+      "minecraft:emerald_armor": {
+        "minecraft:is_saddled": {
+        },
+	          "minecraft:behavior.player_ride_tamed": {
+        },
+      "minecraft:attack": {
+        "damage": 20
+      },
+        "minecraft:health": {
+          "value": 120,
+          "max": 120
+        },
+	  "minecraft:inventory": {
+        "inventory_size": 27,
+        "container_type": "container", 
+        "private": false
+      },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.mount",
+          "seats": {
+            "position": [ 0.0,1.9, -0.05 ]
+          }
+
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/rhinoceros/esmeralda.json"
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "event": "minecraft:removearmor"
+              },
+              "spawn_items": {
+                "table": "loot_tables/entities/rhinoceros/esmeralda.json"
+              },
+              "interact_text": "action.interact.unequip",
+              "use_item": false,
+              "hurt_item": 2,
+              "play_sounds": "armor.equip_generic"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 6
+        }
+      },
+      "minecraft:ruby_armor": {
+        "minecraft:is_saddled": {
+        },
+	          "minecraft:behavior.player_ride_tamed": {
+        },
+      "minecraft:attack": {
+        "damage": 22
+      },
+        "minecraft:health": {
+          "value": 160,
+          "max": 160
+        },
+	  "minecraft:inventory": {
+        "inventory_size": 27,
+        "container_type": "container", 
+        "private": false
+      },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.mount",
+          "seats": {
+            "position": [ 0.0,1.9, -0.05 ]
+          }
+
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/rhinoceros/ruby.json"
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "event": "minecraft:removearmor"
+              },
+              "spawn_items": {
+                "table": "loot_tables/entities/rhinoceros/ruby.json"
+              },
+              "interact_text": "action.interact.unequip",
+              "use_item": false,
+              "hurt_item": 2,
+              "play_sounds": "armor.equip_generic"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 5
+        }
+      },
+      "minecraft:citrine_armor": {
+	          "minecraft:behavior.player_ride_tamed": {
+        },
+        "minecraft:is_saddled": {
+        },
+      "minecraft:attack": {
+        "damage": 24
+      },
+        "minecraft:health": {
+          "value": 180,
+          "max": 180
+        },
+	  "minecraft:inventory": {
+        "inventory_size": 27,
+        "container_type": "container", 
+        "private": false
+      },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.mount",
+          "seats": {
+            "position": [ 0.0,1.9, -0.05 ]
+          }
+
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/rhinoceros/citrine.json"
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "event": "minecraft:removearmor"
+              },
+              "spawn_items": {
+                "table": "loot_tables/entities/rhinoceros/citrine.json"
+              },
+              "interact_text": "action.interact.unequip",
+              "use_item": false,
+              "hurt_item": 2,
+              "play_sounds": "armor.equip_generic"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 4
+        }
+      },
+      "minecraft:diamond_armor": {
+	          "minecraft:behavior.player_ride_tamed": {
+        },
+        "minecraft:is_saddled": {
+        },
+      "minecraft:attack": {
+        "damage": 19
+      },
+        "minecraft:health": {
+          "value": 150,
+          "max": 150
+        },
+	  "minecraft:inventory": {
+        "inventory_size": 27,
+        "container_type": "container", 
+        "private": false
+      },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.mount",
+          "seats": {
+            "position": [ 0.0,1.9, -0.05 ]
+          }
+
+        },
+        "minecraft:mark_variant": {
+          "value": 3
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/rhinoceros/diamond.json"
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "event": "minecraft:removearmor"
+              },
+              "spawn_items": {
+                "table": "loot_tables/entities/rhinoceros/diamond.json"
+              },
+              "interact_text": "action.interact.unequip",
+              "use_item": false,
+              "hurt_item": 2,
+              "play_sounds": "armor.equip_generic"
+            }
+          ]
+        }
+      },
+      "minecraft:iron_armor": {
+      "minecraft:attack": {
+        "damage": 15
+      },
+        "minecraft:health": {
+          "value": 125,
+          "max": 125
+        },
+        "minecraft:is_saddled": {
+        },
+	          "minecraft:behavior.player_ride_tamed": {
+        },
+      "minecraft:attack": {
+        "damage": 18
+      },
+	  "minecraft:inventory": {
+        "inventory_size": 27,
+        "container_type": "container", 
+        "private": false
+      },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.mount",
+          "seats": {
+            "position": [ 0.0,1.9, -0.05 ]
+          }
+
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/rhinoceros/iron.json"
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "event": "minecraft:removearmor"
+              },
+              "spawn_items": {
+                "table": "loot_tables/entities/rhinoceros/iron.json"
+              },
+              "interact_text": "action.interact.unequip",
+              "use_item": false,
+              "hurt_item": 2,
+              "play_sounds": "armor.equip_generic"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 2
+        }
+      },
+      "minecraft:gold_armor": {
+        "minecraft:is_saddled": {
+        },
+	          "minecraft:behavior.player_ride_tamed": {
+        },
+      "minecraft:attack": {
+        "damage": 12
+      },
+        "minecraft:health": {
+          "value": 130,
+          "max": 130
+        },
+	  "minecraft:inventory": {
+        "inventory_size": 27,
+        "container_type": "container", 
+        "private": false
+      },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.mount",
+          "seats": {
+            "position": [ 0.0,1.9, -0.05 ]
+          }
+
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/rhinoceros/gold.json"
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "event": "minecraft:removearmor"
+              },
+              "spawn_items": {
+                "table": "loot_tables/entities/rhinoceros/gold.json"
+              },
+              "interact_text": "action.interact.unequip",
+              "use_item": false,
+              "hurt_item": 2,
+              "play_sounds": "armor.equip_generic"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "minecraft:netherite_armor": {
+        "minecraft:is_saddled": {
+        },
+	          "minecraft:behavior.player_ride_tamed": {
+        },
+      "minecraft:attack": {
+        "damage": 30
+      },
+        "minecraft:health": {
+          "value": 220,
+          "max": 220
+        },
+      "minecraft:fire_immune": true,
+	  "minecraft:inventory": {
+        "inventory_size": 27,
+        "container_type": "container", 
+        "private": false
+      },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.mount",
+          "seats": {
+            "position": [ 0.0,1.9, -0.05 ]
+          }
+
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/rhinoceros/netherite.json"
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "event": "minecraft:removearmor"
+              },
+              "spawn_items": {
+                "table": "loot_tables/entities/rhinoceros/netherite.json"
+              },
+              "interact_text": "action.interact.unequip",
+              "use_item": false,
+              "hurt_item": 2,
+              "play_sounds": "armor.equip_generic"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 7
+        }
+      },
+      "minecraft:reptil_armor": {
+        "minecraft:is_saddled": {
+        },
+	          "minecraft:behavior.player_ride_tamed": {
+        },
+      "minecraft:attack": {
+        "damage": 13
+      },
+        "minecraft:health": {
+          "value": 90,
+          "max": 90
+        },
+	  "minecraft:inventory": {
+        "inventory_size": 27,
+        "container_type": "container", 
+        "private": false
+      },
+        "minecraft:input_ground_controlled": {
+        },
+        "minecraft:can_power_jump": {
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.mount",
+          "seats": {
+            "position": [ 0.0,1.9, -0.05 ]
+          }
+
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/rhinoceros/reptil.json"
+        },
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "event": "minecraft:removearmor"
+              },
+              "spawn_items": {
+                "table": "loot_tables/entities/rhinoceros/reptil.json"
+              },
+              "interact_text": "action.interact.unequip",
+              "use_item": false,
+              "hurt_item": 2,
+              "play_sounds": "armor.equip_generic"
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "minecraft:rhinoceros_baby": {
+        "minecraft:is_baby": {
+        },
+        "minecraft:scale": {
+          "value": 0.65
+        },
+
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            "chicken",
+            "cooked_chicken",
+            "beef",
+            "cooked_beef",
+            "muttonRaw",
+            "muttonCooked",
+            "porkchop",
+            "cooked_porkchop",
+            "rabbit",
+            "cooked_rabbit",
+            "rotten_flesh"
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        }
+      },
+
+      "minecraft:rhinoceros_adult": {
+        "minecraft:experience_reward": {
+          "on_bred": "Math.Random(1,7)",
+          "on_death": "query.last_hit_by_player ? Math.Random(1,3) : 0"
+        },
+        "minecraft:loot": {
+          "table": "loot_tables/entities/rhinoceros.json"
+        },
+        "minecraft:scale": {
+          "value": 1.3
+        },
+        "minecraft:behavior.breed": {
+          "priority": 3,
+          "speed_multiplier": 1.0
+        },
+        "minecraft:breedable": {
+          "require_tame": true,
+          "breeds_with": {
+            "mate_type": "worldanimals:rhinoceros",
+            "baby_type": "worldanimals:rhinoceros",
+            "breed_event": {
+              "event": "minecraft:entity_born",
+              "target": "baby"
+            }
+          },
+          "breed_items": [
+            "fortniteaddon:banana",
+            "minecraft:melon_slice",
+            "minecraft:sweet_berries",
+            "minecraft:apple",
+            "minecraft:golden_apple"
+          ]
+        }
+      },
+
+      "minecraft:rhinoceros_angry": {
+        "minecraft:angry": {
+          "duration": 25,
+          "broadcast_anger": true,
+          "broadcast_range": 20,
+          "calm_event": {
+            "event": "minecraft:on_calm",
+            "target": "self"
+          }
+        },
+        "minecraft:on_target_acquired": {
+        }
+      },
+
+      "minecraft:rhinoceros_wild": {
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 3,
+          "entity_types": [
+            {
+              "filters": { "test": "is_family", "subject": "other", "value": "llama" },
+              "max_dist": 24,
+              "walk_speed_multiplier": 1.5,
+              "sprint_speed_multiplier": 1.5
+            }
+          ],
+          "probability_per_strength": 0.14
+        },
+        "minecraft:tameable": {
+          "probability": 1.0,
+          "tame_items": "worldanimals:collar",
+          "tame_event": {
+            "event": "minecraft:on_tame",
+            "target": "self"
+          }
+        },
+
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "attack_interval": 10,
+          "reselect_targets": true,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
+                  { "test" :  "is_family", "subject" : "other", "value" :  "zombie"}
+                ] 
+              },
+              "max_dist": 16
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "baby_turtle"
+                  },
+                  {
+                    "test": "in_water",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": true
+                  }
+                ]
+              },
+              "max_dist": 16
+            },
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "skeleton"
+                  },
+                  {
+                    "test": "is_underwater",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": true
+                  }
+                ]
+              },
+              "max_dist": 16
+            }
+          ],
+          "must_see": true
+        },
+        "minecraft:on_target_acquired": {
+          "event": "minecraft:become_angry",
+          "target": "self"
+        },
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "family_types": [
+            "zombie"
+          ],
+          "seats": {
+            "position": [ 0.0,1.9, -0.05 ]
+          }
+        }
+      },
+
+      "minecraft:rhinoceros_tame": {
+        "minecraft:is_tamed": {
+        },
+        "minecraft:sittable": {
+        },
+        "minecraft:behavior.follow_owner": {
+          "priority": 6,
+          "speed_multiplier": 1.0,
+          "start_distance": 10,
+          "stop_distance": 2
+        },
+        "minecraft:health": {
+          "value": 85,
+          "max": 85
+        },
+        "minecraft:attack": {
+          "damage": 9
+        },
+        "minecraft:behavior.breed": {
+          "priority": 7
+        },
+
+        "minecraft:behavior.owner_hurt_by_target": {
+          "priority": 1
+        },
+        "minecraft:behavior.owner_hurt_target": {
+          "priority": 2
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 5,
+          "attack_interval": 10,
+          "entity_types": [
+            {
+              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
+              "max_dist": 16
+            }
+          ],
+          "must_see": true
+        },
+        "minecraft:rideable": {
+          "priority": 0,
+          "seat_count": 1,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.ride.horse",
+          "seats": {
+            "position": [ 0.0,1.9, -0.05 ]
+          }
+
+        },
+
+        "minecraft:leashable": {
+          "soft_distance": 4.0,
+          "hard_distance": 6.0,
+          "max_distance": 10.0,
+          "on_leash": {
+            "event": "minecraft:on_leash",
+            "target": "self"
+          },
+          "on_unleash": {
+            "event": "minecraft:on_unleash",
+            "target": "self"
+          }
+        }
+      }
+    },
+
+
+    "components": {
+      "minecraft:nameable": {
+      },
+      "minecraft:type_family": {
+        "family": [ "rhinoceros", "mob" ]
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0
+      },
+      "minecraft:collision_box": {
+        "width": 1.6,
+        "height": 1.5
+      },
+      "minecraft:health": {
+        "value": 75,
+        "max": 75
+      },
+      "minecraft:hurt_on_condition": {
+        "damage_conditions": [
+          {
+            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "cause": "lava",
+            "damage_per_tick": 4
+          }
+        ]
+      },
+      "minecraft:movement": {
+        "value": 0.3
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true,
+        "avoid_damage_blocks": true
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:jump.static": {
+      },
+      "minecraft:can_climb": {
+      },
+      "minecraft:attack": {
+        "damage": 9
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "minecraft:golden_apple",
+            "heal_amount": 16
+          },
+          {
+            "item": "minecraft:wheat",
+            "heal_amount": 8
+          },
+          {
+            "item": "minecraft:apple",
+            "heal_amount": 8
+          }
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 0
+      },
+      "minecraft:behavior.mount_pathing": {
+        "priority": 1,
+        "speed_multiplier": 1.25,
+        "target_dist": 0,
+        "track_target": true
+      },
+      "minecraft:behavior.stay_while_sitting": {
+        "priority": 3
+      },
+      "minecraft:behavior.leap_at_target": {
+        "priority": 4,
+        "target_dist": 0.4
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 5,
+        "target_dist": 1.2,
+        "track_target": true,
+        "reach_multiplier": 1.0
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 8,
+        "speed_multiplier": 1.0
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "target_distance": 6.0,
+        "probability": 0.02
+      },
+      "minecraft:behavior.beg": {
+        "priority": 9,
+        "look_distance": 8,
+        "look_time": [ 2, 4 ],
+        "items": [ "bone", "porkchop", "cooked_porkchop", "chicken", "cooked_chicken", 
+                   "beef", "cooked_beef", "rotten_flesh", "muttonraw", "muttoncooked", "rabbit", "cooked_rabbit" ]
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 3
+      },
+	    "minecraft:physics": {
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+
+    "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 90,
+                "remove": {
+                },
+                "add": {
+                  "component_groups": [
+                    "minecraft:rhinoceros_adult",
+                    "minecraft:rhinoceros_wild"
+                  ]
+                }
+              },
+              {
+                "weight": 10,
+                "remove": {
+                },
+                "add": {
+                  "component_groups": [
+                    "minecraft:rhinoceros_baby",
+                    "minecraft:rhinoceros_wild"
+                  ]
+
+                }
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 50,
+                "add": {
+                  "component_groups": [
+                    "minecraft:rhinoceros_0"
+                  ]
+                }
+              },
+              {
+                "weight": 50,
+                "add": {
+                  "component_groups": [
+                    "minecraft:rhinoceros_1"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+
+      "minecraft:entity_born": {
+        "remove": {
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:rhinoceros_baby",
+            "minecraft:rhinoceros_tame",
+            "minecraft:interacciones"
+          ]
+        }
+      },
+
+      "minecraft:ageable_grow_up": {
+        "remove": {
+          "component_groups": [
+            "minecraft:rhinoceros_baby"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:rhinoceros_adult"
+          ]
+        }
+      },
+
+      "minecraft:ageable_set_baby": {
+        "remove": {
+          "component_groups": [
+            "minecraft:rhinoceros_adult"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:rhinoceros_baby"
+          ]
+        }
+      },
+
+      "minecraft:on_tame": {
+        "remove": {
+          "component_groups": [
+            "minecraft:rhinoceros_wild"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:rhinoceros_tame",
+            "minecraft:interacciones"
+          ]
+        }
+      },
+      "minecraft:become_angry": {
+        "remove": {
+          "component_groups": [
+            "minecraft:rhinoceros_wild"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:rhinoceros_angry"
+          ]
+        }
+      },
+      "minecraft:on_calm": {
+        "remove": {
+          "component_groups": [
+            "minecraft:rhinoceros_angry"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:rhinoceros_wild"
+          ]
+        }
+      },
+      "minecraft:removearmor": {
+        "remove": {
+          "component_groups": [
+            "minecraft:reptil_armor",
+            "minecraft:gold_armor",
+            "minecraft:iron_armor",
+            "minecraft:diamond_armor",
+            "minecraft:citrine_armor",
+            "minecraft:ruby_armor",
+            "minecraft:emerald_armor",
+			"minecraft:netherite_armor"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:removearmor",
+            "minecraft:rhinoceros_tame",
+            "minecraft:interacciones"
+          ]
+        }
+      },
+      "minecraft:reptil_armor_on": {
+        "remove": {
+          "component_groups": [
+            "minecraft:removearmor",
+            "minecraft:interacciones"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:reptil_armor"
+          ]
+        }
+      },
+      "minecraft:gold_armor_on": {
+        "remove": {
+          "component_groups": [
+            "minecraft:removearmor",
+            "minecraft:interacciones"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:gold_armor"
+          ]
+        }
+      },
+      "minecraft:iron_armor_on": {
+        "remove": {
+          "component_groups": [
+            "minecraft:removearmor",
+            "minecraft:interacciones"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:iron_armor"
+          ]
+        }
+      },
+      "minecraft:diamond_armor_on": {
+        "remove": {
+          "component_groups": [
+            "minecraft:removearmor",
+            "minecraft:interacciones"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:diamond_armor"
+          ]
+        }
+      },
+      "minecraft:citrine_armor_on": {
+        "remove": {
+          "component_groups": [
+            "minecraft:removearmor",
+            "minecraft:interacciones"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:citrine_armor"
+          ]
+        }
+      },
+      "minecraft:ruby_armor_on": {
+        "remove": {
+          "component_groups": [
+            "minecraft:removearmor",
+            "minecraft:interacciones"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:ruby_armor"
+          ]
+        }
+      },
+      "minecraft:emerald_armor_on": {
+        "remove": {
+          "component_groups": [
+            "minecraft:removearmor",
+            "minecraft:interacciones"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:emerald_armor"
+          ]
+        }
+      },
+      "minecraft:netherite_armor_on": {
+        "remove": {
+          "component_groups": [
+            "minecraft:removearmor",
+            "minecraft:interacciones"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "minecraft:netherite_armor"
+          ]
+        }
+      }
+    }
+  }
+}

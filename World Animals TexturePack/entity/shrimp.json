@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:shrimp",
+      "materials": { "default": "dolphin" },
+      "textures": {
+        "default": "textures/entity/shrimp"
+      },
+      "geometry": {
+        "default": "geometry.shrimp"
+      },
+      "animations": {
+        "move": "animation.orca.walk"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.dolphin.general" }
+      ],
+      "render_controllers": [ "controller.render.dolphin" ],
+      "spawn_egg": {
+        "texture": "egg_shrimp",
+        "texture_index": 0
+      }
+    }
+  }
+}

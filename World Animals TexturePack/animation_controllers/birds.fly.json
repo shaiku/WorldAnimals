@@ -1,0 +1,25 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.birds.walk" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"walk" : "q.modified_move_speed > 0.1 && q.is_on_ground"
+						}
+					],"blend_transition": 0.5
+				},
+				"walk" : {
+					"animations" : [ "walk" ],
+					"transitions" : [
+						{
+							"default" : "q.modified_move_speed < 0.1 || !q.is_on_ground"
+						}
+					],"blend_transition": 0.5
+				}
+			}
+		}
+	}
+}

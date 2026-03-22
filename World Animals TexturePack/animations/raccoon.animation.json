@@ -1,0 +1,41 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.raccoon.sit": {
+			"loop": true,
+			"bones": {
+				"raccoon": {
+					"position": [0, -3, 0]
+				},
+				"tail": {
+					"rotation": [0, 37.5, 0]
+				},
+				"leg0": {
+					"rotation": [0, 0, -70]
+				},
+				"leg2": {
+					"rotation": [0, 0, -70]
+				},
+				"leg1": {
+					"rotation": [0, 0, 70]
+				},
+				"leg3": {
+					"rotation": [0, 0, 70]
+				}
+			}
+		},
+		"animation.raccoon.idle": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"tail": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.5": [10, 0, 0],
+						"3.0": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

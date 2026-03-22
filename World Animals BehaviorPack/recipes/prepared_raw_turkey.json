@@ -1,0 +1,38 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:prepared_raw_turkey"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+	  "EEE",
+      "CAD",
+	  "BBB"
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:raw_turkey"
+      },
+      "B": {
+        "item": "minecraft:quartz"
+      },
+      "C": {
+        "item": "minecraft:apple"
+      },
+      "D": {
+        "item": "minecraft:potato"
+      },
+      "E": {
+        "item": "minecraft:wheat"
+      }
+    },
+    "result": {
+      "item": "worldanimals:prepared_raw_turkey",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:crocodile",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/reptils/crocodile_v2",
+		"white_crocodile": "textures/entity/reptils/white_crocodile"
+      },
+      "geometry": { "default": "geometry.crocodile_v2" },
+      "animations": {
+        "setup": "animation.crocodile_v2.idle",
+		"wolf_sitting": "animation.crocodile_v2.sit",
+		"attack": "animation.crocodile_v2.attack",
+        "walk": "animation.crocodile_v2.walk"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animation_controllers": [
+		{ "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" },
+				{
+					"attack": "controller.animation.animals.attack"
+				}
+      ],
+      "render_controllers": [ "controller.render.crocodile", "controller.render.white_crocodile" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_crocodile",
+        "texture_index": 0
+      }
+    }
+  }
+}

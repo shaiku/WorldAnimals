@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "worldanimals:astronaut_1",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "astronaut_1",
+		"minecraft:max_stack_size": 1,
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

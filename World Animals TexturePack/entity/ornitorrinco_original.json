@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:ornitorrinco_original",
+      "materials": { "default": "slime" },
+      "textures": {
+        "blue": "textures/entity/ornintorrinco/ornintorrinco_original_chest",
+        "green": "textures/entity/ornintorrinco/ornintorrinco_original_chest",
+        "red_blue": "textures/entity/ornintorrinco/ornintorrinco_original",
+        "yellow_blue": "textures/entity/ornintorrinco/ornintorrinco_original_chest",
+        "grey": "textures/entity/ornintorrinco/ornintorrinco_original_chest"
+      },
+      "geometry": { "default": "geometry.ornintorrinco" },
+      "animations": {
+        "setup": "animation.llama.setup",
+        "walk": "animation.ornitorrinco.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.llama.baby_transform"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.parrot" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_ornintorrinco_original",
+        "texture_index": 0
+      }
+    }
+  }
+}

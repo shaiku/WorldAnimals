@@ -1,0 +1,64 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "worldanimals:bag_items",
+      "is_spawnable": false,
+
+      "is_summonable": true,
+
+      "is_experimental": false
+    },
+    "events": {
+      "bag:items_off": {
+		"run_command": {
+			"command": [
+					"kill @s"
+			]
+		}
+      }
+	},
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/entities/bag_items.json"
+      },
+		"minecraft:timer": {
+			  "looping": true,
+			  "time": 0.25,
+			  "time_down_event": {
+				"event": "bag:items_off"
+			}
+		},
+      "minecraft:type_family": {
+        "family": [ "caja" ]
+      },
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:navigation.walk": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+	  "minecraft:physics": {},
+      "minecraft:knockback_resistance": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:fall_damage": {
+      "value": 10.0
+      },
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      }
+    }
+  }
+}

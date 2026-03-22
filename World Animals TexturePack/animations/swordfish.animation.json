@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.swordfish.weapon.third": {
+			"loop": true,
+			"bones": {
+				"pez": {
+					"scale": 0.6
+				}
+			}
+		},
+		"animation.swordfish.weapon.first": {
+			"loop": true,
+			"bones": {
+				"pez": {
+					"scale": 0.6
+				},
+				"rightItem": {
+					"rotation": [48.70169, 63.44693, -31.77592],
+					"position": [0, 6, 0]
+				}
+			}
+		}
+	}
+}

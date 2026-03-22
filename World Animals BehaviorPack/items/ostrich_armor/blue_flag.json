@@ -1,0 +1,18 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldanimals:blue_flag",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.equipment"
+			},
+			"minecraft:icon": {
+				"texture": "blue_flag"
+			},
+			"minecraft:max_stack_size": 1
+		}
+	}
+}

@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:asian_elephant",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/elephants_v2/asian_elephant_v2",
+		"saddle": "textures/entity/elephants_v2/elephant_saddle_v2"
+      },
+      "geometry": { "default": "geometry.elephant_v2", "saddle": "geometry.elephant_saddle_v2" },
+      "animations": {
+        "setup": "animation.elephant_asian_v2.idle",
+        "look_at_target": "animation.common.look_at_target",
+        "walk": "animation.elephant_v2.walk",
+		"attack": "animation.elephant_v2.attack",
+		"casting": "animation.elephant_v2.celebrate",
+		"celebrating": "animation.elephant_v2.celebrate",
+        "wolf_sitting": "animation.elephant_african_v2.sit"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+				{
+					"attack": "controller.animation.animals.attack"
+				},
+				{
+					"general": "controller.animation.subaru_duck.general" 
+				}
+      ],
+      "render_controllers": [ 
+	  "controller.render.elephant", 
+	  "controller.render.elephant.saddle"
+	  ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_asian_elephant",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.moon_knight.fly" : {
+			"initial_state" : "default",
+			"states" : {
+				"capa_on" : {
+					"animations" : [ "capa_on" ],
+					"transitions" : [
+						{
+							"capa_off" : "!query.is_gliding && !query.is_sneaking"
+						}
+					]
+				},
+				"capa_off" : {
+					"animations" : [ "capa_off" ],
+					"transitions" : [
+						{
+							"capa_on" : "query.is_gliding || query.is_sneaking"
+						}
+					]
+				}
+			}
+		}
+			}
+		}

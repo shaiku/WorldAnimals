@@ -1,0 +1,27 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers": {
+		"controller.animation.crab.falling" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"falling" : "q.is_wall_climbing && !q.is_in_water"
+						}
+					],
+          "blend_transition": 0.2
+				},
+				"falling" : {
+					"animations" : [ "falling" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_wall_climbing || q.is_in_water"
+						}
+					],
+          "blend_transition": 0.2
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+    "format_version": "1.16.100",
+    "minecraft:block": {
+        "description": {
+            "identifier": "worldanimals:ruby_block",
+            "register_to_creative_menu": true,
+            "category": "nature",
+			"is_experimental": true
+        },
+        "components": {
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.search"
+			},
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "ruby_block",
+                    "render_method": "double_sided"
+                }
+            },
+            "minecraft:pick_collision": {
+                "origin":  [-8, 0, -8],
+                "size":    [16, 16, 16]
+            },
+            "minecraft:entity_collision": true,
+            "minecraft:loot": "loot_tables/blocks/ruby_block.json",
+            "minecraft:destroy_time": 1,
+            "minecraft:block_light_emission": 0.0
+        }
+    }
+}

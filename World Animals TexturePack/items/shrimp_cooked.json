@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "worldanimals:shrimp_cooked",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "shrimp_cooked",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

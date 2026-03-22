@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:erizo",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/erizo/erizo"
+      },
+      "geometry": { "default": "geometry.erizo" },
+      "animations": {
+		  "wolf_sitting": "animation.erizo.sit",
+        "setup": "animation.llama.setup",
+        "walk": "animation.erizo.walk",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+	  { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" }
+      ],
+      "render_controllers": [ "controller.render.erizo" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_erizo",
+        "texture_index": 0
+      }
+    }
+  }
+}

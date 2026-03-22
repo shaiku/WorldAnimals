@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:citrine_axe_2"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " AA",
+      " BA",
+      " B "
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:citrine"
+      },
+	    "B": {
+        "item": "minecraft:stick"
+      }
+    },
+    "result": {
+      "item": "worldanimals:citrine_axe",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

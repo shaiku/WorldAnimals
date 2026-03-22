@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "worldanimals:diamond_rhinoceros_saddle",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "diamond_rhinoceros_saddle",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "worldanimals:village_ice",
+			"materials": {
+				"default": "iron_golem"
+			},
+			"textures": {
+				"default": "textures/entity/village/villager_ice"
+			},
+			"geometry": {
+				"default": "geometry.village_ice"
+			},
+			"animations": {
+				"walk": "animation.zombie_tank.walk",
+				"move": "animation.zombie_tank.move",
+				"attack": "animation.zombie_tank.attack",
+				"flower": "animation.zombie_tank.flower",
+				"look_at_target": "animation.common.look_at_target"
+			},
+			"animation_controllers": [
+				{
+					"move": "controller.animation.zombie_tank.move"
+				},
+				{
+					"arm": "controller.animation.zombie_tank.arm_movement"
+				}
+			],
+			"render_controllers": [
+				"controller.render.zombie_tank"
+			],
+			"spawn_egg": {
+				"texture": "egg_village_ice",
+				"texture_index": 0
+			}
+		}
+	}
+}

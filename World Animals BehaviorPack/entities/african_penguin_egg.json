@@ -1,0 +1,70 @@
+{
+  "format_version": "1.13.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "worldanimals:african_penguin_egg",
+      "is_spawnable": true,
+
+      "is_summonable": true,
+
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:agea": {
+        "minecraft:transformation": {
+          "into": "worldanimals:penguin_african"
+        }
+      }
+	},
+    "events": {
+      "minecraft:ageable_grow_up": {
+        "add": {
+          "component_groups": [
+            "minecraft:agea"
+          ]
+        }
+      }
+	},
+    "components": {
+        "minecraft:ageable": {
+          "duration": 1200,
+          "feed_items": [
+            {
+              "item": "worldanimals:gold_bone_meal",
+              "growth": 0.25
+            }
+          ],
+          "grow_up": {
+            "event": "minecraft:ageable_grow_up",
+            "target": "self"
+          }
+        },
+      "minecraft:type_family": {
+        "family": [ "african_penguin_egg" ]
+      },
+      "minecraft:health": {
+        "value": 10,
+        "max": 10
+      },
+      "minecraft:navigation.walk": {
+      },
+      "minecraft:movement.basic": {
+      },
+      "minecraft:movement": {
+        "value": 0,
+        "max": 0
+      },
+	  "minecraft:physics": {},
+      "minecraft:fall_damage": {
+      "value": 10.0
+      },
+      "minecraft:scale": {
+        "value": 0.4
+      },
+      "minecraft:collision_box": {
+        "width": 0.5,
+        "height": 0.5
+      }
+    }
+  }
+}

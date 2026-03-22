@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:land_turtle",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/land_turtle_v2"
+      },
+      "geometry": { "default": "geometry.land_turtle_v2" },
+      "animations": {
+        "setup": "animation.llama.setup",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.llama.baby_transform",
+        "wolf_sitting": "animation.land_turtle.sit"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_land_turtle",
+        "texture_index": 0
+      }
+    }
+  }
+}

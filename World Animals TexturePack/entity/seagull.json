@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:seagull",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/seagull"
+      },
+      "geometry": { "default": "geometry.seagull" },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animations": {
+        "setup": "animation.seagull.idle",
+		"attack": "animation.seagull.attack",
+        "walk": "animation.seagull.walk",
+		"ground": "animation.seagull.no_fly",
+        "fly": "animation.seagull.fly",
+        "water": "animation.seagull.on_water"
+      },
+      "animation_controllers": [
+	    { "attack": "controller.animation.animals.attack" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" },
+        { "fly": "controller.animation.pelican.fly" },
+        { "water": "controller.animation.pelican.water" },
+        { "ground": "controller.animation.pelican.ground" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_seagull",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "resource_pack_name": "world animals blocks",
+  "texture_name": "atlas.terrain",
+  "padding": 8,
+  "num_mip_levels": 4,
+  "texture_data": {
+    "palm_sapling": {
+      "textures": "textures/blocks/palm_sapling"
+    },
+    "mammoth_fossil": {
+      "textures": "textures/entity/elephants/mammoth_fossil"
+    },
+    "bananas": {
+      "textures": "textures/blocks/bananas"
+    },
+    "coco_3d": {
+      "textures": "textures/blocks/coco_3d"
+    },
+    "swordfish_death": {
+      "textures": "textures/blocks/swordfish_death"
+    },
+    "zebra_carpet": {
+      "textures": "textures/blocks/zebra_carpet"
+    },
+    "ruby_block": {
+      "textures": "textures/blocks/ruby_block"
+    },
+    "ruby_ore": {
+      "textures": "textures/blocks/ruby_ore"
+    },
+    "citrine_ore": {
+      "textures": "textures/blocks/citrine_ore"
+    },
+    "citrine_block": {
+      "textures": "textures/blocks/citrine_block"
+    },
+    "deepslate_ruby_ore": {
+      "textures": "textures/blocks/deepslate_ruby_ore"
+    },
+    "deepslate_citrine_ore": {
+      "textures": "textures/blocks/deepslate_citrine_ore"
+    },
+    "cooked_turkey": {
+      "textures": "textures/entity/turkey/cooked_turkey"
+    }
+  }
+}

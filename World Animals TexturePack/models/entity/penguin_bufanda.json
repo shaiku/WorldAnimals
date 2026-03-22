@@ -1,0 +1,36 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.penguin_bufanda",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 2,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "penguin",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "body",
+					"parent": "penguin",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "bufanda",
+					"parent": "body",
+					"pivot": [0, 9, 0],
+					"cubes": [
+						{"origin": [-4, 7, -4], "size": [8, 2, 7], "inflate": 0.25, "uv": [0, 37]},
+						{"origin": [0, 5, -4], "size": [2, 2, 1], "inflate": 0.225, "uv": [0, 37]},
+						{"origin": [0, 3.55, -4], "size": [2, 1, 1], "inflate": 0.225, "uv": [0, 42]}
+					]
+				}
+			]
+		}
+	]
+}

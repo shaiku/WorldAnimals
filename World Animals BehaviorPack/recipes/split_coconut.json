@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:split_coconut"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A"
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:coco"
+      }
+    },
+    "result": {
+      "item": "worldanimals:split_coconut",
+        "data": 0,
+      "count": 2
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:giraffe_saddle"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A  ",
+      "AB ",
+	  "ADC"
+    ],
+    "key": {
+	    "A": {
+        "item": "minecraft:leather"
+      },
+      "B": {
+        "item": "minecraft:lead"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      },
+      "D": {
+        "item": "minecraft:saddle"
+      }
+    },
+    "result": {
+      "item": "worldanimals:giraffe_saddle",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

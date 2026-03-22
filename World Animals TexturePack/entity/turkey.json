@@ -1,0 +1,36 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:turkey",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/turkey/turkey",
+		"baby": "textures/entity/turkey/baby_turkey"
+      },
+      "geometry": { "default": "geometry.turkey" },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animations": {
+        "setup": "animation.turkey.idle",
+        "walk": "animation.turkey.walk",
+		"fly": "animation.turkey.fall",
+        "baby_transform": "animation.turkey.baby"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" },
+        { "ground": "controller.animation.turkey.fly" }
+      ],
+      "render_controllers": [ "controller.render.turkey", "controller.render.baby_turkey" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_turkey",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:breaded_shrimp"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      " B ",
+	  "BAB",
+	  " B "
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:shrimp_cooked"
+      },
+      "B": {
+        "item": "minecraft:wheat"
+      }
+    },
+    "result": {
+      "item": "worldanimals:breaded_shrimp",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

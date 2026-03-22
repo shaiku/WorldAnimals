@@ -1,0 +1,15 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "worldanimals:cooked_ostrich_leg",
+      "category": "Nature"
+    },
+
+    "components": {
+      "minecraft:icon": "cooked_ostrich_leg",
+      "minecraft:use_animation": "eat",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

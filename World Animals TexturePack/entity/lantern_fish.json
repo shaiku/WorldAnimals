@@ -1,0 +1,26 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:lantern_fish",
+      "materials": { "default": "entity_emissive_alpha" },
+      "textures": {
+        "default": "textures/entity/lantern_fish"
+      },
+      "geometry": {
+        "default": "geometry.lantern_fish"
+      },
+      "animations": {
+        "move": "animation.lantern_fish.walk"
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.dolphin.general" }
+      ],
+      "render_controllers": [ "controller.render.dolphin" ],
+      "spawn_egg": {
+        "texture": "egg_lantern_fish",
+        "texture_index": 0
+      }
+    }
+  }
+}

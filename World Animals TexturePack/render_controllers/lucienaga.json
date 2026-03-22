@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.lucienaga_0": {
+		"textures": [ "Texture.default" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 0" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.lucienaga_1": {
+		"textures": [ "Texture.lucienaga_1" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 1" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    }
+  }
+}

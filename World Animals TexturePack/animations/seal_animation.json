@@ -1,0 +1,98 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.seal.walk": {
+			"loop": true,
+			"animation_length": 0.8,
+			"bones": {
+				"tail": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [15, 0, 0],
+						"0.8": [0, 0, 0]
+					},
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"left_fin": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [0, 25, 0],
+						"0.8": [0, 0, 0]
+					},
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"right_fin": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [0, -25, 0],
+						"0.8": [0, 0, 0]
+					},
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [-10, 0, 0],
+						"0.8": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.seal.idle": {
+			"loop": true,
+			"animation_length": 2.08,
+			"bones": {
+				"tail": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0333": [10, 0, 0],
+						"2.0833": [0, 0, 0]
+					},
+					"position": [0, 0, 0],
+					"scale": 1
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.0333": [-10, 0, 0],
+						"2.0833": [0, 0, 0]
+					},
+					"position": [0, 0, 0],
+					"scale": 1
+				}
+			}
+		},
+		"animation.seal.baby": {
+			"loop": true,
+			"bones": {
+				"body1": {
+					"position": [0, 0, -2],
+					"scale": [0.85, 0.9, 0.75]
+				},
+				"head": {
+					"scale": 0.8
+				}
+			}
+		},
+		"animation.seal.sit": {
+			"loop": true,
+			"bones": {
+				"seal": {
+					"rotation": [0, 0, -32.5]
+				},
+				"head": {
+					"rotation": [0, -25, 30]
+				},
+				"tail": {
+					"rotation": [10, 25, 35]
+				},
+				"right_fin": {
+					"rotation": [0, 0, 45]
+				}
+			}
+		}
+	}
+}

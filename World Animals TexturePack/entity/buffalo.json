@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:buffalo",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/buffalo"
+      },
+      "geometry": { "default": "geometry.buffalo" },
+      "animations": {
+        "setup": "animation.buffalo.idle",
+        "walk": "animation.quadruped.walk",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_gorilla",
+        "texture_index": 0
+      }
+    }
+  }
+}

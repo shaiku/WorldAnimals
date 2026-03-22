@@ -1,0 +1,104 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.ostrich_v2_flag",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "ostrich",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leg1",
+					"parent": "ostrich",
+					"pivot": [-3, 13, 0]
+				},
+				{
+					"name": "rodilla2",
+					"parent": "leg1",
+					"pivot": [-3, 10, 1.5]
+				},
+				{
+					"name": "leg0",
+					"parent": "ostrich",
+					"pivot": [3, 13, 0]
+				},
+				{
+					"name": "rodilla0",
+					"parent": "leg0",
+					"pivot": [3, 10, 1.5]
+				},
+				{
+					"name": "body",
+					"parent": "ostrich",
+					"pivot": [0, 13, 2]
+				},
+				{
+					"name": "tail",
+					"parent": "body",
+					"pivot": [0, 20, 9],
+					"rotation": [37.5, 0, 0]
+				},
+				{
+					"name": "montura",
+					"parent": "body",
+					"pivot": [4, 21, -2]
+				},
+				{
+					"name": "flag",
+					"parent": "montura",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{"origin": [3.5, 36.5, 6], "size": [1, 1, 1], "inflate": 0.1, "uv": [0, 4]},
+						{"origin": [3.5, 21, 6], "size": [1, 24, 1], "uv": [36, 38]},
+						{"origin": [3.5, 39.9, 6], "size": [1, 1, 1], "inflate": 0.1, "uv": [0, 0]},
+						{"origin": [3.5, 36.4, 6.6], "size": [1, 8, 10], "inflate": -0.48, "uv": [0, 37]},
+						{"origin": [3.5, 43.2, 6], "size": [1, 1, 1], "inflate": 0.1, "uv": [0, 2]}
+					]
+				},
+				{
+					"name": "ala2",
+					"parent": "body",
+					"pivot": [-4, 21, 0]
+				},
+				{
+					"name": "ala1",
+					"parent": "body",
+					"pivot": [4, 21, 0]
+				},
+				{
+					"name": "head",
+					"parent": "body",
+					"pivot": [0, 19.3, -6.7]
+				},
+				{
+					"name": "cabeza2",
+					"parent": "head",
+					"pivot": [0, 19.3, -6.7]
+				},
+				{
+					"name": "montura0",
+					"parent": "cabeza2",
+					"pivot": [0, 19.3, -7.7]
+				},
+				{
+					"name": "cuello",
+					"parent": "cabeza2",
+					"pivot": [0, 22.3, -11.7]
+				},
+				{
+					"name": "cabeza",
+					"parent": "cuello",
+					"pivot": [0, 29.2, -10.5]
+				}
+			]
+		}
+	]
+}

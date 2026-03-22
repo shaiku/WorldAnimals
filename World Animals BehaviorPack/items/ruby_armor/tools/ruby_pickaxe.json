@@ -1,0 +1,1794 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:item": {
+		"description": {
+			"identifier": "worldanimals:ruby_pickaxe",
+			"category": "equipment"
+		},
+		"components": {
+			"minecraft:max_stack_size": 1,
+			"minecraft:hand_equipped": true,
+			"minecraft:mining_speed": 9,
+			"minecraft:damage": 5,
+			"minecraft:durability": {
+				"max_durability": 1300
+			},
+			"minecraft:enchantable": {
+				"value": 7,
+				"slot": "pickaxe"
+			},
+			"minecraft:damageable": {
+				"max_damage": 1000,
+				"repair_items": [
+					"worldanimals:ruby",
+					"worldanimals:ruby_pickaxe"
+				]
+			},
+			"minecraft:repairable": {
+				"repair_items": [
+					{
+						"items": [
+							"worldanimals:ruby",
+							"worldanimals:ruby_pickaxe"
+						],
+						"repair_amount": 10
+					}
+				]
+			},
+			"minecraft:digger": {
+				"use_efficiency": true,
+				"destroy_speeds": [
+					{
+						"block": "minecraft:stone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:mud_bricks",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:ender_chest",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:ancient_debris",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:packed_mud",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cobblestone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:mossy_cobblestone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:smooth_stone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:stone_pressure_plate",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:mud_brick_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab2",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab3",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:stone_slab4",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cobblestone_wall",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:mud_brick_wall",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:stone_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:normal_stone_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:mossy_cobblestone_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:andesite_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_andesite_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:granite_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_granite_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:diorite_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_diorite_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:mud_brick_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:coal_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_coal_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:copper_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_copper_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:lapis_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_lapis_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:redstone_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:lit_redstone_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_redstone_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:lit_deepslate_redstone_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:iron_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_iron_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:gold_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_gold_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:emerald_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_emerald_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:diamond_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_diamond_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:nether_gold_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:quartz_ore",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:coal_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:redstone_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:lapis_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:iron_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:gold_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:diamond_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:emerald_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:ender_chest",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:concrete",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:hardened_clay",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:stained_hardened_clay",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:black_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:blue_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:brown_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cyan_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:gray_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:green_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:light_blue_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:lime_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:magenta_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:orange_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:pink_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:purple_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:red_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:silver_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:white_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:yellow_glazed_terracotta",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:coral_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:purpur_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:purpur_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:prismarine",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:prismarine_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:prismarine_bricks_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:dark_prismarine_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:quartz_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:quartz_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:quartz_bricks",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:smooth_quartz_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:sandstone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:sandstone_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:smooth_sandstone_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:red_sandstone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:red_sandstone_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:smooth_red_sandstone_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:brick_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:brick_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:end_stone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:end_bricks",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:end_brick_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:nether_brick",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:netherite_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cracked_nether_bricks",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:chiseled_nether_bricks",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:nether_brick_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:nether_brick_fence",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:red_nether_brick",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:red_nether_brick_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:stonebrick",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:stone_brick_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:mossy_stone_brick_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:chiseled_deepslate",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_double_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cobbled_deepslate_wall",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_double_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_deepslate_wall",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tiles",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cracked_deepslate_tiles",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_double_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_tile_wall",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_bricks",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cracked_deepslate_bricks",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_double_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:deepslate_brick_wall",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:blackstone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:gilded_blackstone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_double_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:blackstone_wall",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_double_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_wall",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_pressure_plate",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_button",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:chiseled_polished_blackstone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_bricks",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cracked_polished_blackstone_bricks",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_double_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_blackstone_brick_wall",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:ice",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:blue_ice",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:frosted_ice",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:packed_ice",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:amethyst_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:budding_amethyst",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:amethyst_cluster",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:large_amethyst_bud",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:medium_amethyst_bud",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:small_amethyst_bud",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:dripstone_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:pointed_dripstone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:basalt",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:polished_basalt",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:smooth_basalt",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:furnace",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:lit_furnace",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:respawn_anchor",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:blast_furnace",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:lit_blast_furnace",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:smoker",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:light_smoker",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:bone_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:end_stone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:magma",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:netherrack",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:mob_spawner",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:calcite",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:tuff",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:lodestone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:anvil",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:shulker_box",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:undyed_shulker_box",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:brewing_stand",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:stonecutter_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:grindstone",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:enchanting_table",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cauldron",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:beacon",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:bell",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:observer",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:hopper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:dispenser",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:dropper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:iron_door",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:iron_trapdoor",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:iron_bars",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:heavy_weighted_pressure_plate",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:light_weighted_pressure_plate",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:chain",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:copper_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:exposed_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:weathered_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cut_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cut_copper_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:double_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_cut_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_cut_copper_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_double_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:exposed_cut_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:exposed_cut_copper_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:exposed_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:exposed_double_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_exposed_double_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:weathered_cut_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:weathered_cut_copper_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:weathered_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:weathered_double_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_weathered_double_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:oxidized_double_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper_stairs",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:waxed_oxidized_double_cut_copper_slab",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:raw_copper_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:raw_iron_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:raw_gold_block",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:obsidian",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					},
+					{
+						"block": "minecraft:crying_obsidian",
+						"speed": 8,
+						"on_dig": {
+							"event": "pickaxe"
+						}
+					}
+				],
+				"on_dig": {
+					"event": "pickaxe"
+				}
+			},
+			"minecraft:icon": {
+				"texture": "ruby_pickaxe"
+			},
+			"minecraft:display_name": {
+				"value": "Ruby pickaxe"
+			},
+			"minecraft:weapon": {
+				"on_hurt_entity": {
+					"event": "pickaxe"
+				}
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.pickaxe"
+			},
+			"tag:is_pickaxe_costum": {}
+		},
+		"events": {
+			"pickaxe": {
+				"damage": {
+					"type": "magic",
+					"amount": 1,
+					"target": "self"
+				}
+			}
+		}
+	}
+}

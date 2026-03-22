@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:taco_rat"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "BBB",
+	  "CAC",
+	  "BBB"
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:cooked_rat"
+      },
+      "B": {
+        "item": "minecraft:wheat"
+      },
+      "C": {
+        "item": "minecraft:beetroot"
+      }
+    },
+    "result": {
+      "item": "worldanimals:taco_rat",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

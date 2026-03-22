@@ -1,0 +1,96 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worldanimals:coco_3d",
+			"properties": {
+                "furniture_arathnido:state_color": [ 1, 2, 3 ],
+                "furniture_arathnido:facing": [ 2, 3, 4, 5 ]
+            },
+            "category": "nature",
+			"is_experimental": true
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.search"
+			},
+            "minecraft:geometry": "geometry.coco_3d",
+            "minecraft:material_instances": {
+                "*": {
+                    "texture": "coco_3d",
+                    "render_method": "alpha_test"
+                }
+            },     
+            "minecraft:pick_collision":{
+                "origin":[-8.0, 0.0, -8.0],
+                "size":[16, 16, 16]
+            },
+			"minecraft:entity_collision":{
+                "origin":[-8.0, 0.0, -8.0],
+                "size":[16, 16, 16]
+			},
+			"minecraft:on_player_placing": {
+                "event": "furniture_arathnido:place_facing"
+            },
+
+            "minecraft:loot": "loot_tables/blocks/coco_3d.json",
+          
+			"minecraft:flammable": {
+                "flame_odds": 0,
+                "burn_odds": 0
+            },
+            "minecraft:block_light_emission": 0.0,
+            "minecraft:block_light_absorption": 0.0,
+
+            
+			"minecraft:destroy_time": 1,
+			"minecraft:friction": 0.6,
+			"minecraft:map_color": "#bbbbbb"
+        },
+        
+		"events": {
+            "furniture_arathnido:place_facing": {
+                "sequence":[
+                    {
+                        "set_block_property": {
+                            "furniture_arathnido:facing": "(query.cardinal_player_facing)"
+                        }
+                    }
+                ]
+            }
+        },
+        "permutations": [
+            {
+                "condition": "query.block_property('furniture_arathnido:facing') == 2",
+                "components": {
+                    "minecraft:block_light_absorption": 0.0
+                }
+            },
+            {
+                "condition": "query.block_property('furniture_arathnido:facing') == 3",
+                "components": {
+                    "minecraft:rotation": [ 0, 180, 0 ],
+
+                    "minecraft:block_light_absorption": 0.0
+                }
+            },
+            {
+                "condition": "query.block_property('furniture_arathnido:facing') == 4",
+                "components": {
+                    "minecraft:rotation": [ 0, 90, 0 ],
+
+                    "minecraft:block_light_absorption": 0.0               
+                }
+            },
+            {
+                "condition": "query.block_property('furniture_arathnido:facing') == 5",
+                "components": {
+                    "minecraft:rotation": [ 0, 270, 0 ],
+                    
+                    "minecraft:block_light_absorption": 0.0
+                }
+            }
+        ]
+	}
+}

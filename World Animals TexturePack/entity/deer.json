@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:deer",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/deer_v2/deer_0",
+		"deer_1": "textures/entity/deer_v2/deer_1",
+		"deer_2": "textures/entity/deer_v2/deer_2",
+		"deer_3": "textures/entity/deer_v2/deer_3"
+      },
+      "geometry": { "default": "geometry.deer_v2" },
+      "animations": {
+		  "attack": "animation.deer_v2.attack",
+        "setup": "animation.deer_v2.idle",
+        "walk": "animation.deer_v2.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby": "animation.deer_v2.baby"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animation_controllers": [
+		{ "attack": "controller.animation.animals.attack" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.deer.baby" }
+      ],
+      "render_controllers": [ "controller.render.deer_0", "controller.render.deer_1", "controller.render.deer_2", "controller.render.deer_3" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_deer",
+        "texture_index": 0
+      }
+    }
+  }
+}

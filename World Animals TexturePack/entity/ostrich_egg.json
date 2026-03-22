@@ -1,0 +1,32 @@
+{
+	"format_version": "1.8.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "worldanimals:ostrich_egg",
+			"materials": {
+				"default": "slime"
+			},
+			"textures": {
+				"default": "textures/entity/ostrich_v2/ostrich_egg"
+			},
+			"geometry": {
+				"default": "geometry.ostrich_egg"
+			},
+			"animations": {
+				"loop": "animation.ostrich_egg.idle"
+			},
+			"animation_controllers": [
+				{
+					"loop": "controller.animation.loop"
+				}
+			],
+			"render_controllers": [
+				"controller.render.skeleton"
+			],
+			"spawn_egg": {
+				"texture": "ostrich_egg",
+				"texture_index": 0
+			}
+		}
+	}
+}

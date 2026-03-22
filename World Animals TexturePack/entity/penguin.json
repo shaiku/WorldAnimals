@@ -1,0 +1,56 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:penguin",
+      "materials": { "default": "slime", "armor": "stray_clothes" },
+      "textures": {
+        "default": "textures/entity/penguin/penguin_v2",
+        "black": "textures/entity/penguin/black_scarf",
+        "blue": "textures/entity/penguin/blue_scarf",
+        "brown": "textures/entity/penguin/brown_scarf",
+        "cian": "textures/entity/penguin/cian_scarf",
+        "gray": "textures/entity/penguin/gray_scarf",
+        "green": "textures/entity/penguin/green_scarf",
+        "light_blue": "textures/entity/penguin/light_blue_scarf",
+        "light_gray": "textures/entity/penguin/light_gray_scarf",
+        "lime": "textures/entity/penguin/lime_scarf",
+        "magenta": "textures/entity/penguin/magenta_scarf",
+        "orange": "textures/entity/penguin/orange_scarf",
+        "pink": "textures/entity/penguin/pink_scarf",
+        "purple": "textures/entity/penguin/purple_scarf",
+        "red": "textures/entity/penguin/red_scarf",
+        "white": "textures/entity/penguin/white_scarf",
+        "yellow": "textures/entity/penguin/yellow_scarf"
+      },
+      "geometry": {
+        "default": "geometry.penguin_v2",
+        "armor": "geometry.penguin_bufanda"
+      },
+      "animations": {
+        "setup": "animation.penguin_v2.idle",
+        "walk": "animation.penguin_v2.walk",
+		"casting": "animation.penguin_v2.dance",
+		"celebrating": "animation.penguin_v2.dance",
+		"riding.legs": "animation.penguin_v2.dance",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.penguin_v2.sit",
+		"swim": "animation.penguin.swim"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" },
+				{
+					"general": "controller.animation.subaru_duck.general" 
+				},
+        { "swim": "controller.animation.penguin.swim" }
+      ],
+      "render_controllers": [ "controller.render.default", "controller.render.penguin_scarf" ],
+      "spawn_egg": {
+        "texture": "egg_penguin_two",
+        "texture_index": 0
+      }
+    }
+  }
+}

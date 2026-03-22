@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:gorilla",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/gorilla/gorilla"
+      },
+      "geometry": { "default": "geometry.gorilla" },
+      "animations": {
+        "setup": "animation.gorilla.idle",
+        "walk": "animation.gorilla.walk",
+		"wolf_sitting": "animation.gorilla.sit",
+		"attack": "animation.gorilla.attack",
+		"casting": "animation.gorilla.celebrate",
+		"celebrating": "animation.gorilla.celebrate",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.llama.baby_transform"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animation_controllers": [
+		{ "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" },
+				{
+					"attack": "controller.animation.animals.attack"
+				},
+				{
+					"general": "controller.animation.subaru_duck.general" 
+				}
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_gorilla",
+        "texture_index": 0
+      }
+    }
+  }
+}

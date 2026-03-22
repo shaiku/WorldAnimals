@@ -1,0 +1,109 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.raccoon",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "raccoon",
+					"pivot": [0, 3, 0],
+					"cubes": [
+						{"origin": [-4, 3, -6], "size": [8, 6, 13], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "tail",
+					"parent": "raccoon",
+					"pivot": [0, 6, 6.5],
+					"rotation": [-12.5, 0, 0],
+					"cubes": [
+						{"origin": [-2, 4, 6.5], "size": [4, 4, 6], "inflate": 0.1, "uv": [29, 0]}
+					]
+				},
+				{
+					"name": "tail2",
+					"parent": "tail",
+					"pivot": [0, 5.9, 12],
+					"rotation": [12.5, 0, 0],
+					"cubes": [
+						{"origin": [-2, 3.9, 12], "size": [4, 4, 6], "uv": [26, 26]}
+					]
+				},
+				{
+					"name": "leg0",
+					"parent": "raccoon",
+					"pivot": [3, 5, 5],
+					"cubes": [
+						{"origin": [2, 2.3, 3.5], "size": [2, 3, 3], "inflate": 0.1, "pivot": [3, 3.5, 5], "rotation": [25, 0, 0], "uv": [39, 16]},
+						{"origin": [2, 0.8, 3.5], "size": [2, 2, 3], "inflate": -0.2, "uv": [27, 41]},
+						{"origin": [2, 0.1, 2.3], "size": [2, 1, 4], "inflate": 0.1, "uv": [24, 36]}
+					]
+				},
+				{
+					"name": "leg2",
+					"parent": "raccoon",
+					"pivot": [3, 5, -3],
+					"cubes": [
+						{"origin": [2, 2.3, -4.5], "size": [2, 3, 3], "inflate": 0.1, "pivot": [3, 3.5, -3], "rotation": [25, 0, 0], "uv": [0, 37]},
+						{"origin": [2, 0.8, -4.5], "size": [2, 2, 3], "inflate": -0.2, "uv": [40, 22]},
+						{"origin": [2, 0.1, -5.7], "size": [2, 1, 4], "inflate": 0.1, "uv": [0, 5]}
+					]
+				},
+				{
+					"name": "leg1",
+					"parent": "raccoon",
+					"pivot": [-3, 5, 5],
+					"cubes": [
+						{"origin": [-4, 2.3, 3.5], "size": [2, 3, 3], "inflate": 0.1, "pivot": [-3, 3.5, 5], "rotation": [25, 0, 0], "uv": [10, 37]},
+						{"origin": [-4, 0.8, 3.5], "size": [2, 2, 3], "inflate": -0.2, "uv": [40, 27]},
+						{"origin": [-4, 0.1, 2.3], "size": [2, 1, 4], "inflate": 0.1, "uv": [16, 32]}
+					]
+				},
+				{
+					"name": "leg3",
+					"parent": "raccoon",
+					"pivot": [-3, 5, -3],
+					"cubes": [
+						{"origin": [-4, 2.3, -4.5], "size": [2, 3, 3], "inflate": 0.1, "pivot": [-3, 3.5, -3], "rotation": [25, 0, 0], "uv": [36, 36]},
+						{"origin": [-4, 0.8, -4.5], "size": [2, 2, 3], "inflate": -0.2, "uv": [17, 40]},
+						{"origin": [-4, 0.1, -5.7], "size": [2, 1, 4], "inflate": 0.1, "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "raccoon",
+					"pivot": [0, 6.5, -6],
+					"cubes": [
+						{"origin": [-5, 3, -12], "size": [10, 7, 6], "uv": [0, 19]},
+						{"origin": [2, 10, -8], "size": [3, 2, 1], "uv": [29, 10]},
+						{"origin": [-5, 10, -8], "size": [3, 2, 1], "uv": [0, 10]}
+					]
+				},
+				{
+					"name": "boca1",
+					"parent": "head",
+					"pivot": [0, 4, -12],
+					"cubes": [
+						{"origin": [-2, 3, -16], "size": [4, 1, 4], "uv": [0, 32]}
+					]
+				},
+				{
+					"name": "boca0",
+					"parent": "head",
+					"pivot": [0, 5, -12],
+					"cubes": [
+						{"origin": [-2, 4, -16], "size": [4, 2, 4], "inflate": 0.1, "uv": [26, 19]},
+						{"origin": [-1, 5, -16], "size": [2, 1, 1], "inflate": 0.125, "uv": [29, 0]}
+					]
+				}
+			]
+		}
+	]
+}

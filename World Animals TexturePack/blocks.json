@@ -1,0 +1,37 @@
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"worldanimals:bananas": {
+		"sound": "grass"
+	},
+	"worldanimals:palm_sapling": {
+		"sound": "grass"
+	},
+	"worldanimals:ruby_block": {
+		"textures": "ruby_block",
+		"sound": "stone"
+	},
+	"worldanimals:ruby_ore": {
+		"textures": "ruby_ore",
+		"sound": "stone"
+	},
+	"worldanimals:citrine_block": {
+		"textures": "citrine_block",
+		"sound": "stone"
+	},
+	"worldanimals:citrine_ore": {
+		"textures": "citrine_ore",
+		"sound": "stone"
+	},
+	"worldanimals:deepslate_ruby_ore": {
+		"textures": "deepslate_ruby_ore",
+		"sound": "stone"
+	},
+	"worldanimals:deepslate_citrine_ore": {
+		"textures": "deepslate_citrine_ore",
+		"sound": "stone"
+	}
+}

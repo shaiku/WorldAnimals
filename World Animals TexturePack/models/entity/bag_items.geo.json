@@ -1,0 +1,24 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bag_items",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [0, 1, 0]
+			},
+			"bones": [
+				{
+					"name": "bolsa",
+					"pivot": [0, 8.2, 0.4],
+					"cubes": [
+						{"origin": [-1, 0.2, -4.1], "size": [1, 8, 8], "uv": [44, 48]}
+					]
+				}
+			]
+		}
+	]
+}

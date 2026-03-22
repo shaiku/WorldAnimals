@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:sofa_zebra"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+	  "ABA",
+	  "ABA"
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:zebra_skin"
+      },
+	    "B": {
+        "item": "minecraft:wool"
+      }
+    },
+    "result": {
+      "item": "worldanimals:sofa_zebra",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

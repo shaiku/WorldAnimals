@@ -1,0 +1,33 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:rat",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/rat/rat",
+		"rat_1": "textures/entity/rat/rat_0",
+		"rat_2": "textures/entity/rat/rat_1",
+		"rat_3": "textures/entity/rat/rat_2",
+		"rat_4": "textures/entity/rat/rat_3"
+      },
+      "geometry": { "default": "geometry.rat" },
+      "animations": {
+        "setup": "animation.llama.setup",
+        "walk": "animation.quadruped.walk",
+        "wolf_sitting": "animation.rat_v2.sit",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" }
+      ],
+      "render_controllers": [ "controller.render.rat_0", "controller.render.rat_1", "controller.render.rat_2", "controller.render.rat_3", "controller.render.rat_4" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_rat",
+        "texture_index": 0
+      }
+    }
+  }
+}

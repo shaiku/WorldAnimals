@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.penguin_scarf": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.black",
+            "Texture.blue",
+            "Texture.brown",
+            "Texture.cian",
+            "Texture.gray",
+            "Texture.green",
+            "Texture.light_blue",
+            "Texture.light_gray",
+            "Texture.lime",
+            "Texture.magenta",
+            "Texture.orange",
+            "Texture.pink",
+            "Texture.purple",
+            "Texture.red",
+            "Texture.white",
+            "Texture.yellow"
+          ]
+        }
+      },
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.armor" } ],
+      "textures": [ "Array.decor[query.variant]" ]
+    }
+  }
+}

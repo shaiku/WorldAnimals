@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.moon_knight_suit": {
+      "geometry": "Geometry.moon_knight_suit",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.moon_knight_suit", "Texture.enchanted" ]
+    },
+    "controller.render.moon_knight_armor": {
+      "geometry": "Geometry.moon_knight_armor",
+      "materials": [ { "*": "variable.is_enchanted ? Material.enchanted : Material.default" } ],
+      "textures": [ "Texture.moon_knight_armor", "Texture.enchanted" ]
+    }
+  }
+}

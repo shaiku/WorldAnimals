@@ -1,0 +1,48 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:caracal",
+      "materials": { "default": "slime", "armor": "stray_clothes" },
+      "textures": {
+        "default": "textures/entity/caracal/caracal",
+        "black": "textures/entity/caracal/black_scarf",
+        "blue": "textures/entity/caracal/blue_scarf",
+        "brown": "textures/entity/caracal/brown_scarf",
+        "cian": "textures/entity/caracal/cian_scarf",
+        "gray": "textures/entity/caracal/gray_scarf",
+        "green": "textures/entity/caracal/green_scarf",
+        "light_blue": "textures/entity/caracal/light_blue_scarf",
+        "light_gray": "textures/entity/caracal/light_gray_scarf",
+        "lime": "textures/entity/caracal/lime_scarf",
+        "magenta": "textures/entity/caracal/magenta_scarf",
+        "orange": "textures/entity/caracal/orange_scarf",
+        "pink": "textures/entity/caracal/pink_scarf",
+        "purple": "textures/entity/caracal/purple_scarf",
+        "red": "textures/entity/caracal/red_scarf",
+        "white": "textures/entity/caracal/white_scarf",
+        "yellow": "textures/entity/caracal/yellow_scarf"
+      },
+      "geometry": {
+        "default": "geometry.caracal",
+        "armor": "geometry.caracal_scarf"
+      },
+      "animations": {
+        "setup": "animation.caracal.idle",
+        "walk": "animation.caracal.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.caracal.sit"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.animals", "controller.render.caracal_scarf" ],
+      "spawn_egg": {
+        "texture": "egg_ostrich",
+        "texture_index": 0
+      }
+    }
+  }
+}

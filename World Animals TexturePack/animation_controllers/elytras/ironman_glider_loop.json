@@ -1,0 +1,26 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.ironman.jet_loop" : {
+			"initial_state" : "default",
+			"states" : {
+				"jet_on_loop" : {
+					"animations" : [ "jet_on_loop" ],
+					"transitions" : [
+						{
+							"jet_off_loop" : "!query.is_gliding"
+						}
+					]
+				},
+				"jet_off_loop" : {
+					"animations" : [ "jet_off_loop" ],
+					"transitions" : [
+						{
+							"jet_on_loop" : "query.is_gliding"
+						}
+					]
+				}
+			}
+		}
+			}
+		}

@@ -1,0 +1,37 @@
+{
+	"format_version": "1.17.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worldanimals:deepslate_ruby_ore"
+		},
+		"components": {
+			"tag:stone": {},
+			"minecraft:destroy_time": 2,
+			"minecraft:explosion_resistance": 1,
+			"minecraft:map_color": "#00CFCF",
+			"minecraft:loot": "loot_tables/blocks/ruby_item.json",
+			"minecraft:on_player_destroyed": {
+				"event": "destroyed",
+				"target": "self"
+			},
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.ore",
+				"category": "Nature"
+			}
+		},
+		"events": {
+			"destroyed": {
+				"sequence": [
+					{
+						"run_command": {
+							"command": [
+								"summon xp_orb ~ ~ ~"
+							],
+							"target": "self"
+						}
+					}
+				]
+			}
+		}
+	}
+}

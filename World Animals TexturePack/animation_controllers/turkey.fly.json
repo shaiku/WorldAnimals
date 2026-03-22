@@ -1,0 +1,25 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.turkey.fly" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"fly" : "!query.is_on_ground"
+						}
+					],"blend_transition": 0.75
+				},
+				"fly" : {
+					"animations" : [ "fly" ],
+					"transitions" : [
+						{
+							"default" : "query.is_on_ground"
+						}
+					],"blend_transition": 0.75
+				}
+			}
+		}
+	}
+}

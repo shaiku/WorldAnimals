@@ -1,0 +1,65 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers" : {
+		"controller.animation.pelican.fly" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"fly" : "!query.is_on_ground"
+						}
+					],"blend_transition": 0.75
+				},
+				"fly" : {
+					"animations" : [ "fly" ],
+					"transitions" : [
+						{
+							"default" : "query.is_on_ground"
+						}
+					],"blend_transition": 0.75
+				}
+			}
+		},
+		"controller.animation.pelican.ground" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"animations" : [ "ground" ],
+					"transitions" : [
+						{
+							"fly" : "!query.is_on_ground || query.is_in_water"
+						}
+					],"blend_transition": 0.75
+				},
+				"fly" : {
+					"transitions" : [
+						{
+							"default" : "query.is_on_ground && !query.is_in_water"
+						}
+					],"blend_transition": 0.75
+				}
+			}
+		},
+		"controller.animation.pelican.water" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"water" : "query.is_in_water"
+						}
+					],"blend_transition": 0.75
+				},
+				"water" : {
+					"animations" : [ "water" ],
+					"transitions" : [
+						{
+							"default" : "!query.is_in_water"
+						}
+					],"blend_transition": 0.75
+				}
+			}
+		}
+	}
+}

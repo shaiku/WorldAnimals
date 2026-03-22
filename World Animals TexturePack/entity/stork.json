@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:stork",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/stork"
+      },
+      "geometry": { "default": "geometry.stork" },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animations": {
+        "loop": "animation.stork.idle",
+		"attack": "animation.stork.attack",
+        "walk": "animation.stork.walk",
+		"ground": "animation.stork.no_fly",
+        "fly": "animation.stork.fly",
+        "baby_transform": "animation.stork.baby",
+        "bag_off": "animation.stork.bag_off"
+      },
+      "animation_controllers": [
+	    { "attack": "controller.animation.animals.attack" },
+        { "loop": "controller.animation.loop" },
+        { "walk": "controller.animation.birds.walk" },
+        { "baby": "controller.animation.llama.baby" },
+        { "fly": "controller.animation.pelican.fly" },
+        { "water": "controller.animation.pelican.water" },
+        { "ground": "controller.animation.pelican.ground" },
+        { "bag": "controller.animation.stork.bag" }
+      ],
+      "render_controllers": [ "controller.render.default" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_stork",
+        "texture_index": 0
+      }
+    }
+  }
+}

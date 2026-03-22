@@ -1,0 +1,40 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:snake",
+      "materials": { "default": "slime" },
+      "textures": {
+        "blue": "textures/entity/snake/snake_v2",
+        "green": "textures/entity/snake/snake_v2_1",
+        "red_blue": "textures/entity/snake/snake_v2_2",
+        "yellow_blue": "textures/entity/snake/snake_v2_3",
+        "grey": "textures/entity/snake/snake_v2_4"
+      },
+      "geometry": { "default": "geometry.snake_v2" },
+      "animations": {
+        "setup": "animation.snake_v2.idle2",
+		"attack": "animation.snake_v2.attack",
+        "walk": "animation.snake_v2.walk"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" },
+				{
+					"attack": "controller.animation.animals.attack"
+				}
+      ],
+      "render_controllers": [ "controller.render.parrot" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_snake",
+        "texture_index": 0
+      }
+    }
+  }
+}

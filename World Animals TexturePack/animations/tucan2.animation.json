@@ -1,0 +1,22 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tucan.sit": {
+			"loop": true,
+			"bones": {
+				"Tuca": {
+					"rotation": [0, 0, 0],
+					"position": [0, -2, 0]
+				},
+				"leg0": {
+					"rotation": [-90, 0, 0],
+					"position": [0, -2.3, 0]
+				},
+				"leg1": {
+					"rotation": [-90, 0, 0],
+					"position": [0, -2.3, 0]
+				}
+			}
+		}
+	}
+}

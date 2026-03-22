@@ -1,0 +1,91 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+      "identifier": "minecraft:elytra",
+      "materials": {
+        "default": "entity_emissive_alpha",
+        "enchanted": "entity_emissive_alpha",
+        "spiderman_elytra": "slime"
+      },
+      "textures": {
+        "default": "textures/models/armor/elytra",
+        "ironman_glider": "textures/suits/ironman_glider",
+		"ironman_mark2_glider": "textures/suits/ironman_glider_mark2",
+		"ironman_mark4_glider": "textures/suits/ironman_glider_mark4",
+		"ironman_mark5_glider": "textures/suits/ironman_glider_mark5",
+		"ironman_mark1_glider": "textures/suits/ironman_glider_mark1",
+		"ironman_glider_war_machine_mark1": "textures/suits/ironman_glider_war_machine_mark1",
+		"spiderman_elytra": "textures/suits/spectacular_spiderman_suit",
+		"moon_knight_suit": "textures/suits/moon_knight_suit",
+		"moon_knight_armor": "textures/suits/moon_knight_armor",
+        "butterfly_elytra0": "textures/entity/butterfly_v2/butterfly0",
+        "butterfly_elytra1": "textures/entity/butterfly_v2/butterfly1",
+        "butterfly_elytra2": "textures/entity/butterfly_v2/butterfly2",
+        "butterfly_elytra3": "textures/entity/butterfly_v2/butterfly3",
+        "butterfly_elytra4": "textures/entity/butterfly_v2/butterfly4"
+      },
+      "geometry": {
+        "default": "geometry.elytra",
+		"ironman_glider": "geometry.ironman_glider",
+		"spiderman_elytra": "geometry.spiderman_elytra",
+		"moon_knight_suit": "geometry.moon_knight_capa",
+		"moon_knight_armor": "geometry.moon_knight_armor_capa",
+		"butterfly_elytra": "geometry.butterfly_elytra"
+      },
+      "animations": {
+        "default_controller": "controller.animation.elytra.default",
+        "default": "animation.elytra.default",
+        "gliding": "animation.elytra.gliding",
+        "sneaking": "animation.elytra.sneaking",
+        "sleeping": "animation.elytra.sleeping",
+        "swimming": "animation.elytra.swimming",
+		
+		"ironman_controller": "controller.animation.ironman.jet",
+		"ironman_loop_controller": "controller.animation.ironman.jet_loop",
+		"jet_on": "animation.ironman_glider.jet_on",
+		"jet_on_loop": "animation.ironman_glider.jet_on_idle",
+		"jet_off": "animation.ironman_glider.jet_off",
+		"jet_off_loop": "animation.ironman_glider.jet_off_idle",
+		
+		"moon_knight_controller": "controller.animation.moon_knight.fly",
+		"capa_on": "animation.moon_knight_suit.capa_on",
+		"capa_off": "animation.moon_knight_suit.capa_off",	
+		
+		"butterfly_controller": "controller.animation.butterfly.fly",
+		"butterfly_on": "animation.butterfly_elytra.fly",
+		"butterfly_off": "animation.butterfly_elytra.idle"			
+		
+      },
+      "scripts": {
+        "parent_setup": "variable.chest_layer_visible = 0.0;",
+        "animate": [
+          "default_controller",
+		  "ironman_controller",
+		  "ironman_loop_controller",
+		  
+		  "moon_knight_controller",
+		  
+		  "butterfly_controller"
+        ]
+      },
+      "render_controllers": [
+	{ "controller.render.armor": "!query.equipped_item_all_tags('slot.armor.head', 'special_elytra') && !query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand') && !query.equipped_item_any_tag('slot.armor.feet', 'moon_knight_armor') && !query.equipped_item_any_tag('slot.armor.feet', 'moon_knight_suit') && !query.equipped_item_any_tag('slot.armor.feet', 'ironman_suit') && !query.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit')" },
+	{ "controller.render.ironman_glider": "(query.equipped_item_any_tag('slot.armor.feet', 'mark3') && !query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.ironman_mark2_glider": "(query.equipped_item_any_tag('slot.armor.feet', 'mark2') && !query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.ironman_mark4_glider": "(query.equipped_item_any_tag('slot.armor.feet', 'mark4') && !query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand')) || (query.equipped_item_any_tag('slot.armor.feet', 'mark6'))" },
+	{ "controller.render.ironman_mark5_glider": "(query.equipped_item_any_tag('slot.armor.feet', 'mark5') && !query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.ironman_mark1_glider": "(query.equipped_item_any_tag('slot.armor.feet', 'mark1') && !query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.ironman_glider_war_machine_mark1": "(query.equipped_item_any_tag('slot.armor.feet', 'war_machine_mark1') && !query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.spiderman_elytra": "(query.equipped_item_any_tag('slot.armor.feet', 'spiderman_suit') && !query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.moon_knight_suit": "(query.equipped_item_any_tag('slot.armor.feet', 'moon_knight_suit') && !query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.moon_knight_armor": "(query.equipped_item_any_tag('slot.armor.feet', 'moon_knight_armor') && !query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.butterfly_elytra0": "(query.equipped_item_all_tags('slot.weapon.offhand', 'butterfly_elytra0') && query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.butterfly_elytra1": "(query.equipped_item_all_tags('slot.weapon.offhand', 'butterfly_elytra1') && query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.butterfly_elytra2": "(query.equipped_item_all_tags('slot.weapon.offhand', 'butterfly_elytra2') && query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.butterfly_elytra3": "(query.equipped_item_all_tags('slot.weapon.offhand', 'butterfly_elytra3') && query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" },
+	{ "controller.render.butterfly_elytra4": "(query.equipped_item_all_tags('slot.weapon.offhand', 'butterfly_elytra4') && query.equipped_item_all_tags('slot.weapon.offhand', 'elytra_offhand'))" }
+      ]
+    }
+  }
+}

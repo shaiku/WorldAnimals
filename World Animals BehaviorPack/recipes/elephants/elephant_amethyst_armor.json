@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:elephant_amethyst_armor"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "ABA",
+      "ABA",
+	  "AAA"
+    ],
+    "key": {
+	  "A": {
+        "item": "minecraft:amethyst_shard"
+      },
+      "B": {
+        "item": "minecraft:leather"
+      }
+    },
+    "result": {
+      "item": "worldanimals:elephant_amethyst_armor",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:black_bear",
+      "materials": {
+        "default": "polar_bear"
+      },
+      "textures": {
+        "default": "textures/entity/bear/black_bear_v2"
+      },
+      "geometry": {
+        "default": "geometry.bear_v2"
+      },
+      "animations": {
+        "walk": "animation.bear_v2.walk",
+        "move": "animation.bear_v2.idle",
+		"attack": "animation.bear_v2.attack",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.polarbear.baby_transform"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animation_controllers": [
+		{
+			"attack": "controller.animation.animals.attack"
+		},
+        {
+          "move": "controller.animation.polarbear.move"
+        },
+        {
+          "baby": "controller.animation.polarbear.baby"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.polarbear"
+      ],
+      "spawn_egg": {
+        "texture": "egg_black_bear",
+        "texture_index": 0
+      }
+    }
+  }
+}

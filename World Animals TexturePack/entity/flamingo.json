@@ -1,0 +1,35 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:flamingo",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/flamingo"
+      },
+      "geometry": { "default": "geometry.flamingo" },
+      "animations": {
+        "setup": "animation.flamingo.idle",
+		"attack": "animation.flamingo.attack",
+        "walk": "animation.flamingo.walk",
+		"ground": "animation.flamingo.no_fly",
+        "fly": "animation.flamingo.fly",
+        "water": "animation.flamingo.water"
+      },
+      "animation_controllers": [
+	    { "attack": "controller.animation.animals.attack" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" },
+        { "fly": "controller.animation.pelican.fly" },
+        { "water": "controller.animation.pelican.water" },
+        { "ground": "controller.animation.pelican.ground" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_flamingo",
+        "texture_index": 0
+      }
+    }
+  }
+}

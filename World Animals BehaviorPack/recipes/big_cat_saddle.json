@@ -1,0 +1,32 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:big_cat_saddle"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "AAA",
+      " B ",
+	  " C "
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:reptil_skin"
+      },
+      "B": {
+        "item": "minecraft:iron_ingot"
+      },
+      "C": {
+        "item": "minecraft:chest"
+      }
+    },
+    "result": {
+      "item": "worldanimals:big_cat_saddle",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

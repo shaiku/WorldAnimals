@@ -1,0 +1,60 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tucan_v2.idle": {
+			"loop": true,
+			"animation_length": 3,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"1.5": [-5, 0, 0],
+						"3.0": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.tucan_v2.fly": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"ala0_0": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.125": [0, 0, 152.5],
+						"0.25": [0, 0, 0]
+					}
+				},
+				"ala1_1": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.125": [0, 0, -152.5],
+						"0.25": [0, 0, 0]
+					}
+				},
+				"leg0": {
+					"rotation": [42.5, 0, 0]
+				},
+				"leg1": {
+					"rotation": [42.5, 0, 0]
+				}
+			}
+		},
+		"animation.tucan_v2.sit": {
+			"loop": true,
+			"bones": {
+				"Tuca": {
+					"position": [0, -3, 0]
+				},
+				"leg0": {
+					"rotation": [-42.5, 0, 0],
+					"position": [0, 2, 0]
+				},
+				"leg1": {
+					"rotation": [-42.5, 0, 0],
+					"position": [0, 2, 0]
+				}
+			}
+		}
+	}
+}

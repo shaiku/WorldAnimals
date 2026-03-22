@@ -1,0 +1,429 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "worldanimals:cooked_turkey",
+			"properties": {
+				"cooked_turkey:slices": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			},
+			"menu_category": {
+				"group": "none",
+				"category": "none"
+			}
+		},
+		"events": {
+			"cooked_turkey:slice1": {
+				"set_block_property": {
+					"cooked_turkey:slices": 1
+				}
+			},
+			"cooked_turkey:slice2": {
+				"set_block_property": {
+					"cooked_turkey:slices": 2
+				}
+			},
+			"cooked_turkey:slice3": {
+				"set_block_property": {
+					"cooked_turkey:slices": 3
+				}
+			},
+			"cooked_turkey:slice4": {
+				"set_block_property": {
+					"cooked_turkey:slices": 4
+				}
+			},
+			"cooked_turkey:slice5": {
+				"set_block_property": {
+					"cooked_turkey:slices": 5
+				}
+			},
+			"cooked_turkey:slice6": {
+				"set_block_property": {
+					"cooked_turkey:slices": 6
+				}
+			},
+			"cooked_turkey:slice7": {
+				"set_block_at_pos": {
+					"block_type": "minecraft:air"
+				}
+			},
+			"cooked_turkey:slice11": {
+				"sequence": [
+					{
+						"trigger": {
+							"event": "cooked_turkey:slice1"
+						}
+					},
+					{
+						"trigger": {
+							"event": "c_1"
+						}
+					}
+				]
+			},
+			"cooked_turkey:slice12": {
+				"sequence": [
+					{
+						"trigger": {
+							"event": "cooked_turkey:slice2"
+						}
+					},
+					{
+						"trigger": {
+							"event": "c_1"
+						}
+					}
+				]
+			},
+			"cooked_turkey:slice13": {
+				"sequence": [
+					{
+						"trigger": {
+							"event": "cooked_turkey:slice3"
+						}
+					},
+					{
+						"trigger": {
+							"event": "c_1"
+						}
+					}
+				]
+			},
+			"cooked_turkey:slice14": {
+				"sequence": [
+					{
+						"trigger": {
+							"event": "cooked_turkey:slice4"
+						}
+					},
+					{
+						"trigger": {
+							"event": "c_1"
+						}
+					}
+				]
+			},
+			"cooked_turkey:slice15": {
+				"sequence": [
+					{
+						"trigger": {
+							"event": "cooked_turkey:slice5"
+						}
+					},
+					{
+						"trigger": {
+							"event": "c_1"
+						}
+					}
+				]
+			},
+			"cooked_turkey:slice16": {
+				"sequence": [
+					{
+						"trigger": {
+							"event": "cooked_turkey:slice6"
+						}
+					},
+					{
+						"trigger": {
+							"event": "c_1"
+						}
+					}
+				]
+			},
+			"cooked_turkey:slice17": {
+				"sequence": [
+					{
+						"trigger": {
+							"event": "cooked_turkey:slice7"
+						}
+					},
+					{
+						"trigger": {
+							"event": "c_1"
+						}
+					}
+				]
+			},
+			"c_1": {
+				"randomize": [
+					{
+						"run_command": {
+							"command": [
+								"playsound random.burp @p ~ ~ ~ 0.8 1 0.3",
+								"effect @p saturation 1 9 true"
+							]
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"playsound random.burp @p ~ ~ ~ 0.8 0.9 0.3",
+								"effect @p saturation 1 9 true"
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('cooked_turkey:slices') == 0",
+				"components": {
+					"minecraft:geometry": "geometry.cooked_turkey",
+					"minecraft:on_interact": {
+						"event": "cooked_turkey:slice11"
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "cooked_turkey",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cooked_turkey:slices') == 1",
+				"components": {
+					"minecraft:geometry": "geometry.cooked_turkey_0",
+					"minecraft:on_interact": {
+						"event": "cooked_turkey:slice12"
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "cooked_turkey",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cooked_turkey:slices') == 2",
+				"components": {
+					"minecraft:geometry": "geometry.cooked_turkey_1",
+					"minecraft:on_interact": {
+						"event": "cooked_turkey:slice13"
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "cooked_turkey",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cooked_turkey:slices') == 3",
+				"components": {
+					"minecraft:geometry": "geometry.cooked_turkey_2",
+					"minecraft:on_interact": {
+						"event": "cooked_turkey:slice14"
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "cooked_turkey",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cooked_turkey:slices') == 4",
+				"components": {
+					"minecraft:geometry": "geometry.cooked_turkey_3",
+					"minecraft:on_interact": {
+						"event": "cooked_turkey:slice15"
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "cooked_turkey",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('cooked_turkey:slices') == 5",
+				"components": {
+					"minecraft:geometry": "geometry.cooked_turkey_4",
+					"minecraft:on_interact": {
+						"event": "cooked_turkey:slice17"
+					},
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "cooked_turkey",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					},
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							10,
+							16
+						]
+					}
+				}
+			}
+		],
+		"components": {
+			"minecraft:creative_category": {
+				"category": "nature",
+				"group": "itemGroup.search"
+			},
+			"minecraft:loot": "loot_tables/empty.json",
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 0.5
+			},
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 0.75
+			},
+			"minecraft:light_dampening": 0,
+			"minecraft:light_emission": 0
+		}
+	}
+}

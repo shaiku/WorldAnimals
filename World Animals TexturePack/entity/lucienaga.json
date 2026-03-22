@@ -1,0 +1,28 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:lucienaga",
+      "materials": { "default": "entity_emissive_alpha" },
+      "textures": {
+        "default": "textures/entity/lucienaga/lucienaga",
+		"lucienaga_1": "textures/entity/lucienaga/lucienaga_off"
+      },
+      "geometry": { "default": "geometry.lucienaga" },
+      "animations": {
+        "setup": "animation.lucienaga.idle",
+        "walk": "animation.lucienaga.fly"
+      },
+      "animation_controllers": [
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.lucienaga_0", "controller.render.lucienaga_1" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_lucienaga",
+        "texture_index": 0
+      }
+    }
+  }
+}

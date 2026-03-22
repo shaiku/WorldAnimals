@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.kiwi.sit": {
+			"loop": true,
+			"bones": {
+				"body": {
+					"position": [0, -5, 0]
+				},
+				"bone2": {
+					"rotation": [-15, 0, 0],
+					"position": [0, 0.2, -0.3]
+				},
+				"leg0": {
+					"rotation": [-90, 0, 0],
+					"position": [0, 1, -1]
+				},
+				"leg1": {
+					"rotation": [-90, 0, 0],
+					"position": [0, 1, -1]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,43 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.rhinoceros_0": {
+		"textures": [ "Texture.default" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 0" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.rhinoceros_1": {
+		"textures": [ "Texture.rhinoceros_1" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 1" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.rhinoceros_armor": {
+      "arrays": {
+        "textures": {
+          "Array.decor": [
+            "Texture.reptil",
+            "Texture.gold",
+            "Texture.iron",
+            "Texture.diamond",
+            "Texture.citrine",
+            "Texture.ruby",
+            "Texture.emerald",
+            "Texture.netherite"
+          ]
+        }
+      },
+      "geometry": "Geometry.armor",
+      "part_visibility": [
+        { "*": "query.is_saddled" }
+      ],
+      "materials": [ { "*": "Material.armor" } ],
+      "textures": [ "Array.decor[query.mark_variant]" ]
+    }
+  }
+}

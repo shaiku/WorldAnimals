@@ -1,0 +1,49 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers": {
+		"controller.animation.penguin.falling" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"falling" : "!q.is_on_ground && !q.is_in_water"
+						}
+					],
+          "blend_transition": 0.2
+				},
+				"falling" : {
+					"animations" : [ "falling" ],
+					"transitions" : [
+						{
+							"default" : "q.is_on_ground || q.is_in_water"
+						}
+					],
+          "blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.penguin.swim" : {
+			"initial_state" : "default",
+			"states" : {
+				"default" : {
+					"transitions" : [
+						{
+							"swim" : "q.is_in_water && q.modified_move_speed > 0.1"
+						}
+					],
+          "blend_transition": 0.4
+				},
+				"swim" : {
+					"animations" : [ "swim" ],
+					"transitions" : [
+						{
+							"default" : "!q.is_in_water || q.modified_move_speed < 0.1"
+						}
+					],
+          "blend_transition": 0.4
+				}
+			}
+		}
+	}
+}

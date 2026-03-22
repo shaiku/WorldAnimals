@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:reptil_chest"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "A A",
+      "AAA",
+      "AAA"
+    ],
+    "key": {
+	    "A": {
+        "item": "worldanimals:reptil_skin"
+      }
+    },
+    "result": {
+      "item": "worldanimals:reptil_chest",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

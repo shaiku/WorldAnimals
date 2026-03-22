@@ -1,0 +1,39 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:hyenas",
+      "materials": {
+        "default": "slime"
+      },
+      "textures": {
+        "default": "textures/entity/hyenas/hyenas",
+        "blue": "textures/entity/hyenas/hyenas_2"
+      },
+      "geometry": {
+        "default": "geometry.hyenas"
+      },
+      "animations": {
+        "walk": "animation.quadruped.walk",
+        "move": "animation.polarbear.move",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.polarbear.baby_transform"
+      },
+      "animation_controllers": [
+        {
+          "move": "controller.animation.polarbear.move"
+        },
+        {
+          "baby": "controller.animation.polarbear.baby"
+        }
+      ],
+      "render_controllers": [
+        "controller.render.iguana"
+      ],
+      "spawn_egg": {
+        "texture": "egg_hyenas",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:ostrich",
+      "materials": { "default": "slime", "armor": "stray_clothes" },
+      "textures": {
+        "ostrich_0": "textures/entity/ostrich_v2/ostrich_0",
+		"ostrich_1": "textures/entity/ostrich_v2/ostrich_1",
+		"ostrich_2": "textures/entity/ostrich_v2/ostrich_2",
+		"saddle": "textures/entity/ostrich_v2/ostrich_flag_green",
+        "flag_green": "textures/entity/ostrich_v2/ostrich_flag_green",
+        "flag_red": "textures/entity/ostrich_v2/ostrich_flag_red",
+        "flag_blue": "textures/entity/ostrich_v2/ostrich_flag_blue",
+        "flag_yellow": "textures/entity/ostrich_v2/ostrich_flag_yellow",
+        "flag_orange": "textures/entity/ostrich_v2/ostrich_flag_orange"
+      },
+      "geometry": {
+        "default": "geometry.ostrich_v2",
+        "saddle": "geometry.ostrich_saddle",
+        "ostrich_flag": "geometry.ostrich_v2_flag"
+      },
+      "animations": {
+        "setup": "animation.ostrich_v2.idle",
+        "walk": "animation.ostrich_v2.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.ostrich_v2.sit"
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ 
+	  "controller.render.ostrich_0", 
+	  "controller.render.ostrich_1", 
+	  "controller.render.ostrich_2", 
+	  "controller.render.ostrich.saddle", 
+	  "controller.render.ostrich.green_flag", 
+	  "controller.render.ostrich.red_flag", 
+	  "controller.render.ostrich.blue_flag", 
+	  "controller.render.ostrich.yellow_flag", 
+	  "controller.render.ostrich.orange_flag"
+	  ],
+      "spawn_egg": {
+        "texture": "egg_ostrich",
+        "texture_index": 0
+      }
+    }
+  }
+}

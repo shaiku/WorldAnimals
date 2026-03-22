@@ -1,0 +1,74 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.crocodile_legs",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leftLeg",
+					"parent": "root",
+					"pivot": [2, 12, 0],
+					"cubes": [
+						{"origin": [-0.5, 4.3, -2.5], "size": [5, 3, 5], "inflate": -0.225, "uv": [50, 33]},
+						{"origin": [-0.5, 6.725, -2.5], "size": [5, 6, 5], "inflate": -0.15, "uv": [16, 41]}
+					]
+				},
+				{
+					"name": "rightLeg",
+					"parent": "root",
+					"pivot": [-2, 12, 0],
+					"cubes": [
+						{"origin": [-4.5, 4.3, -2.5], "size": [5, 3, 5], "inflate": -0.225, "uv": [51, 11]},
+						{"origin": [-4.5, 6.725, -2.5], "size": [5, 6, 5], "inflate": -0.15, "uv": [36, 41]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "root",
+					"pivot": [0, 24, 0],
+					"cubes": [
+						{"origin": [-4, 12, -2], "size": [8, 3, 4], "inflate": 0.425, "uv": [30, 21]}
+					]
+				},
+				{
+					"name": "armor_tail",
+					"parent": "body",
+					"pivot": [0, 13.5, 1.1],
+					"rotation": [-35, 0, 0],
+					"cubes": [
+						{"origin": [-2.5, 10.5, 1.1], "size": [5, 5, 10], "uv": [0, 17]}
+					]
+				},
+				{
+					"name": "armor_tail2",
+					"parent": "armor_tail",
+					"pivot": [0, 13.5, 9.9],
+					"rotation": [17.5, 0, 0],
+					"cubes": [
+						{"origin": [-2, 10.5, 9.9], "size": [4, 5, 12], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "armor_tail3",
+					"parent": "armor_tail2",
+					"pivot": [0, 14.3, 21.5],
+					"rotation": [5, 0, 0],
+					"cubes": [
+						{"origin": [-2, 11.3, 21.5], "size": [4, 4, 10], "inflate": -0.1, "uv": [22, 7]}
+					]
+				}
+			]
+		}
+	]
+}

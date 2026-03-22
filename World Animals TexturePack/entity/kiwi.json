@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:kiwi",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/kiwi"
+      },
+      "geometry": { "default": "geometry.kiwi" },
+      "animations": {
+        "setup": "animation.kiwi.idle",
+		"wolf_sitting": "animation.kiwi.sit",
+        "walk": "animation.quadruped.walk"
+      },
+      "animation_controllers": [
+	    { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_kiwi",
+        "texture_index": 0
+      }
+    }
+  }
+}

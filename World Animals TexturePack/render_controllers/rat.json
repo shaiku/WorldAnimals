@@ -1,0 +1,45 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.rat_0": {
+		"textures": [ "Texture.default" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 0" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.rat_1": {
+		"textures": [ "Texture.rat_1" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 1" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.rat_2": {
+		"textures": [ "Texture.rat_2" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 2" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.rat_3": {
+		"textures": [ "Texture.rat_3" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 3" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    },
+    "controller.render.rat_4": {
+		"textures": [ "Texture.rat_4" ],
+      "geometry": "Geometry.default",
+      "part_visibility": [
+        { "*": "query.variant == 4" }
+      ],
+      "materials": [ { "*": "Material.default" } ]
+    }
+  }
+}

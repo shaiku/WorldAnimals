@@ -1,0 +1,165 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.komodo_dragon",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 6,
+				"visible_bounds_height": 2.5,
+				"visible_bounds_offset": [0, 0.75, 0]
+			},
+			"bones": [
+				{
+					"name": "komodo_dragon",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "leg3",
+					"parent": "komodo_dragon",
+					"pivot": [-5, 5, 8],
+					"cubes": [
+						{"origin": [-5, 3, 6], "size": [4, 4, 4], "inflate": -0.1, "pivot": [-3, 5, 8], "rotation": [0, 0, 45], "uv": [0, 91]},
+						{"origin": [-6, 0, 6], "size": [4, 5, 4], "inflate": -0.25, "uv": [0, 64]},
+						{"origin": [-6, 0, 5], "size": [4, 1, 5], "inflate": -0.1, "uv": [0, 41]},
+						{"origin": [-3, 0, 4], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [-3, 0, 3], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]},
+						{"origin": [-6, 0, 4], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [-6, 0, 3], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]},
+						{"origin": [-4.5, 0, 4], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [-4.5, 0, 3], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]}
+					]
+				},
+				{
+					"name": "leg2",
+					"parent": "komodo_dragon",
+					"pivot": [3, 5, 8],
+					"cubes": [
+						{"origin": [1, 3, 6], "size": [4, 4, 4], "inflate": -0.1, "pivot": [3, 5, 8], "rotation": [0, 0, 45], "uv": [0, 91]},
+						{"origin": [2, 0, 6], "size": [4, 5, 4], "inflate": -0.25, "uv": [0, 64]},
+						{"origin": [2, 0, 5], "size": [4, 1, 5], "inflate": -0.1, "uv": [0, 41]},
+						{"origin": [5, 0, 4], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [5, 0, 3], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]},
+						{"origin": [2, 0, 4], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [2, 0, 3], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]},
+						{"origin": [3.5, 0, 4], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [3.5, 0, 3], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]}
+					]
+				},
+				{
+					"name": "body",
+					"parent": "komodo_dragon",
+					"pivot": [0, 3, 0],
+					"cubes": [
+						{"origin": [-4, 3, -6], "size": [8, 6, 16], "uv": [27, 15]}
+					]
+				},
+				{
+					"name": "leg1",
+					"parent": "body",
+					"pivot": [-6, 5, -4],
+					"cubes": [
+						{"origin": [-6, 3, -6], "size": [4, 4, 4], "inflate": -0.1, "pivot": [-4, 5, -4], "rotation": [0, 0, 45], "uv": [0, 91]},
+						{"origin": [-7, 0, -6], "size": [4, 5, 4], "inflate": -0.25, "uv": [0, 64]},
+						{"origin": [-7, 0, -7], "size": [4, 1, 5], "inflate": -0.1, "uv": [0, 41]},
+						{"origin": [-4, 0, -8], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [-4, 0, -9], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]},
+						{"origin": [-7, 0, -8], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [-7, 0, -9], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]},
+						{"origin": [-5.5, 0, -8], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [-5.5, 0, -9], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]}
+					]
+				},
+				{
+					"name": "leg0",
+					"parent": "body",
+					"pivot": [4, 5, -4],
+					"cubes": [
+						{"origin": [2, 3, -6], "size": [4, 4, 4], "inflate": -0.1, "pivot": [4, 5, -4], "rotation": [0, 0, 45], "uv": [0, 91]},
+						{"origin": [3, 0, -6], "size": [4, 5, 4], "inflate": -0.25, "uv": [0, 64]},
+						{"origin": [3, 0, -7], "size": [4, 1, 5], "inflate": -0.1, "uv": [0, 41]},
+						{"origin": [6, 0, -8], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [6, 0, -9], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]},
+						{"origin": [3, 0, -8], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [3, 0, -9], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]},
+						{"origin": [4.5, 0, -8], "size": [1, 1, 2], "inflate": -0.15, "uv": [27, 0]},
+						{"origin": [4.5, 0, -9], "size": [1, 1, 2], "inflate": -0.25, "uv": [33, 0]}
+					]
+				},
+				{
+					"name": "body1",
+					"parent": "body",
+					"pivot": [0, 6, -6],
+					"cubes": [
+						{"origin": [-3.5, 3, -11], "size": [7, 6, 6], "inflate": -0.2, "pivot": [0, 6, -6], "rotation": [5, 0, 0], "uv": [102, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"parent": "body1",
+					"pivot": [0, 6, -11],
+					"cubes": [
+						{"origin": [-2, 5, -18], "size": [4, 2, 8], "pivot": [-0.5, 6, -11], "rotation": [10, 0, 0], "uv": [0, 0]},
+						{"origin": [-2, 6.45, -17.9], "size": [4, 2, 8], "inflate": -0.25, "pivot": [-0.5, 6, -11], "rotation": [20, 0, 0], "uv": [67, 0]},
+						{"origin": [-2, 3.5, -14], "size": [4, 3, 2], "inflate": -0.55, "pivot": [-0.5, 6, -11], "rotation": [65, 0, 0], "uv": [44, 24]},
+						{"origin": [-2, 3.5, -13], "size": [4, 2, 2], "inflate": -0.55, "pivot": [-0.5, 6, -11], "rotation": [65, 0, 0], "uv": [44, 24]}
+					]
+				},
+				{
+					"name": "boca",
+					"parent": "head",
+					"pivot": [-0.5, 6, -11],
+					"cubes": [
+						{"origin": [-1.5, 4, -18], "size": [3, 1, 8], "pivot": [-0.5, 6, -11], "rotation": [10, 0, 0], "uv": [42, 0]}
+					]
+				},
+				{
+					"name": "lengua",
+					"parent": "boca",
+					"pivot": [0, 4.5, -10.8],
+					"rotation": [6, 0, 0],
+					"cubes": [
+						{"origin": [-1.5, 3.675, -18.3], "size": [3, 1, 8], "inflate": -0.25, "uv": [59, 48]}
+					]
+				},
+				{
+					"name": "tale4",
+					"parent": "body",
+					"pivot": [0, 6, 10],
+					"rotation": [-10, 0, 0],
+					"cubes": [
+						{"origin": [-1, 6.75, 28], "size": [2, 2, 6], "uv": [88, 120]}
+					]
+				},
+				{
+					"name": "tale3",
+					"parent": "body",
+					"pivot": [0, 6, 10],
+					"rotation": [-5, 0, 0],
+					"cubes": [
+						{"origin": [-2, 4.25, 23], "size": [4, 4, 6], "inflate": -0.15, "uv": [108, 110]}
+					]
+				},
+				{
+					"name": "tale2",
+					"parent": "body",
+					"pivot": [0, 6, 10],
+					"rotation": [-5, 0, 0],
+					"cubes": [
+						{"origin": [-3, 4.25, 16], "size": [6, 4, 8], "uv": [100, 83]}
+					]
+				},
+				{
+					"name": "tale",
+					"parent": "body",
+					"pivot": [0, 6, 10],
+					"rotation": [-5, 0, 0],
+					"cubes": [
+						{"origin": [-3, 4.25, 9], "size": [6, 4, 8], "inflate": 0.5, "uv": [100, 59]}
+					]
+				}
+			]
+		}
+	]
+}

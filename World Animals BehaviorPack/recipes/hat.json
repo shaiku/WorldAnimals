@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "worldanimals:hat"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "BBB",
+	  "AAA"
+    ],
+    "key": {
+	    "A": {
+        "item": "minecraft:wool"
+      },
+      "B": {
+        "item": "minecraft:coal"
+      }
+    },
+    "result": {
+      "item": "worldanimals:hat",
+        "data": 0,
+      "count": 1
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.butterfly_elytra.idle": {
+			"loop": true,
+			"animation_length": 1.875,
+			"bones": {
+				"butterfly_ala0": {
+					"rotation": [0, 0, 35]
+				},
+				"butterfly_ala1": {
+					"rotation": [0, 0, -35]
+				}
+			}
+		},
+		"animation.butterfly_elytra.fly": {
+			"loop": true,
+			"animation_length": 0.25,
+			"bones": {
+				"butterfly_ala0": {
+					"rotation": {
+						"0.0": [0, 0, -25],
+						"0.125": [0, 0, 50],
+						"0.25": [0, 0, -25]
+					}
+				},
+				"butterfly_ala1": {
+					"rotation": {
+						"0.0": [0, 0, 25],
+						"0.125": [0, 0, -50],
+						"0.25": [0, 0, 25]
+					}
+				}
+			}
+		}
+	}
+}

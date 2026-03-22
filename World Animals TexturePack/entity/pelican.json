@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:pelican",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/pelican_v2"
+      },
+      "geometry": { "default": "geometry.pelican_v2" },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animations": {
+        "loop": "animation.pelican_v2.idle",
+		"attack": "animation.pelican_v2.attack",
+        "walk": "animation.pelican_v2.walk",
+		"ground": "animation.pelican_v2.no_fly",
+        "fly": "animation.pelican_v2.fly",
+        "water": "animation.pelican_v2.on_water"
+      },
+      "animation_controllers": [
+	    { "attack": "controller.animation.animals.attack" },
+        { "loop": "controller.animation.loop" },
+		{ "walk": "controller.animation.birds.walk" },
+        { "baby": "controller.animation.llama.baby" },
+        { "fly": "controller.animation.pelican.fly" },
+        { "water": "controller.animation.pelican.water" },
+        { "ground": "controller.animation.pelican.ground" }
+      ],
+      "render_controllers": [ "controller.render.polarbear" ],
+      "enable_attachables": true,
+      "spawn_egg": {
+        "texture": "egg_pelican",
+        "texture_index": 0
+      }
+    }
+  }
+}

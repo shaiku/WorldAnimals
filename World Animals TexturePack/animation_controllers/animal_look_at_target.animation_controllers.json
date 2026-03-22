@@ -1,0 +1,13 @@
+{
+	"format_version" : "1.10.0",
+	"animation_controllers": {
+		"controller.animation.animal.look_at_target": {
+			"initial_state": "look_at_target",
+			"states": {
+				"look_at_target": {
+					"animations": [ "look_at_target" ]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.land_turtle.sit": {
+			"loop": true,
+			"bones": {
+				"caparason": {
+					"position": [0, -1, 0]
+				},
+				"leg0": {
+					"position": [-1, 0, 1]
+				},
+				"leg1": {
+					"position": [1, 0, 1]
+				},
+				"leg2": {
+					"position": [-1, 0, -1]
+				},
+				"leg3": {
+					"position": [1, 0, -1]
+				},
+				"head": {
+					"position": [0, -1, 4]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:hammerhead_shark",
+      "materials": { "default": "slime" },
+      "textures": {
+        "default": "textures/entity/shark_v2/hammerhead_shark_0",
+		"hammerhead_shark_1": "textures/entity/shark_v2/hammerhead_shark_1",
+		"hammerhead_shark_2": "textures/entity/shark_v2/hammerhead_shark_2",
+		"hammerhead_shark_3": "textures/entity/shark_v2/hammerhead_shark_v2"
+      },
+      "geometry": { "default": "geometry.hammerhead_shark_v2" },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animations": {
+        "setup": "animation.shark_v2.idle",
+		"attack": "animation.shark_v2.attack",
+        "walk": "animation.shark_v2.walk"
+      },
+      "animation_controllers": [
+	    { "attack": "controller.animation.animals.attack" },
+        { "move": "controller.animation.llama.move" },
+        { "baby": "controller.animation.llama.baby" }
+      ],
+      "render_controllers": [ 
+	  "controller.render.hammerhead_shark_0", 
+	  "controller.render.hammerhead_shark_1", 
+	  "controller.render.hammerhead_shark_2", 
+	  "controller.render.hammerhead_shark_3"
+	  ],
+      "spawn_egg": {
+        "texture": "egg_shark",
+        "texture_index": 0
+      }
+    }
+  }
+}

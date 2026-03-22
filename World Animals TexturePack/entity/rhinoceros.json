@@ -1,0 +1,49 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "worldanimals:rhinoceros",
+      "materials": { "default": "slime", "armor": "stray_clothes" },
+      "textures": {
+        "default": "textures/entity/rhinoceros_v2/rhinoceros_v2",
+		"rhinoceros_1": "textures/entity/rhinoceros_v2/rhinoceros_1",
+        "reptil": "textures/entity/rhinoceros_v2/rhinoceros_reptil_armor",
+        "gold": "textures/entity/rhinoceros_v2/rhinoceros_gold_armor",
+        "iron": "textures/entity/rhinoceros_v2/rhinoceros_iron_armor",
+        "diamond": "textures/entity/rhinoceros_v2/rhinoceros_diamond_armor",
+        "citrine": "textures/entity/rhinoceros_v2/rhinoceros_citrine_armor",
+        "ruby": "textures/entity/rhinoceros_v2/rhinoceros_ruby_armor",
+        "emerald": "textures/entity/rhinoceros_v2/rhinoceros_emerald_armor",
+        "netherite": "textures/entity/rhinoceros_v2/rhinoceros_netherite_armor"
+      },
+      "geometry": {
+        "default": "geometry.rhinoceros_v2",
+        "armor": "geometry.rhinoceros_v2"
+      },
+      "animations": {
+        "setup": "animation.rhinoceros_v2.idle",
+        "walk": "animation.rhinoceros_v2.walk",
+		"attack": "animation.rhinoceros_v2.attack",
+        "look_at_target": "animation.common.look_at_target",
+        "wolf_sitting": "animation.rhinoceros_v2.sit"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "animation_controllers": [
+        { "wolf_sitting": "controller.animation.wolf.sitting" },
+        { "move": "controller.animation.llama.move" },
+				{
+					"attack": "controller.animation.animals.attack"
+				}
+      ],
+      "render_controllers": [ "controller.render.rhinoceros_0", "controller.render.rhinoceros_1", "controller.render.rhinoceros_armor" ],
+      "spawn_egg": {
+        "texture": "egg_rhinoceros",
+        "texture_index": 0
+      }
+    }
+  }
+}

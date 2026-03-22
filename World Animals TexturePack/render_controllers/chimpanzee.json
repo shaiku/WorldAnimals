@@ -1,0 +1,21 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.chimpanzee_0": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "query.mark_variant == 0" }
+      ],
+      "textures": [ "Texture.chimpanzee_0" ]
+    },
+    "controller.render.chimpanzee_1": {
+      "geometry": "Geometry.default",
+      "materials": [ { "*": "Material.default" } ],
+      "part_visibility": [
+        { "*": "query.mark_variant == 1" }
+      ],
+      "textures": [ "Texture.chimpanzee_1" ]
+    }
+  }
+}
