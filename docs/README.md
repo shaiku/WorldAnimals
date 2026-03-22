@@ -33,7 +33,7 @@ Explore a diverse ecosystem of animals across multiple biomes:
 
 ### Installation Steps
 
-1. **Download** the latest `.mcaddon` file from the [Releases](../../releases) page
+1. **Download** the latest `.mcaddon` file from the [Releases](../../../releases) page
 2. **Open** the `.mcaddon` file with Minecraft — both packs will be imported automatically
 3. **Create or edit** a world and enable **World Animals BehaviorPack** in the addon settings (the Resource Pack will be added automatically)
 4. **Play!** Animals will spawn naturally in appropriate biomes
