@@ -46,7 +46,7 @@ Three separate addon packs with short directory names:
 
 ## Script API (BP/scripts/main.js)
 
-Uses `@minecraft/server` v2.0.0 with `system.beforeEvents.startup`. Three custom components:
+Uses `@minecraft/server` v2.0.0 with `system.beforeEvents.startup`. Three custom block components:
 
 | Component | Blocks | Behavior |
 |---|---|---|
@@ -54,13 +54,33 @@ Uses `@minecraft/server` v2.0.0 with `system.beforeEvents.startup`. Three custom
 | `worldanimals:turkey_eat` | cooked_turkey | Cycle slice state, play burp, give saturation, destroy at end |
 | `worldanimals:palm_sapling` | palm_sapling | Bone meal growth (25% chance), auto-grow on tick |
 
+### Script Event Commands
+
+Triggered via `/scriptevent` or wrapper mcfunctions (`/function worldanimals_refresh`):
+
+| Event | Function wrapper | Behavior |
+|---|---|---|
+| `worldanimals:refresh` | `worldanimals_refresh` | Despawn all wild entities and respawn fresh replacements, preserving tamed status, equipment/armor, name tags, and scoreboard tags |
+| `worldanimals:despawnall` | `worldanimals_despawnall` | Clean removal of all addon entities via `entity.remove()` (no loot drops) |
+
+The refresh system uses a mark_variant → event mapping to restore armor on elephants, mammoth, ostrich, and rhinoceros. Simple saddle/chest state is restored for big cats, penguins, giraffe, deer, and zebra.
+
 ## Key Patterns
 
 - **Entity namespace:** `worldanimals:` prefix throughout
 - **Naming convention:** snake_case for all filenames and identifiers
 - **Rotation system:** Blocks use `minecraft:placement_direction` trait with `y_rotation_offset: 180`
 - **Entity variants:** Component groups handle age, gender, and visual variants
+- **Equipment system:** Entities use event-driven component group swaps (not `minecraft:equippable`). Saddle/armor is applied via `minecraft:interact` filters that detect held items and trigger events like `minecraft:on_chest`, `minecraft:on_saddle`, or armor-specific events. Equipment state is tracked via `minecraft:is_saddled` and `minecraft:mark_variant`.
+- **Taming:** 39 entities are tameable. All use `minecraft:on_tame` event. Tamed state is tracked via `minecraft:is_tamed` component in a tamed component group.
 - **Cross-pack consistency:** Entity/item/block identifiers, loot table paths, and spawn rule filenames must stay in sync across BP and RP
+- **Translations:** 5 language files in RP/texts/ (en_US, es_ES, es_MX, pt_PT, pt_BR). Requires RP/texts/languages.json to be present. Keys use both `item.worldanimals:name.name=` and `item.worldanimals:name=` formats for cross-version compatibility.
+
+## Bedrock Command Syntax
+
+- **Execute:** Use new syntax `execute as @e[...] at @s run <command>` (not legacy `execute @e[...] ~ ~ ~ <command>`)
+- **Entity removal:** Use Script API `entity.remove()` for clean despawn without loot. `minecraft:instant_despawn` component does NOT work when added at runtime via events.
+- **Color codes:** Use `§` section sign for colored text in .lang files (e.g., `§d` for light purple/Epic rarity)
 
 ## Working With Entities
 
@@ -83,5 +103,7 @@ npm run build    # Create .mcaddon for distribution
 
 Test in-game:
 - `/summon worldanimals:<entity_name>` to test specific entities
+- `/function worldanimals_refresh` to refresh all entities (preserves tamed/equipped state)
+- `/function worldanimals_despawnall` to cleanly remove all addon entities
 - Place/break each block type
 - Craft items and verify recipes
