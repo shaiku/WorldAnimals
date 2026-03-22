@@ -34,9 +34,6 @@
 						"repair_amount": 10
 					}
 				]
-			},
-			"minecraft:armor": {
-				"protection": 4
 			}
 		}
 	}

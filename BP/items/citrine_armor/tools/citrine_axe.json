@@ -217,11 +217,7 @@
 						"block": "minecraft:noteblock",
 						"speed": 6
 					}
-				],
-				"on_dig": {
-					"event": "minecraft:break",
-					"target": "self"
-				}
+				]
 			}
 		}
 	}

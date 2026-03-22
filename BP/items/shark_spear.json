@@ -32,11 +32,7 @@
 						"block": "minecraft:bamboo",
 						"speed": 10
 					}
-				],
-				"on_dig": {
-					"event": "minecraft:break",
-					"target": "self"
-				}
+				]
 			}
 		}
 	}

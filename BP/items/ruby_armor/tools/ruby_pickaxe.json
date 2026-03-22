@@ -1018,10 +1018,7 @@
 						"block": "minecraft:crying_obsidian",
 						"speed": 8
 					}
-				],
-				"on_dig": {
-					"event": "pickaxe"
-				}
+				]
 			},
 			"minecraft:icon": "ruby_pickaxe",
 			"tag:is_pickaxe_costum": {}

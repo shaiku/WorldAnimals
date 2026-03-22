@@ -21,9 +21,6 @@
 			"minecraft:knockback_resistance": {
 				"protection": 0.0
 			},
-			"minecraft:armor": {
-				"protection": 4
-			},
 			"minecraft:repairable": {
 				"repair_items": [
 					{

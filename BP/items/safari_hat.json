@@ -18,9 +18,6 @@
 			"minecraft:knockback_resistance": {
 				"protection": 0.0
 			},
-			"minecraft:armor": {
-				"protection": 2
-			},
 			"minecraft:wearable": {
 				"slot": "slot.armor.head"
 			}

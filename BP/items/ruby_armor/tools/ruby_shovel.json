@@ -61,11 +61,7 @@
 						"block": "minecraft:clay",
 						"speed": 8
 					}
-				],
-				"on_dig": {
-					"event": "minecraft:break",
-					"target": "self"
-				}
+				]
 			}
 		}
 	}
