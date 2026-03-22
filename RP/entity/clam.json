@@ -3,7 +3,9 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:clam",
-      "materials": { "default": "dolphin" },
+      "materials": {
+        "default": "dolphin"
+      },
       "textures": {
         "default": "textures/entity/clam"
       },
@@ -11,12 +13,17 @@
         "default": "geometry.clam"
       },
       "animations": {
-        "move": "animation.clam.idle"
+        "move": "animation.clam.idle",
+        "general": "animation.clam.idle"
       },
       "animation_controllers": [
-        { "general": "controller.animation.dolphin.general" }
+        {
+          "general": "controller.animation.dolphin.general"
+        }
       ],
-      "render_controllers": [ "controller.render.dolphin" ],
+      "render_controllers": [
+        "controller.render.dolphin"
+      ],
       "spawn_egg": {
         "texture": "egg_white_shark",
         "texture_index": 0

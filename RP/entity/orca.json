@@ -3,7 +3,9 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:orca",
-      "materials": { "default": "dolphin" },
+      "materials": {
+        "default": "dolphin"
+      },
       "textures": {
         "default": "textures/entity/orca"
       },
@@ -17,14 +19,21 @@
       },
       "animations": {
         "setup": "animation.orca.idle",
-		"attack": "animation.orca.attack",
-        "walk": "animation.orca.walk"
+        "attack": "animation.orca.attack",
+        "walk": "animation.orca.walk",
+        "look_at_target": "animation.common.look_at_target"
       },
       "animation_controllers": [
-	    { "attack": "controller.animation.animals.attack" },
-        { "move": "controller.animation.llama.move" }
+        {
+          "attack": "controller.animation.animals.attack"
+        },
+        {
+          "move": "controller.animation.llama.move"
+        }
       ],
-      "render_controllers": [ "controller.render.dolphin" ],
+      "render_controllers": [
+        "controller.render.dolphin"
+      ],
       "spawn_egg": {
         "texture": "egg_orca",
         "texture_index": 0

@@ -39,7 +39,8 @@
         "look_at_target": "animation.common.look_at_target",
         "wolf_sitting": "animation.penguin_v2.sit",
         "swim": "animation.penguin.swim",
-        "general": "animation.penguin_african.idle"
+        "general": "animation.penguin_african.idle",
+        "baby_transform": "animation.polarbear.baby_transform"
       },
       "animation_controllers": [
         {

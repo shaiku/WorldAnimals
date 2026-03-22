@@ -27,7 +27,8 @@
         "riding.legs": "animation.chimpanzee.dance",
         "look_at_target": "animation.common.look_at_target",
         "wolf_sitting": "animation.chimpanzee.sit",
-        "general": "animation.chimpanzee.idle"
+        "general": "animation.chimpanzee.idle",
+        "baby_transform": "animation.polarbear.baby_transform"
       },
       "animation_controllers": [
         {

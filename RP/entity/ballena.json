@@ -3,7 +3,9 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:ballena",
-      "materials": { "default": "dolphin" },
+      "materials": {
+        "default": "dolphin"
+      },
       "textures": {
         "default": "textures/entity/ballena"
       },
@@ -11,12 +13,17 @@
         "default": "geometry.ballena"
       },
       "animations": {
-        "move": "animation.ballena.idle"
+        "move": "animation.ballena.idle",
+        "general": "animation.ballena.idle"
       },
       "animation_controllers": [
-        { "general": "controller.animation.dolphin.general" }
+        {
+          "general": "controller.animation.dolphin.general"
+        }
       ],
-      "render_controllers": [ "controller.render.dolphin" ],
+      "render_controllers": [
+        "controller.render.dolphin"
+      ],
       "spawn_egg": {
         "texture": "egg_shark",
         "texture_index": 0

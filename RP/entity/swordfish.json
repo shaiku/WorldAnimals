@@ -3,7 +3,9 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:swordfish",
-      "materials": { "default": "dolphin" },
+      "materials": {
+        "default": "dolphin"
+      },
       "textures": {
         "default": "textures/entity/swordfish/swordfish"
       },
@@ -11,12 +13,17 @@
         "default": "geometry.swordfish"
       },
       "animations": {
-        "move": "animation.shark.walk"
+        "move": "animation.shark.walk",
+        "general": "animation.shark.walk"
       },
       "animation_controllers": [
-        { "general": "controller.animation.dolphin.general" }
+        {
+          "general": "controller.animation.dolphin.general"
+        }
       ],
-      "render_controllers": [ "controller.render.dolphin" ],
+      "render_controllers": [
+        "controller.render.dolphin"
+      ],
       "spawn_egg": {
         "texture": "egg_swordfish",
         "texture_index": 0

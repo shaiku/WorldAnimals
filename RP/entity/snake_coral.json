@@ -3,15 +3,21 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:snake_coral",
-      "materials": { "default": "slime" },
+      "materials": {
+        "default": "slime"
+      },
       "textures": {
         "default": "textures/entity/snake/snake_coral"
       },
-      "geometry": { "default": "geometry.snake_coral" },
+      "geometry": {
+        "default": "geometry.snake_coral"
+      },
       "animations": {
         "setup": "animation.snake_v2.idle2",
-		"attack": "animation.snake_v2.attack",
-        "walk": "animation.snake_v2.walk"
+        "attack": "animation.snake_v2.attack",
+        "walk": "animation.snake_v2.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.polarbear.baby_transform"
       },
       "scripts": {
         "pre_animation": [
@@ -19,13 +25,19 @@
         ]
       },
       "animation_controllers": [
-        { "move": "controller.animation.llama.move" },
-        { "baby": "controller.animation.llama.baby" },
-				{
-					"attack": "controller.animation.animals.attack"
-				}
+        {
+          "move": "controller.animation.llama.move"
+        },
+        {
+          "baby": "controller.animation.llama.baby"
+        },
+        {
+          "attack": "controller.animation.animals.attack"
+        }
       ],
-      "render_controllers": [ "controller.render.dolphin" ],
+      "render_controllers": [
+        "controller.render.dolphin"
+      ],
       "enable_attachables": true,
       "spawn_egg": {
         "texture": "egg_snake",

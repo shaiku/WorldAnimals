@@ -3,11 +3,15 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:white_shark",
-      "materials": { "default": "slime" },
+      "materials": {
+        "default": "slime"
+      },
       "textures": {
         "default": "textures/entity/shark_v2/white_shark_v2"
       },
-      "geometry": { "default": "geometry.shark_v2" },
+      "geometry": {
+        "default": "geometry.shark_v2"
+      },
       "scripts": {
         "pre_animation": [
           "variable.attack = Math.sin(variable.attack_time * 38.17);"
@@ -15,15 +19,25 @@
       },
       "animations": {
         "setup": "animation.shark_v2.idle",
-		"attack": "animation.shark_v2.attack",
-        "walk": "animation.shark_v2.walk"
+        "attack": "animation.shark_v2.attack",
+        "walk": "animation.shark_v2.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.polarbear.baby_transform"
       },
       "animation_controllers": [
-	    { "attack": "controller.animation.animals.attack" },
-        { "move": "controller.animation.llama.move" },
-        { "baby": "controller.animation.llama.baby" }
+        {
+          "attack": "controller.animation.animals.attack"
+        },
+        {
+          "move": "controller.animation.llama.move"
+        },
+        {
+          "baby": "controller.animation.llama.baby"
+        }
       ],
-      "render_controllers": [ "controller.render.polarbear" ],
+      "render_controllers": [
+        "controller.render.polarbear"
+      ],
       "enable_attachables": true,
       "spawn_egg": {
         "texture": "egg_white_shark",

@@ -3,12 +3,16 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:vulture",
-      "materials": { "default": "slime" },
+      "materials": {
+        "default": "slime"
+      },
       "textures": {
         "default": "textures/entity/vulture/vulture",
-		"baby": "textures/entity/vulture/baby_vulture"
+        "baby": "textures/entity/vulture/baby_vulture"
       },
-      "geometry": { "default": "geometry.vulture" },
+      "geometry": {
+        "default": "geometry.vulture"
+      },
       "scripts": {
         "pre_animation": [
           "variable.attack = Math.sin(variable.attack_time * 38.17);"
@@ -16,19 +20,33 @@
       },
       "animations": {
         "loop": "animation.vulture.idle",
-		"attack": "animation.vulture.attack",
+        "attack": "animation.vulture.attack",
         "walk": "animation.vulture.walk",
         "fly": "animation.vulture.fly",
-        "baby": "animation.vulture.baby"
+        "baby": "animation.vulture.baby",
+        "baby_transform": "animation.polarbear.baby_transform"
       },
       "animation_controllers": [
-	    { "attack": "controller.animation.animals.attack" },
-		{ "loop": "controller.animation.loop" },
-        { "walk": "controller.animation.birds.walk" },
-		{ "baby": "controller.animation.llama.baby" },
-        { "fly": "controller.animation.pelican.fly" }
+        {
+          "attack": "controller.animation.animals.attack"
+        },
+        {
+          "loop": "controller.animation.loop"
+        },
+        {
+          "walk": "controller.animation.birds.walk"
+        },
+        {
+          "baby": "controller.animation.llama.baby"
+        },
+        {
+          "fly": "controller.animation.pelican.fly"
+        }
       ],
-      "render_controllers": [ "controller.render.vulture", "controller.render.baby_vulture" ],
+      "render_controllers": [
+        "controller.render.vulture",
+        "controller.render.baby_vulture"
+      ],
       "enable_attachables": true,
       "spawn_egg": {
         "texture": "egg_vulture",

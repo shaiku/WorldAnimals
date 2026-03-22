@@ -3,7 +3,10 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:caracal",
-      "materials": { "default": "slime", "armor": "stray_clothes" },
+      "materials": {
+        "default": "slime",
+        "armor": "stray_clothes"
+      },
       "textures": {
         "default": "textures/entity/caracal/caracal",
         "black": "textures/entity/caracal/black_scarf",
@@ -31,14 +34,24 @@
         "setup": "animation.caracal.idle",
         "walk": "animation.caracal.walk",
         "look_at_target": "animation.common.look_at_target",
-        "wolf_sitting": "animation.caracal.sit"
+        "wolf_sitting": "animation.caracal.sit",
+        "baby_transform": "animation.polarbear.baby_transform"
       },
       "animation_controllers": [
-        { "wolf_sitting": "controller.animation.wolf.sitting" },
-        { "move": "controller.animation.llama.move" },
-        { "baby": "controller.animation.llama.baby" }
+        {
+          "wolf_sitting": "controller.animation.wolf.sitting"
+        },
+        {
+          "move": "controller.animation.llama.move"
+        },
+        {
+          "baby": "controller.animation.llama.baby"
+        }
       ],
-      "render_controllers": [ "controller.render.animals", "controller.render.caracal_scarf" ],
+      "render_controllers": [
+        "controller.render.animals",
+        "controller.render.caracal_scarf"
+      ],
       "spawn_egg": {
         "texture": "egg_ostrich",
         "texture_index": 0

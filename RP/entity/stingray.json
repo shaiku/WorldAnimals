@@ -3,7 +3,9 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:stingray",
-      "materials": { "default": "dolphin" },
+      "materials": {
+        "default": "dolphin"
+      },
       "textures": {
         "default": "textures/entity/stingray"
       },
@@ -11,12 +13,17 @@
         "default": "geometry.stingray"
       },
       "animations": {
-        "move": "animation.stingray.idle"
+        "move": "animation.stingray.idle",
+        "general": "animation.stingray.idle"
       },
       "animation_controllers": [
-        { "general": "controller.animation.dolphin.general" }
+        {
+          "general": "controller.animation.dolphin.general"
+        }
       ],
-      "render_controllers": [ "controller.render.dolphin" ],
+      "render_controllers": [
+        "controller.render.dolphin"
+      ],
       "spawn_egg": {
         "texture": "egg_shark",
         "texture_index": 0

@@ -3,20 +3,32 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:kangaroo",
-      "materials": { "default": "slime" },
+      "materials": {
+        "default": "slime"
+      },
       "textures": {
         "default": "textures/entity/kangaroo"
       },
-      "geometry": { "default": "geometry.kangaroo" },
+      "geometry": {
+        "default": "geometry.kangaroo"
+      },
       "animations": {
         "setup": "animation.kangaroo.idle",
-        "walk": "animation.kangaroo.walk"
+        "walk": "animation.kangaroo.walk",
+        "look_at_target": "animation.common.look_at_target",
+        "baby_transform": "animation.polarbear.baby_transform"
       },
       "animation_controllers": [
-        { "move": "controller.animation.llama.move" },
-        { "baby": "controller.animation.llama.baby" }
+        {
+          "move": "controller.animation.llama.move"
+        },
+        {
+          "baby": "controller.animation.llama.baby"
+        }
       ],
-      "render_controllers": [ "controller.render.polarbear" ],
+      "render_controllers": [
+        "controller.render.polarbear"
+      ],
       "enable_attachables": true,
       "spawn_egg": {
         "texture": "egg_giraffe",
