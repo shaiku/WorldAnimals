@@ -1,94 +1,95 @@
 # Refresh all WorldAnimals entities - removes old and spawns fresh replacements
 # Use this to fix worlds after addon updates
+# Tamed entities are preserved (skipped)
 
-# Phase 1: Tag all existing worldanimals entities for removal
-tag @e[type=worldanimals:african_elephant] add wa_refresh
+# Phase 1: Tag all wild (untamed) worldanimals entities for refresh
+tag @e[type=worldanimals:african_elephant,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:african_penguin_egg] add wa_refresh
 tag @e[type=worldanimals:ant] add wa_refresh
-tag @e[type=worldanimals:asian_elephant] add wa_refresh
+tag @e[type=worldanimals:asian_elephant,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:bag_items] add wa_refresh
 tag @e[type=worldanimals:ballena] add wa_refresh
 tag @e[type=worldanimals:bear] add wa_refresh
 tag @e[type=worldanimals:black_bear] add wa_refresh
-tag @e[type=worldanimals:blue_penguin] add wa_refresh
+tag @e[type=worldanimals:blue_penguin,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:blue_penguin_egg] add wa_refresh
 tag @e[type=worldanimals:buffalo] add wa_refresh
 tag @e[type=worldanimals:butterfly] add wa_refresh
-tag @e[type=worldanimals:capuchin_monkeys] add wa_refresh
-tag @e[type=worldanimals:caracal] add wa_refresh
-tag @e[type=worldanimals:chimpanzee] add wa_refresh
+tag @e[type=worldanimals:capuchin_monkeys,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:caracal,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:chimpanzee,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:clam] add wa_refresh
-tag @e[type=worldanimals:cougar] add wa_refresh
+tag @e[type=worldanimals:cougar,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:crab] add wa_refresh
-tag @e[type=worldanimals:crocodile] add wa_refresh
-tag @e[type=worldanimals:cyanocitta_cristata] add wa_refresh
-tag @e[type=worldanimals:deer] add wa_refresh
-tag @e[type=worldanimals:dove] add wa_refresh
+tag @e[type=worldanimals:crocodile,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:cyanocitta_cristata,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:deer,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:dove,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:duck] add wa_refresh
 tag @e[type=worldanimals:duck_egg] add wa_refresh
 tag @e[type=worldanimals:eagle] add wa_refresh
-tag @e[type=worldanimals:emperor_penguin] add wa_refresh
+tag @e[type=worldanimals:emperor_penguin,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:emperor_penguin_egg] add wa_refresh
-tag @e[type=worldanimals:erizo] add wa_refresh
+tag @e[type=worldanimals:erizo,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:flamingo] add wa_refresh
-tag @e[type=worldanimals:giraffe] add wa_refresh
-tag @e[type=worldanimals:gorilla] add wa_refresh
+tag @e[type=worldanimals:giraffe,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:gorilla,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:hammerhead_shark] add wa_refresh
 tag @e[type=worldanimals:hippopotamus] add wa_refresh
-tag @e[type=worldanimals:hyenas] add wa_refresh
-tag @e[type=worldanimals:iguana] add wa_refresh
+tag @e[type=worldanimals:hyenas,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:iguana,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:jellyfish_wa] add wa_refresh
 tag @e[type=worldanimals:kangaroo] add wa_refresh
-tag @e[type=worldanimals:kiwi] add wa_refresh
-tag @e[type=worldanimals:komodo_dragon] add wa_refresh
-tag @e[type=worldanimals:land_turtle] add wa_refresh
+tag @e[type=worldanimals:kiwi,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:komodo_dragon,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:land_turtle,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:lantern_fish] add wa_refresh
-tag @e[type=worldanimals:leopard] add wa_refresh
-tag @e[type=worldanimals:lion] add wa_refresh
+tag @e[type=worldanimals:leopard,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:lion,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:lucienaga] add wa_refresh
-tag @e[type=worldanimals:mammoth] add wa_refresh
+tag @e[type=worldanimals:mammoth,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:orca] add wa_refresh
-tag @e[type=worldanimals:ornitorrinco_original] add wa_refresh
-tag @e[type=worldanimals:ostrich] add wa_refresh
+tag @e[type=worldanimals:ornitorrinco_original,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:ostrich,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:ostrich_egg] add wa_refresh
-tag @e[type=worldanimals:panther] add wa_refresh
+tag @e[type=worldanimals:panther,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:pelican] add wa_refresh
-tag @e[type=worldanimals:penguin] add wa_refresh
-tag @e[type=worldanimals:penguin_african] add wa_refresh
+tag @e[type=worldanimals:penguin,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:penguin_african,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:pink_dolphin] add wa_refresh
-tag @e[type=worldanimals:raccoon] add wa_refresh
-tag @e[type=worldanimals:rat] add wa_refresh
+tag @e[type=worldanimals:raccoon,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:rat,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:real_penguin_egg] add wa_refresh
-tag @e[type=worldanimals:red_panda] add wa_refresh
-tag @e[type=worldanimals:rhinoceros] add wa_refresh
+tag @e[type=worldanimals:red_panda,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:rhinoceros,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:seagull] add wa_refresh
-tag @e[type=worldanimals:seal] add wa_refresh
+tag @e[type=worldanimals:seal,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:shark] add wa_refresh
 tag @e[type=worldanimals:shrimp] add wa_refresh
 tag @e[type=worldanimals:snail] add wa_refresh
 tag @e[type=worldanimals:snake] add wa_refresh
 tag @e[type=worldanimals:snake_coral] add wa_refresh
-tag @e[type=worldanimals:snake_scarlet] add wa_refresh
-tag @e[type=worldanimals:snow_leopard] add wa_refresh
+tag @e[type=worldanimals:snake_scarlet,family=!tamed] add wa_refresh
+tag @e[type=worldanimals:snow_leopard,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:squirrel] add wa_refresh
 tag @e[type=worldanimals:stingray] add wa_refresh
 tag @e[type=worldanimals:stork] add wa_refresh
 tag @e[type=worldanimals:swordfish] add wa_refresh
-tag @e[type=worldanimals:tiger] add wa_refresh
+tag @e[type=worldanimals:tiger,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:tiger_shark] add wa_refresh
-tag @e[type=worldanimals:tucan] add wa_refresh
+tag @e[type=worldanimals:tucan,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:turkey] add wa_refresh
 tag @e[type=worldanimals:turkey_egg] add wa_refresh
 tag @e[type=worldanimals:village_ice] add wa_refresh
 tag @e[type=worldanimals:village_wild] add wa_refresh
 tag @e[type=worldanimals:vulture] add wa_refresh
-tag @e[type=worldanimals:white_lion] add wa_refresh
+tag @e[type=worldanimals:white_lion,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:white_shark] add wa_refresh
-tag @e[type=worldanimals:white_tiger] add wa_refresh
+tag @e[type=worldanimals:white_tiger,family=!tamed] add wa_refresh
 tag @e[type=worldanimals:wild_boar] add wa_refresh
-tag @e[type=worldanimals:zebra] add wa_refresh
+tag @e[type=worldanimals:zebra,family=!tamed] add wa_refresh
 
-# Phase 2: Summon fresh replacements at each old entity's position
+# Phase 2: Summon fresh replacements at each tagged entity's position
 execute @e[type=worldanimals:african_elephant,tag=wa_refresh] ~ ~ ~ summon worldanimals:african_elephant ~ ~ ~
 execute @e[type=worldanimals:african_penguin_egg,tag=wa_refresh] ~ ~ ~ summon worldanimals:african_penguin_egg ~ ~ ~
 execute @e[type=worldanimals:ant,tag=wa_refresh] ~ ~ ~ summon worldanimals:ant ~ ~ ~
@@ -175,5 +176,5 @@ execute @e[type=worldanimals:white_tiger,tag=wa_refresh] ~ ~ ~ summon worldanima
 execute @e[type=worldanimals:wild_boar,tag=wa_refresh] ~ ~ ~ summon worldanimals:wild_boar ~ ~ ~
 execute @e[type=worldanimals:zebra,tag=wa_refresh] ~ ~ ~ summon worldanimals:zebra ~ ~ ~
 
-# Phase 3: Remove all old entities
-tp @e[tag=wa_refresh] ~ -100 ~
+# Phase 3: Instantly despawn all old entities (no loot drops)
+event entity @e[tag=wa_refresh] worldanimals:despawn

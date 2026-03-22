@@ -9,45 +9,60 @@
     },
     "component_groups": {
       "minecraft:on": {
-			"minecraft:timer": {
-			  "looping": true,
-			  "time": [1.0, 3.0],
-			  "randomInterval": false,
-			  "time_down_event": {
-				"event": "minecraft:off"
-			  }
-		},
-        "minecraft:variant": { "value": 0 }
+        "minecraft:timer": {
+          "looping": true,
+          "time": [
+            1.0,
+            3.0
+          ],
+          "randomInterval": false,
+          "time_down_event": {
+            "event": "minecraft:off"
+          }
+        },
+        "minecraft:variant": {
+          "value": 0
+        }
       },
       "minecraft:off": {
-			"minecraft:timer": {
-			  "looping": true,
-			  "time": [4.0, 8.0],
-			  "randomInterval": false,
-			  "time_down_event": {
-				"event": "minecraft:on"
-			  }
-		},
-        "minecraft:variant": { "value": 1 }
+        "minecraft:timer": {
+          "looping": true,
+          "time": [
+            4.0,
+            8.0
+          ],
+          "randomInterval": false,
+          "time_down_event": {
+            "event": "minecraft:on"
+          }
+        },
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "worldanimals:despawn": {
+        "minecraft:instant_despawn": {}
       }
     },
-
     "components": {
       "minecraft:type_family": {
-        "family": [ "lucienaga", "mob" ]
+        "family": [
+          "lucienaga",
+          "mob"
+        ]
       },
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0
       },
-			"minecraft:timer": {
-			  "looping": false,
-			  "time": 0.1,
-			  "randomInterval": false,
-			  "time_down_event": {
-				"event": "minecraft:off"
-			  }
-		},
+      "minecraft:timer": {
+        "looping": false,
+        "time": 0.1,
+        "randomInterval": false,
+        "time_down_event": {
+          "event": "minecraft:off"
+        }
+      },
       "minecraft:collision_box": {
         "width": 0.5,
         "height": 0.5
@@ -61,12 +76,21 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           },
           {
-            "filters": { "test": "in_contact_with_water", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_contact_with_water",
+              "operator": "==",
+              "value": true
+            },
             "cause": "drowning",
             "damage_per_tick": 1
           }
@@ -75,13 +99,11 @@
       "minecraft:movement": {
         "value": 0.05
       },
-      "minecraft:navigation.float": {	
-        "can_path_over_water": true	
+      "minecraft:navigation.float": {
+        "can_path_over_water": true
       },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:jump.static": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
       "minecraft:behavior.float": {
         "priority": 0
       },
@@ -90,20 +112,19 @@
         "y_dist": 3,
         "y_offset": -2.0,
         "random_reselect": true,
-        "float_duration": [ 0.05, 0.2 ]
+        "float_duration": [
+          0.05,
+          0.2
+        ]
       },
-      "minecraft:can_fly": {
-      },
+      "minecraft:can_fly": {},
       "minecraft:health": {
         "value": 4,
         "max": 4
       },
-      "minecraft:nameable": {
-      },
-      "minecraft:physics": {
-      }
+      "minecraft:nameable": {},
+      "minecraft:physics": {}
     },
-
     "events": {
       "minecraft:off": {
         "add": {
@@ -126,6 +147,13 @@
         "remove": {
           "component_groups": [
             "minecraft:off"
+          ]
+        }
+      },
+      "worldanimals:despawn": {
+        "add": {
+          "component_groups": [
+            "worldanimals:despawn"
           ]
         }
       }

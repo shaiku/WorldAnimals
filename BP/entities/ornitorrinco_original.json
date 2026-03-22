@@ -283,7 +283,17 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
+        },
+        "minecraft:type_family": {
+          "family": [
+            "ornitorrinco_original",
+            "mob",
+            "tamed"
+          ]
         }
+      },
+      "worldanimals:despawn": {
+        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -536,6 +546,13 @@
         "add": {
           "component_groups": [
             "minecraft:ornitorrinco_original_chested"
+          ]
+        }
+      },
+      "worldanimals:despawn": {
+        "add": {
+          "component_groups": [
+            "worldanimals:despawn"
           ]
         }
       }

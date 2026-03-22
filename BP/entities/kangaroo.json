@@ -44,6 +44,9 @@
           "start_delay": 15,
           "max_failed_attempts": 20
         }
+      },
+      "worldanimals:despawn": {
+        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -329,6 +332,13 @@
             }
           }
         ]
+      },
+      "worldanimals:despawn": {
+        "add": {
+          "component_groups": [
+            "worldanimals:despawn"
+          ]
+        }
       }
     }
   }

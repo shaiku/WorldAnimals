@@ -6,24 +6,21 @@
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
-			"animations": {
-				"big_cat": "animation.big_cat"
-			},
-			"scripts": {
-				"animate": [
-					"big_cat"
-				]
-			}
+      "animations": {
+        "big_cat": "animation.big_cat"
+      },
+      "scripts": {
+        "animate": [
+          "big_cat"
+        ]
+      }
     },
-
     "component_groups": {
       "minecraft:cougar_baby": {
-        "minecraft:is_baby": {
-        },
+        "minecraft:is_baby": {},
         "minecraft:scale": {
           "value": 0.45
         },
-
         "minecraft:ageable": {
           "duration": 1200,
           "feed_items": [
@@ -45,7 +42,6 @@
           }
         }
       },
-
       "minecraft:cougar_adult": {
         "minecraft:behavior.breed": {
           "priority": 3,
@@ -95,8 +91,17 @@
               "on_interact": {
                 "filters": {
                   "all_of": [
-                    { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                    { "test" :  "has_equipment", "domain": "hand","subject" : "other", "value" :  "worldanimals:big_cat_saddle"}
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "worldanimals:big_cat_saddle"
+                    }
                   ]
                 },
                 "event": "minecraft:on_chest",
@@ -108,19 +113,18 @@
           ]
         }
       },
-
       "minecraft:cougar_chested": {
-	  "minecraft:inventory": {
-        "inventory_size": 27,
-        "container_type": "container", 
-        "private": false
-      },
-      "minecraft:horse.jump_strength": {
-        "value": {
-          "range_min": 0.5,
-          "range_max": 0.78
-        }
-      },
+        "minecraft:inventory": {
+          "inventory_size": 27,
+          "container_type": "container",
+          "private": false
+        },
+        "minecraft:horse.jump_strength": {
+          "value": {
+            "range_min": 0.5,
+            "range_max": 0.78
+          }
+        },
         "minecraft:rideable": {
           "seat_count": 1,
           "interact_text": "action.interact.mount",
@@ -128,23 +132,21 @@
             "player"
           ],
           "seats": {
-            "position": [ 0.0, 1.15, -0.2 ]
+            "position": [
+              0.0,
+              1.15,
+              -0.2
+            ]
           }
         },
-        "minecraft:input_ground_controlled": {
-        },
-        "minecraft:can_power_jump": {
-        },
-        "minecraft:is_saddled": {
-
-        },
-        "minecraft:behavior.player_ride_tamed": {
-        },
+        "minecraft:input_ground_controlled": {},
+        "minecraft:can_power_jump": {},
+        "minecraft:is_saddled": {},
+        "minecraft:behavior.player_ride_tamed": {},
         "minecraft:loot": {
           "table": "loot_tables/entities/cat_saddle.json"
         }
       },
-
       "minecraft:cougar_wild": {
         "minecraft:tameable": {
           "probability": 1.0,
@@ -154,7 +156,6 @@
             "target": "self"
           }
         },
-
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 4,
           "reselect_targets": true,
@@ -163,20 +164,30 @@
             {
               "filters": {
                 "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "zebra"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "sheep"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "rabbit"}
-                ] 
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "zebra"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "sheep"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "rabbit"
+                  }
+                ]
               },
               "max_dist": 16
             }
           ]
         }
       },
-
       "minecraft:cougar_tame": {
-        "minecraft:is_tamed": {
-        },
+        "minecraft:is_tamed": {},
         "minecraft:health": {
           "value": 70,
           "max": 70
@@ -194,7 +205,6 @@
           "priority": 2,
           "speed_multiplier": 1.0
         },
-
         "minecraft:behavior.owner_hurt_by_target": {
           "priority": 1
         },
@@ -206,18 +216,19 @@
           "must_see": true,
           "entity_types": [
             {
-              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "skeleton"
+              },
               "max_dist": 16
             }
           ]
         },
-
-        "minecraft:sittable": {
-        },
+        "minecraft:sittable": {},
         "minecraft:is_dyeable": {
           "interact_text": "action.interact.dye"
         },
-
         "minecraft:leashable": {
           "soft_distance": 4.0,
           "hard_distance": 6.0,
@@ -230,17 +241,27 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
+        },
+        "minecraft:type_family": {
+          "family": [
+            "cougar",
+            "tamed"
+          ]
         }
+      },
+      "worldanimals:despawn": {
+        "minecraft:instant_despawn": {}
       }
     },
-
-
     "components": {
-      "minecraft:nameable": {
+      "minecraft:nameable": {},
+      "minecraft:variant": {
+        "value": 0
       },
-		"minecraft:variant": { "value": 0 },
       "minecraft:type_family": {
-        "family": [ "cougar" ]
+        "family": [
+          "cougar"
+        ]
       },
       "minecraft:breathable": {
         "total_supply": 15,
@@ -257,7 +278,12 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -270,12 +296,9 @@
         "can_path_over_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:attack": {
         "damage": 8
       },
@@ -386,30 +409,40 @@
       "minecraft:behavior.beg": {
         "priority": 9,
         "look_distance": 8,
-        "look_time": [ 2, 4 ],
-        "items": [ "bone", "porkchop", "cooked_porkchop", "chicken", "cooked_chicken", 
-                   "beef", "cooked_beef", "rotten_flesh", "muttonraw", "muttoncooked", "rabbit", "cooked_rabbit" ]
+        "look_time": [
+          2,
+          4
+        ],
+        "items": [
+          "bone",
+          "porkchop",
+          "cooked_porkchop",
+          "chicken",
+          "cooked_chicken",
+          "beef",
+          "cooked_beef",
+          "rotten_flesh",
+          "muttonraw",
+          "muttoncooked",
+          "rabbit",
+          "cooked_rabbit"
+        ]
       },
-
       "minecraft:behavior.hurt_by_target": {
         "priority": 3
       },
-      "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       }
     },
-
-
     "events": {
       "minecraft:entity_spawned": {
         "randomize": [
           {
             "weight": 4,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:cougar_adult",
@@ -419,8 +452,7 @@
           },
           {
             "weight": 4,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:cougar_adult",
@@ -430,22 +462,18 @@
           },
           {
             "weight": 2,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:cougar_baby",
                 "minecraft:cougar_wild"
               ]
-
             }
           }
         ]
       },
-
       "minecraft:entity_born": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:cougar_baby",
@@ -453,7 +481,6 @@
           ]
         }
       },
-
       "minecraft:ageable_grow_up": {
         "remove": {
           "component_groups": [
@@ -466,7 +493,6 @@
           ]
         }
       },
-
       "minecraft:ageable_set_baby": {
         "remove": {
           "component_groups": [
@@ -479,7 +505,6 @@
           ]
         }
       },
-
       "minecraft:on_tame": {
         "remove": {
           "component_groups": [
@@ -502,6 +527,13 @@
         "add": {
           "component_groups": [
             "minecraft:cougar_chested"
+          ]
+        }
+      },
+      "worldanimals:despawn": {
+        "add": {
+          "component_groups": [
+            "worldanimals:despawn"
           ]
         }
       }

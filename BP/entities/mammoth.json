@@ -786,6 +786,13 @@
               "max_rider_count": 7
             }
           ]
+        },
+        "minecraft:type_family": {
+          "family": [
+            "mammoth",
+            "animal",
+            "tamed"
+          ]
         }
       },
       "minecraft:mammoth_saddle": {
@@ -846,6 +853,9 @@
             "deals_damage": true
           }
         }
+      },
+      "worldanimals:despawn": {
+        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -1541,6 +1551,13 @@
             "minecraft:netherite_armor",
             "minecraft:emerald_armor",
             "minecraft:citrine_armor"
+          ]
+        }
+      },
+      "worldanimals:despawn": {
+        "add": {
+          "component_groups": [
+            "worldanimals:despawn"
           ]
         }
       }

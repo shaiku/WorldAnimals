@@ -7,15 +7,12 @@
       "is_summonable": true,
       "is_experimental": false
     },
-
     "component_groups": {
       "minecraft:raccoon_baby": {
-        "minecraft:is_baby": {
-        },
+        "minecraft:is_baby": {},
         "minecraft:scale": {
           "value": 0.5
         },
-
         "minecraft:ageable": {
           "duration": 1200,
           "feed_items": [
@@ -30,7 +27,6 @@
           }
         }
       },
-
       "minecraft:raccoon_adult": {
         "minecraft:experience_reward": {
           "on_bred": "Math.Random(1,7)",
@@ -65,7 +61,6 @@
           ]
         }
       },
-
       "minecraft:raccoon_angry": {
         "minecraft:angry": {
           "duration": 25,
@@ -76,10 +71,8 @@
             "target": "self"
           }
         },
-        "minecraft:on_target_acquired": {
-        }
+        "minecraft:on_target_acquired": {}
       },
-
       "minecraft:raccoon_wild": {
         "minecraft:tameable": {
           "probability": 1.0,
@@ -94,10 +87,8 @@
           "target": "self"
         }
       },
-
       "minecraft:raccoon_tame": {
-        "minecraft:is_tamed": {
-        },
+        "minecraft:is_tamed": {},
         "minecraft:health": {
           "value": 40,
           "max": 40
@@ -111,20 +102,16 @@
         "minecraft:attack": {
           "damage": 4
         },
-
         "minecraft:behavior.owner_hurt_by_target": {
           "priority": 1
         },
         "minecraft:behavior.owner_hurt_target": {
           "priority": 2
         },
-
-        "minecraft:sittable": {
-        },
+        "minecraft:sittable": {},
         "minecraft:is_dyeable": {
           "interact_text": "action.interact.dye"
         },
-
         "minecraft:leashable": {
           "soft_distance": 4.0,
           "hard_distance": 6.0,
@@ -137,16 +124,26 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
+        },
+        "minecraft:type_family": {
+          "family": [
+            "raccoon",
+            "mob",
+            "tamed"
+          ]
         }
+      },
+      "worldanimals:despawn": {
+        "minecraft:instant_despawn": {}
       }
     },
-
-
     "components": {
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:type_family": {
-        "family": [ "raccoon", "mob" ]
+        "family": [
+          "raccoon",
+          "mob"
+        ]
       },
       "minecraft:breathable": {
         "total_supply": 15,
@@ -163,7 +160,12 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -176,12 +178,9 @@
         "can_path_over_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:attack": {
         "damage": 3
       },
@@ -228,29 +227,32 @@
       "minecraft:behavior.beg": {
         "priority": 9,
         "look_distance": 8,
-        "look_time": [ 2, 4 ],
-        "items": [ "minecraft:cod", "worldanimals:raw_crab", "minecraft:wheat_seeds", "minecraft:sweet_berries" ]
+        "look_time": [
+          2,
+          4
+        ],
+        "items": [
+          "minecraft:cod",
+          "worldanimals:raw_crab",
+          "minecraft:wheat_seeds",
+          "minecraft:sweet_berries"
+        ]
       },
-
       "minecraft:behavior.hurt_by_target": {
         "priority": 3
       },
-      "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       }
     },
-
-
     "events": {
       "minecraft:entity_spawned": {
         "randomize": [
           {
             "weight": 9,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:raccoon_adult",
@@ -260,22 +262,18 @@
           },
           {
             "weight": 1,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:raccoon_baby",
                 "minecraft:raccoon_wild"
               ]
-
             }
           }
         ]
       },
-
       "minecraft:entity_born": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:raccoon_baby",
@@ -283,7 +281,6 @@
           ]
         }
       },
-
       "minecraft:ageable_grow_up": {
         "remove": {
           "component_groups": [
@@ -296,7 +293,6 @@
           ]
         }
       },
-
       "minecraft:ageable_set_baby": {
         "remove": {
           "component_groups": [
@@ -309,7 +305,6 @@
           ]
         }
       },
-
       "minecraft:on_tame": {
         "remove": {
           "component_groups": [
@@ -343,6 +338,13 @@
         "add": {
           "component_groups": [
             "minecraft:raccoon_wild"
+          ]
+        }
+      },
+      "worldanimals:despawn": {
+        "add": {
+          "component_groups": [
+            "worldanimals:despawn"
           ]
         }
       }

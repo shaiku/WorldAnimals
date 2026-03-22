@@ -786,6 +786,13 @@
               "max_rider_count": 7
             }
           ]
+        },
+        "minecraft:type_family": {
+          "family": [
+            "african_elephant",
+            "animal",
+            "tamed"
+          ]
         }
       },
       "minecraft:african_elephant_saddle": {
@@ -809,6 +816,9 @@
             "deals_damage": true
           }
         }
+      },
+      "worldanimals:despawn": {
+        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -1457,6 +1467,13 @@
             "minecraft:netherite_armor",
             "minecraft:emerald_armor",
             "minecraft:citrine_armor"
+          ]
+        }
+      },
+      "worldanimals:despawn": {
+        "add": {
+          "component_groups": [
+            "worldanimals:despawn"
           ]
         }
       }

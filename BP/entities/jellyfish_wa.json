@@ -7,18 +7,25 @@
       "is_summonable": true,
       "is_experimental": false
     },
-
     "component_groups": {
       "minecraft:jellyfish_wa_aggressive": {
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 1,
           "entity_types": [
             {
-              "filters": {  
+              "filters": {
                 "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "zombie"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "squid"}
-                ] 
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "zombie"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "squid"
+                  }
+                ]
               },
               "max_dist": 16
             }
@@ -35,10 +42,12 @@
           }
         }
       },
-
       "minecraft:jellyfish_wa_passive": {
         "minecraft:timer": {
-          "time": [ 1, 3 ],
+          "time": [
+            1,
+            3
+          ],
           "looping": false,
           "time_down_event": {
             "event": "minecraft:target_far_enough",
@@ -49,7 +58,11 @@
           "priority": 1,
           "entity_types": [
             {
-              "filters": {"test" :  "is_family", "subject" : "other", "value" :  "zombie"},
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "zombie"
+              },
               "max_dist": 8,
               "walk_speed_multiplier": 1,
               "sprint_speed_multiplier": 1
@@ -58,40 +71,63 @@
         }
       },
       "minecraft:parrot_red": {
-        "minecraft:variant": { "value": 0 }
+        "minecraft:variant": {
+          "value": 0
+        }
       },
       "minecraft:parrot_blue": {
-        "minecraft:variant": { "value": 1 }
+        "minecraft:variant": {
+          "value": 1
+        }
       },
       "minecraft:parrot_green": {
-        "minecraft:variant": { "value": 2 }
+        "minecraft:variant": {
+          "value": 2
+        }
       },
       "minecraft:parrot_cyan": {
-        "minecraft:variant": { "value": 3 }
+        "minecraft:variant": {
+          "value": 3
+        }
       },
       "minecraft:parrot_silver": {
-        "minecraft:variant": { "value": 4 }
-    }
-	},
-
+        "minecraft:variant": {
+          "value": 4
+        }
+      },
+      "worldanimals:despawn": {
+        "minecraft:instant_despawn": {}
+      }
+    },
     "components": {
       "minecraft:experience_reward": {
         "on_death": "query.last_hit_by_player ? 10 : 0"
       },
-      "minecraft:nameable": {
+      "minecraft:nameable": {},
+      "minecraft:area_attack": {
+        "damage_range": 0.5,
+        "damage_per_tick": 3.0,
+        "cause": "contact",
+        "entity_filter": {
+          "any_of": [
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "player"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "mob"
+            },
+            {
+              "test": "is_family",
+              "subject": "other",
+              "value": "monster"
+            }
+          ]
+        }
       },
-         "minecraft:area_attack" : {
-          "damage_range": 0.5,
-          "damage_per_tick": 3.0,
-          "cause": "contact",
-          "entity_filter": {
-            "any_of": [
-              { "test": "is_family", "subject": "other", "value": "player" },
-              { "test": "is_family", "subject": "other", "value": "mob" },
-              { "test": "is_family", "subject": "other", "value": "monster" }
-            ]
-          }
-        },
       "minecraft:collision_box": {
         "width": 0.85,
         "height": 0.85
@@ -103,7 +139,12 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -129,10 +170,8 @@
         "can_walk": false,
         "can_breach": true
       },
-      "minecraft:movement.sway": {
-      },
-      "minecraft:jump.static": {
-      },
+      "minecraft:movement.sway": {},
+      "minecraft:jump.static": {},
       "minecraft:breathable": {
         "breathes_water": true
       },
@@ -143,11 +182,19 @@
         "priority": 1,
         "entity_types": [
           {
-            "filters": {  
+            "filters": {
               "any_of": [
-                { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                { "test" :  "is_family", "subject" : "other", "value" :  "squid"}
-              ] 
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "squid"
+                }
+              ]
             },
             "max_dist": 16
           }
@@ -166,7 +213,10 @@
       "minecraft:behavior.move_towards_restriction": {
         "priority": 5,
         "speed_multiplier": 1.0,
-        "control_flags": [ "move", "look" ]
+        "control_flags": [
+          "move",
+          "look"
+        ]
       },
       "minecraft:behavior.random_stroll": {
         "priority": 7,
@@ -182,16 +232,16 @@
         "priority": 9
       },
       "minecraft:type_family": {
-        "family": [ "jellyfish_wa" ]
+        "family": [
+          "jellyfish_wa"
+        ]
       },
-	    "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       }
     },
-
     "events": {
       "minecraft:entity_spawned": {
         "randomize": [
@@ -258,6 +308,13 @@
         "add": {
           "component_groups": [
             "minecraft:jellyfish_wa_aggressive"
+          ]
+        }
+      },
+      "worldanimals:despawn": {
+        "add": {
+          "component_groups": [
+            "worldanimals:despawn"
           ]
         }
       }

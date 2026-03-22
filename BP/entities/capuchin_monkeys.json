@@ -7,15 +7,12 @@
       "is_summonable": true,
       "is_experimental": false
     },
-
     "component_groups": {
       "minecraft:capuchin_monkeys_baby": {
-        "minecraft:is_baby": {
-        },
+        "minecraft:is_baby": {},
         "minecraft:scale": {
           "value": 0.35
         },
-
         "minecraft:ageable": {
           "duration": 1200,
           "feed_items": [
@@ -28,7 +25,6 @@
           }
         }
       },
-
       "minecraft:capuchin_monkeys_adult": {
         "minecraft:scale": {
           "value": 0.75
@@ -62,7 +58,6 @@
           ]
         }
       },
-
       "minecraft:capuchin_monkeys_angry": {
         "minecraft:angry": {
           "duration": 25,
@@ -73,16 +68,18 @@
             "target": "self"
           }
         },
-        "minecraft:on_target_acquired": {
-        }
+        "minecraft:on_target_acquired": {}
       },
-
       "minecraft:capuchin_monkeys_wild": {
         "minecraft:behavior.avoid_mob_type": {
           "priority": 3,
           "entity_types": [
             {
-              "filters": { "test": "is_family", "subject": "other", "value": "llama" },
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "llama"
+              },
               "max_dist": 24,
               "walk_speed_multiplier": 1.5,
               "sprint_speed_multiplier": 1.5
@@ -98,7 +95,6 @@
             "target": "self"
           }
         },
-
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 4,
           "attack_interval": 10,
@@ -107,11 +103,27 @@
             {
               "filters": {
                 "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "sheep"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "rabbit"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "fox"}
-                ] 
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "skeleton"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "sheep"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "rabbit"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "fox"
+                  }
+                ]
               },
               "max_dist": 16
             },
@@ -164,7 +176,11 @@
             "zombie"
           ],
           "seats": {
-            "position": [ 0.0, 0.675, -0.1 ]
+            "position": [
+              0.0,
+              0.675,
+              -0.1
+            ]
           }
         }
       },
@@ -176,8 +192,17 @@
               "on_interact": {
                 "filters": {
                   "all_of": [
-                    { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                    { "test" :  "has_equipment", "domain": "hand","subject" : "other", "value" :  "worldanimals:none"}
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "worldanimals:none"
+                    }
                   ]
                 },
                 "event": "minecraft:on_chest",
@@ -189,18 +214,14 @@
           ]
         }
       },
-
       "minecraft:capuchin_monkeys_chested": {
         "minecraft:loot": {
           "table": "loot_tables/entities/gorilla.json"
         },
-        "minecraft:is_chested": {
-
-        }
+        "minecraft:is_chested": {}
       },
       "minecraft:capuchin_monkeys_tame": {
-        "minecraft:is_tamed": {
-        },
+        "minecraft:is_tamed": {},
         "minecraft:health": {
           "value": 35,
           "max": 35
@@ -221,7 +242,6 @@
           "priority": 2,
           "speed_multiplier": 1.0
         },
-
         "minecraft:behavior.owner_hurt_by_target": {
           "priority": 1
         },
@@ -233,19 +253,20 @@
           "attack_interval": 10,
           "entity_types": [
             {
-              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "skeleton"
+              },
               "max_dist": 16
             }
           ],
           "must_see": true
         },
-
-        "minecraft:sittable": {
-        },
+        "minecraft:sittable": {},
         "minecraft:is_dyeable": {
           "interact_text": "action.interact.dye"
         },
-
         "minecraft:leashable": {
           "soft_distance": 4.0,
           "hard_distance": 6.0,
@@ -258,16 +279,26 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
+        },
+        "minecraft:type_family": {
+          "family": [
+            "capuchin_monkeys",
+            "mob",
+            "tamed"
+          ]
         }
+      },
+      "worldanimals:despawn": {
+        "minecraft:instant_despawn": {}
       }
     },
-
-
     "components": {
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:type_family": {
-        "family": [ "capuchin_monkeys", "mob" ]
+        "family": [
+          "capuchin_monkeys",
+          "mob"
+        ]
       },
       "minecraft:breathable": {
         "total_supply": 15,
@@ -286,7 +317,12 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -295,19 +331,16 @@
       "minecraft:movement": {
         "value": 0.2
       },
-        "minecraft:loot": {
-          "table": "loot_tables/entities/gorilla.json"
-        },
+      "minecraft:loot": {
+        "table": "loot_tables/entities/gorilla.json"
+      },
       "minecraft:navigation.walk": {
         "can_path_over_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:attack": {
         "damage": 3
       },
@@ -357,30 +390,40 @@
       "minecraft:behavior.beg": {
         "priority": 9,
         "look_distance": 8,
-        "look_time": [ 2, 4 ],
-        "items": [ "bone", "porkchop", "cooked_porkchop", "chicken", "cooked_chicken", 
-                   "beef", "cooked_beef", "rotten_flesh", "muttonraw", "muttoncooked", "rabbit", "cooked_rabbit" ]
+        "look_time": [
+          2,
+          4
+        ],
+        "items": [
+          "bone",
+          "porkchop",
+          "cooked_porkchop",
+          "chicken",
+          "cooked_chicken",
+          "beef",
+          "cooked_beef",
+          "rotten_flesh",
+          "muttonraw",
+          "muttoncooked",
+          "rabbit",
+          "cooked_rabbit"
+        ]
       },
-
       "minecraft:behavior.hurt_by_target": {
         "priority": 3
       },
-	    "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       }
     },
-
-
     "events": {
       "minecraft:entity_spawned": {
         "randomize": [
           {
             "weight": 9,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:capuchin_monkeys_adult",
@@ -390,22 +433,18 @@
           },
           {
             "weight": 1,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:capuchin_monkeys_baby",
                 "minecraft:capuchin_monkeys_wild"
               ]
-
             }
           }
         ]
       },
-
       "minecraft:entity_born": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:capuchin_monkeys_baby",
@@ -413,7 +452,6 @@
           ]
         }
       },
-
       "minecraft:ageable_grow_up": {
         "remove": {
           "component_groups": [
@@ -426,7 +464,6 @@
           ]
         }
       },
-
       "minecraft:ageable_set_baby": {
         "remove": {
           "component_groups": [
@@ -439,7 +476,6 @@
           ]
         }
       },
-
       "minecraft:on_tame": {
         "remove": {
           "component_groups": [
@@ -486,6 +522,13 @@
         "add": {
           "component_groups": [
             "minecraft:capuchin_monkeys_chested"
+          ]
+        }
+      },
+      "worldanimals:despawn": {
+        "add": {
+          "component_groups": [
+            "worldanimals:despawn"
           ]
         }
       }
