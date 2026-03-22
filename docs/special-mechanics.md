@@ -56,47 +56,29 @@ DNA transformation is generally permanent, but future updates may include revers
 
 ---
 
-## Butterfly Wing Elytra Crafting
+## Butterfly Wings
 
-### Butterfly Wing Collection
+### How to Get Butterfly Wings
 
-**Sources:**
 - Defeat butterflies found in flowery biomes
-- Butterfly drops: Butterfly Wings (colorful materials)
-- No crafting required to obtain wings
+- Butterflies drop wings that can be used as cosmetic elytra reskins
 
-### Elytra Transformation
+### Using Butterfly Wings
 
-![Butterfly Wings with Elytras Screenshot](images/world-animals-addon-butterfly-wings-with-elytras-screenshot.webp)
+![Butterfly Wings Screenshot](images/world-animals-addon-butterfly-wings-with-elytras-screenshot.webp)
 
-![Butterfly Wings with Elytras in Inventory](images/world-animals-addon-butterfly-wings-with-elytras-in-inventory.webp)
+![Butterfly Wings in Inventory](images/world-animals-addon-butterfly-wings-with-elytras-in-inventory.webp)
 
-**Recipe:**
-- Butterfly Wings (dropped by butterflies)
-- Leather straps
-- String reinforcement
-- Dyes (color-specific)
+Butterfly wings are cosmetic items that change the appearance of your elytra. Equip them alongside your elytra to apply the butterfly wing design.
 
-**Crafting Process:**
-1. Collect Butterfly Wings from defeated butterflies
-2. Combine with leather and string
-3. Add dyes to achieve desired color variant
-4. Result: Colorful Butterfly Elytra
+**Available Colors:**
+- Purple Butterfly Wings
+- Orange Butterfly Wings
+- Teal Butterfly Wings
+- Magenta Butterfly Wings
+- Red Butterfly Wings
 
-**Available Colors:** 5 variants
-- Multi-color wings
-- Monarch butterfly orange
-- Blue morpho blue
-- Swallowtail yellow
-- Monarch red
-
-### Elytra Properties
-
-- **Gliding:** Functions like standard Minecraft elytra
-- **Durability:** Similar to regular elytra
-- **Appearance:** Butterfly wing aesthetic
-- **Enchantable:** Can apply standard elytra enchantments
-- **Cosmetic Value:** Visual appeal while maintaining function
+The wings do not replace the elytra — they are a visual overlay that changes how it looks while gliding.
 
 ---
 

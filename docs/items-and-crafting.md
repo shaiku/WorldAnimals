@@ -543,22 +543,24 @@ This comprehensive guide covers all custom items in the World Animals addon, org
 
 **Function:** Transforms Chimpanzees into space explorers for fun cosmetic effect
 
-### Butterfly Elytra
+### Butterfly Wings
 
-![Butterfly Wings with Elytras in Inventory](images/world-animals-addon-butterfly-wings-with-elytras-in-inventory.webp)
+![Butterfly Wings in Inventory](images/world-animals-addon-butterfly-wings-with-elytras-in-inventory.webp)
 
-![Butterfly Wings with Elytras Screenshot](images/world-animals-addon-butterfly-wings-with-elytras-screenshot.webp)
+![Butterfly Wings Screenshot](images/world-animals-addon-butterfly-wings-with-elytras-screenshot.webp)
 
-**Purpose:** Decorative elytra variants from butterfly wings
+**Purpose:** Cosmetic wings that change the appearance of your elytra
 
-**Available Colors:** 5 color variants
+**Available Colors:**
+- Purple Butterfly Wings
+- Orange Butterfly Wings
+- Teal Butterfly Wings
+- Magenta Butterfly Wings
+- Red Butterfly Wings
 
-**Crafting Requires:**
-- Butterfly Wings (dropped by butterflies)
-- Leather
-- String
+**How to Use:** Equip butterfly wings alongside your elytra to change its design. The wings are crafted from butterfly drops.
 
-**Function:** Wearable elytra with butterfly aesthetic for gliding
+**Function:** Cosmetic elytra reskin — does not replace the elytra itself
 
 ### Flags
 

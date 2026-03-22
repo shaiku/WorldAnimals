@@ -99,8 +99,8 @@ These animals are peaceful and won't attack under normal circumstances.
 - **Biomes:** All biomes with flowers
 - **Health:** 2 HP
 - **Behavior:** Flutter around flowers, peaceful
-- **Drops:** Butterfly wings (craftable into elytra)
-- **Special:** Can be crafted into colorful elytra wings (5 colors)
+- **Drops:** Butterfly wings
+- **Special:** Wings can be equipped alongside elytra to change its design (5 colors: Purple, Orange, Teal, Magenta, Red)
 - **Appearance:** Colorful winged insects
 
 ### Firefly
