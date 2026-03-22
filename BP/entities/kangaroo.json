@@ -8,7 +8,6 @@
       "is_experimental": false
     },
     "component_groups": {
-
       "minecraft:kangaroo_baby": {
         "minecraft:experience_reward": {
           "on_death": "query.last_hit_by_player ? 12 + (query.equipment_count * Math.Random(1,3)) : 0"
@@ -21,7 +20,6 @@
           "value": 0.25
         }
       },
-
       "minecraft:kangaroo_adult": {
         "minecraft:scale": {
           "value": 0.9
@@ -39,7 +37,6 @@
           "track_target": true
         }
       },
-
       "minecraft:kangaroo_jockey": {
         "minecraft:behavior.find_mount": {
           "priority": 1,
@@ -49,45 +46,46 @@
         }
       }
     },
-
     "components": {
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:type_family": {
-        "family": [ "kangaroo", "undead", "monster", "animal" ]
+        "family": [
+          "kangaroo",
+          "undead",
+          "monster",
+          "animal"
+        ]
       },
       "minecraft:collision_box": {
         "width": 1.2,
         "height": 1.8
       },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:navigation.walk": {
-        "is_amphibious": true,
-        "can_pass_doors": true,
-        "can_walk": true,
-        "can_break_doors": true
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:health": {
         "value": 20,
         "max": 20
       },
-        "minecraft:navigation.generic": {
-          "is_amphibious": false,
-          "can_path_over_water": false,
-          "can_swim": true,
-          "can_walk": true,
-          "can_breach": false,
-          "can_jump": false
-        },
+      "minecraft:navigation.generic": {
+        "is_amphibious": false,
+        "can_path_over_water": false,
+        "can_swim": true,
+        "can_walk": true,
+        "can_breach": false,
+        "can_jump": false,
+        "can_pass_doors": true,
+        "can_break_doors": true
+      },
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -105,7 +103,6 @@
       "minecraft:loot": {
         "table": "loot_tables/entities/rabbit.json"
       },
-
       "minecraft:environment_sensor": {
         "triggers": {
           "filters": {
@@ -157,9 +154,21 @@
           {
             "filters": {
               "any_of": [
-                { "test": "is_family", "subject": "other", "value": "player" },
-                { "test": "is_family", "subject": "other", "value": "tiger" },
-                { "test": "is_family", "subject": "other", "value": "leopard" }
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "tiger"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "leopard"
+                }
               ]
             },
             "max_dist": 35
@@ -167,8 +176,16 @@
           {
             "filters": {
               "any_of": [
-                { "test": "is_family", "subject": "other", "value": "lion" },
-                { "test": "is_family", "subject": "other", "value": "wandering_trader" }
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "lion"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "wandering_trader"
+                }
               ]
             },
             "max_dist": 35,
@@ -177,8 +194,17 @@
           {
             "filters": {
               "all_of": [
-                { "test": "is_family", "subject": "other", "value": "baby_turtle" },
-                { "test": "in_water", "subject": "other", "operator": "!=", "value": true }
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "baby_turtle"
+                },
+                {
+                  "test": "in_water",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": true
+                }
               ]
             },
             "max_dist": 35
@@ -187,14 +213,12 @@
         "must_see": true,
         "must_see_forget_duration": 17.0
       },
-      "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       }
     },
-
     "events": {
       "minecraft:entity_spawned": {
         "randomize": [
@@ -210,20 +234,17 @@
           },
           {
             "weight": 17,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:kangaroo_baby",
                 "minecraft:can_have_equipment"
               ]
-
             }
           },
           {
             "weight": 3,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:kangaroo_baby",
@@ -255,7 +276,9 @@
           ]
         },
         "remove": {
-          "component_groups": [ "minecraft:look_to_start_drowned_transformation" ]
+          "component_groups": [
+            "minecraft:look_to_start_drowned_transformation"
+          ]
         }
       },
       "minecraft:stop_transforming": {
@@ -279,10 +302,14 @@
               "value": "minecraft:is_baby"
             },
             "add": {
-              "component_groups": [ "minecraft:convert_to_drowned" ]
+              "component_groups": [
+                "minecraft:convert_to_drowned"
+              ]
             },
             "remove": {
-              "component_groups": [ "minecraft:start_drowned_transformation" ]
+              "component_groups": [
+                "minecraft:start_drowned_transformation"
+              ]
             }
           },
           {
@@ -291,10 +318,14 @@
               "value": "minecraft:is_baby"
             },
             "add": {
-              "component_groups": [ "minecraft:convert_to_baby_drowned" ]
+              "component_groups": [
+                "minecraft:convert_to_baby_drowned"
+              ]
             },
             "remove": {
-              "component_groups": [ "minecraft:start_drowned_transformation" ]
+              "component_groups": [
+                "minecraft:start_drowned_transformation"
+              ]
             }
           }
         ]
