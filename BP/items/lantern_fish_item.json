@@ -21,7 +21,8 @@
 						"amplifier": 1
 					}
 				]
-			}
+			},
+			"minecraft:icon": "lantern_fish_item"
 		}
 	}
 }

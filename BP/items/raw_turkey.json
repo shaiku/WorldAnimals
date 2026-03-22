@@ -13,7 +13,8 @@
 				"saturation_modifier": "normal",
 				"nutrition": 2,
 				"can_always_eat": true
-			}
+			},
+			"minecraft:icon": "raw_turkey"
 		}
 	}
 }
