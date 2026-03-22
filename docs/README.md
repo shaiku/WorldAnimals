@@ -33,13 +33,10 @@ Explore a diverse ecosystem of animals across multiple biomes:
 
 ### Installation Steps
 
-1. **Download** the World Animals addon (.mcaddon file)
-2. **Open** the .mcaddon file with Minecraft
-3. **Enable** both the resource pack and behavior pack:
-   - Accept the resource pack (textures and models)
-   - Accept the behavior pack (game mechanics and animals)
-4. **Create** or open a world with the packs enabled
-5. **Play!** Animals will spawn naturally in appropriate biomes
+1. **Download** the latest `.mcaddon` file from the [Releases](../../releases) page
+2. **Open** the `.mcaddon` file with Minecraft — both packs will be imported automatically
+3. **Create or edit** a world and enable **World Animals BehaviorPack** in the addon settings (the Resource Pack will be added automatically)
+4. **Play!** Animals will spawn naturally in appropriate biomes
 
 > **Note:** Holiday Creator Features are **NOT required**. This remaster uses stable Minecraft Bedrock APIs for maximum compatibility.
 
