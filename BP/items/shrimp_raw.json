@@ -14,7 +14,10 @@
 				"nutrition": 1,
 				"can_always_eat": true
 			},
-			"minecraft:icon": "shrimp_raw"
+			"minecraft:icon": "shrimp_raw",
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6
+			}
 		}
 	}
 }

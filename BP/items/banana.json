@@ -14,7 +14,10 @@
 				"nutrition": 4,
 				"can_always_eat": true
 			},
-			"minecraft:icon": "banana"
+			"minecraft:icon": "banana",
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6
+			}
 		}
 	}
 }

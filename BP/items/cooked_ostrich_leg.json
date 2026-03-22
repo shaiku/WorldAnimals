@@ -14,7 +14,10 @@
 				"nutrition": 6,
 				"can_always_eat": true
 			},
-			"minecraft:icon": "cooked_ostrich_leg"
+			"minecraft:icon": "cooked_ostrich_leg",
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6
+			}
 		}
 	}
 }

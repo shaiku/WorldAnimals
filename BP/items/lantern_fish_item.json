@@ -12,17 +12,12 @@
 			"minecraft:food": {
 				"nutrition": 4,
 				"saturation_modifier": 2.4,
-				"can_always_eat": true,
-				"effects": [
-					{
-						"name": "night_vision",
-						"chance": 3.0,
-						"duration": 100,
-						"amplifier": 1
-					}
-				]
+				"can_always_eat": true
 			},
-			"minecraft:icon": "lantern_fish_item"
+			"minecraft:icon": "lantern_fish_item",
+			"minecraft:use_modifiers": {
+				"use_duration": 1.6
+			}
 		}
 	}
 }
