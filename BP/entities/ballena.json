@@ -276,7 +276,7 @@
         }
       },
       "die": {
-        "run_command": {
+        "queue_command": {
           "command": [
             "effect @p[r=5] bad_omen 3600",
             "effect @p[r=5] weakness 3600"

@@ -91,9 +91,10 @@ system.beforeEvents.startup.subscribe((initEvent) => {
     },
 
     onTick(e) {
-      // Very low chance to auto-grow each tick (replaces queued_ticking 20000-25000 tick interval)
-      // onTick fires every tick, so use ~1/22500 chance to approximate the old interval
-      if (Math.random() < 0.000044) {
+      // Auto-grow chance. minecraft:tick fires every 20 ticks (1 second).
+      // Old queued_ticking was 20000-25000 ticks (~1000-1250 seconds).
+      // So ~1/1125 chance per tick call to approximate the old interval.
+      if (Math.random() < 0.00089) {
         const { x, y, z } = e.block.location;
         try {
           e.block.dimension.runCommand(

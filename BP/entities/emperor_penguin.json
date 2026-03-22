@@ -7,14 +7,18 @@
       "is_summonable": true,
       "is_experimental": false
     },
-
     "component_groups": {
       "minecraft:interacciones": {
         "minecraft:interact": {
           "interactions": [
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:black_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:black_scarf"
+                },
                 "event": "minecraft:black_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -23,7 +27,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:blue_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:blue_scarf"
+                },
                 "event": "minecraft:blue_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -32,7 +41,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:brown_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:brown_scarf"
+                },
                 "event": "minecraft:brown_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -41,7 +55,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:cian_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:cian_scarf"
+                },
                 "event": "minecraft:cian_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -50,7 +69,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:gray_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:gray_scarf"
+                },
                 "event": "minecraft:gray_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -59,7 +83,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:green_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:green_scarf"
+                },
                 "event": "minecraft:green_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -68,7 +97,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:light_blue_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:light_blue_scarf"
+                },
                 "event": "minecraft:light_blue_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -77,7 +111,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:light_gray_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:light_gray_scarf"
+                },
                 "event": "minecraft:light_gray_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -86,7 +125,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:lime_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:lime_scarf"
+                },
                 "event": "minecraft:lime_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -95,7 +139,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:magenta_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:magenta_scarf"
+                },
                 "event": "minecraft:magenta_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -104,7 +153,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:orange_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:orange_scarf"
+                },
                 "event": "minecraft:orange_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -113,7 +167,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:pink_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:pink_scarf"
+                },
                 "event": "minecraft:pink_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -122,7 +181,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:purple_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:purple_scarf"
+                },
                 "event": "minecraft:purple_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -131,7 +195,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:red_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:red_scarf"
+                },
                 "event": "minecraft:red_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -140,7 +209,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:white_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:white_scarf"
+                },
                 "event": "minecraft:white_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -149,7 +223,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:yellow_scarf"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:yellow_scarf"
+                },
                 "event": "minecraft:yellow_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -176,120 +255,103 @@
         }
       },
       "minecraft:black_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 0
         }
       },
       "minecraft:blue_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 1
         }
       },
       "minecraft:brown_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 2
         }
       },
       "minecraft:cian_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 3
         }
       },
       "minecraft:gray_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 4
         }
       },
       "minecraft:green_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 5
         }
       },
       "minecraft:light_blue_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 6
         }
       },
       "minecraft:light_gray_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 7
         }
       },
       "minecraft:lime_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 8
         }
       },
       "minecraft:magenta_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 9
         }
       },
       "minecraft:orange_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 10
         }
       },
       "minecraft:pink_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 11
         }
       },
       "minecraft:purple_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 12
         }
       },
       "minecraft:red_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 13
         }
       },
       "minecraft:white_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 14
         }
       },
       "minecraft:yellow_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 15
         }
       },
       "minecraft:emperor_penguin_baby": {
-        "minecraft:is_baby": {
-        },
+        "minecraft:is_baby": {},
         "minecraft:scale": {
           "value": 0.5
         },
@@ -305,7 +367,6 @@
           }
         }
       },
-
       "minecraft:emperor_penguin_adult": {
         "minecraft:experience_reward": {
           "on_bred": "Math.Random(1,7)",
@@ -339,11 +400,13 @@
           "spawn_sound": "plop",
           "spawn_item": "worldanimals:emperor_penguin_egg_spawn_egg",
           "filters": {
-            "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "==",
+            "value": 0
           }
         }
       },
-
       "minecraft:emperor_penguin_angry": {
         "minecraft:angry": {
           "duration": 25,
@@ -354,16 +417,18 @@
             "target": "self"
           }
         },
-        "minecraft:on_target_acquired": {
-        }
+        "minecraft:on_target_acquired": {}
       },
-
       "minecraft:emperor_penguin_wild": {
         "minecraft:behavior.avoid_mob_type": {
           "priority": 3,
           "entity_types": [
             {
-              "filters": { "test": "is_family", "subject": "other", "value": "llama" },
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "llama"
+              },
               "max_dist": 24,
               "walk_speed_multiplier": 1.5,
               "sprint_speed_multiplier": 1.5
@@ -379,7 +444,6 @@
             "target": "self"
           }
         },
-
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 4,
           "attack_interval": 10,
@@ -388,9 +452,17 @@
             {
               "filters": {
                 "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "zombie"}
-                ] 
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "skeleton"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "zombie"
+                  }
+                ]
               },
               "max_dist": 16
             },
@@ -438,12 +510,9 @@
           "target": "self"
         }
       },
-
       "minecraft:emperor_penguin_tame": {
-        "minecraft:is_tamed": {
-        },
-        "minecraft:sittable": {
-        },
+        "minecraft:is_tamed": {},
+        "minecraft:sittable": {},
         "minecraft:behavior.follow_owner": {
           "priority": 6,
           "speed_multiplier": 1.0,
@@ -460,7 +529,6 @@
         "minecraft:behavior.breed": {
           "priority": 7
         },
-
         "minecraft:behavior.owner_hurt_by_target": {
           "priority": 1
         },
@@ -472,12 +540,15 @@
           "must_see": true,
           "entity_types": [
             {
-              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "skeleton"
+              },
               "max_dist": 16
             }
           ]
         },
-
         "minecraft:leashable": {
           "soft_distance": 4.0,
           "hard_distance": 6.0,
@@ -493,18 +564,18 @@
         }
       }
     },
-
-
     "components": {
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:type_family": {
-        "family": [ "emperor_penguin", "mob" ]
+        "family": [
+          "emperor_penguin",
+          "mob"
+        ]
       },
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0,
-		"breathes_water": true
+        "breathes_water": true
       },
       "minecraft:collision_box": {
         "width": 0.6,
@@ -517,69 +588,52 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
         ]
       },
-      "minecraft:celebrate": {
-        "minecraft:behavior.celebrate": {
-          "priority": 5,
-          "celebration_sound": "celebrate",
-          "sound_interval": {
-            "range_min": 2.0,
-            "range_max": 7.0
-          },
-          "jump_interval": {
-            "range_min": 1.0,
-            "range_max": 3.5
-          },
-          "duration": 30.0,
-          "on_celebration_end_event": {
-            "event": "minecraft:stop_celebrating",
-            "target": "self"
-          }
-        }
-      },
-        "minecraft:celebrate_hunt": {
-          "celebration_targets": {
-            "all_of": [
-              {
-                "test": "is_family",
-                "value": "monster"
-              }
-            ]
-          },
-          "broadcast": true,
-          "duration": 10,
-          "celebrate_sound": "celebrate",
-          "sound_interval": {
-            "range_min": 2.0,
-            "range_max": 5.0
-          },
-          "radius": 16
+      "minecraft:celebrate_hunt": {
+        "celebration_targets": {
+          "all_of": [
+            {
+              "test": "is_family",
+              "value": "monster"
+            }
+          ]
         },
+        "broadcast": true,
+        "duration": 10,
+        "celebrate_sound": "celebrate",
+        "sound_interval": {
+          "range_min": 2.0,
+          "range_max": 5.0
+        },
+        "radius": 16
+      },
       "minecraft:movement": {
         "value": 0.3
       },
-        "minecraft:navigation.generic": {
-          "is_amphibious": true,
-          "can_path_over_water": true,
-          "can_swim": true,
-          "can_walk": true,
-          "can_breach": false,
-          "can_jump": false
-        },
+      "minecraft:navigation.generic": {
+        "is_amphibious": true,
+        "can_path_over_water": true,
+        "can_swim": true,
+        "can_walk": true,
+        "can_breach": false,
+        "can_jump": false
+      },
       "minecraft:underwater_movement": {
         "value": 0.55
       },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:attack": {
         "damage": 9
       },
@@ -599,7 +653,6 @@
           }
         ]
       },
-
       "minecraft:behavior.mount_pathing": {
         "priority": 1,
         "speed_multiplier": 1.25,
@@ -631,29 +684,31 @@
       "minecraft:behavior.beg": {
         "priority": 9,
         "look_distance": 8,
-        "look_time": [ 2, 4 ],
-        "items": [ "minecraft:cod", "minecraft:salmon", "minecraft:tropical_fish" ]
+        "look_time": [
+          2,
+          4
+        ],
+        "items": [
+          "minecraft:cod",
+          "minecraft:salmon",
+          "minecraft:tropical_fish"
+        ]
       },
-
       "minecraft:behavior.hurt_by_target": {
         "priority": 3
       },
-	    "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       }
     },
-
-
     "events": {
       "minecraft:entity_spawned": {
         "randomize": [
           {
             "weight": 9,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:emperor_penguin_adult",
@@ -663,22 +718,18 @@
           },
           {
             "weight": 1,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:emperor_penguin_baby",
                 "minecraft:emperor_penguin_wild"
               ]
-
             }
           }
         ]
       },
-
       "minecraft:entity_born": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:emperor_penguin_baby",
@@ -687,7 +738,6 @@
           ]
         }
       },
-
       "minecraft:ageable_grow_up": {
         "remove": {
           "component_groups": [
@@ -700,7 +750,6 @@
           ]
         }
       },
-
       "minecraft:ageable_set_baby": {
         "remove": {
           "component_groups": [
@@ -713,7 +762,6 @@
           ]
         }
       },
-
       "minecraft:on_tame": {
         "remove": {
           "component_groups": [
@@ -870,8 +918,7 @@
         }
       },
       "minecraft:entity_transformed": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:emperor_penguin_baby",

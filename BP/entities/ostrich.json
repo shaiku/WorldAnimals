@@ -7,17 +7,22 @@
       "is_summonable": true,
       "is_experimental": false
     },
-
     "component_groups": {
       "minecraft:ostrich_0": {
-		  "minecraft:variant": { "value": 0 }
-	  },
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
       "minecraft:ostrich_1": {
-		  "minecraft:variant": { "value": 1 }
-	  },
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
       "minecraft:ostrich_2": {
-		  "minecraft:variant": { "value": 2 }
-	  },
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
       "minecraft:add_saddle": {
         "minecraft:interact": {
           "interactions": [
@@ -26,8 +31,17 @@
               "on_interact": {
                 "filters": {
                   "all_of": [
-                    { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                    { "test" :  "has_equipment", "domain": "hand","subject" : "other", "value" :  "worldanimals:ostrich_saddle"}
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "worldanimals:ostrich_saddle"
+                    }
                   ]
                 },
                 "event": "minecraft:on_saddle",
@@ -40,12 +54,19 @@
         }
       },
       "minecraft:add_armor": {
-		"minecraft:mark_variant": { "value": 0 },
+        "minecraft:mark_variant": {
+          "value": 0
+        },
         "minecraft:interact": {
           "interactions": [
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:green_flag"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:green_flag"
+                },
                 "event": "minecraft:green_flag"
               },
               "interact_text": "action.interact.unequip",
@@ -54,7 +75,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:red_flag"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:red_flag"
+                },
                 "event": "minecraft:red_flag"
               },
               "interact_text": "action.interact.unequip",
@@ -63,7 +89,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:blue_flag"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:blue_flag"
+                },
                 "event": "minecraft:blue_flag"
               },
               "interact_text": "action.interact.unequip",
@@ -72,7 +103,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:orange_flag"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:orange_flag"
+                },
                 "event": "minecraft:orange_flag"
               },
               "interact_text": "action.interact.unequip",
@@ -81,7 +117,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:yellow_flag"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:yellow_flag"
+                },
                 "event": "minecraft:yellow_flag"
               },
               "interact_text": "action.interact.unequip",
@@ -99,7 +140,12 @@
           "interactions": [
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "minecraft:shears"
+                },
                 "event": "minecraft:removearmor"
               },
               "spawn_items": {
@@ -124,7 +170,12 @@
           "interactions": [
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "minecraft:shears"
+                },
                 "event": "minecraft:removearmor"
               },
               "spawn_items": {
@@ -149,7 +200,12 @@
           "interactions": [
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "minecraft:shears"
+                },
                 "event": "minecraft:removearmor"
               },
               "spawn_items": {
@@ -174,7 +230,12 @@
           "interactions": [
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "minecraft:shears"
+                },
                 "event": "minecraft:removearmor"
               },
               "spawn_items": {
@@ -199,7 +260,12 @@
           "interactions": [
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "minecraft:shears"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "minecraft:shears"
+                },
                 "event": "minecraft:removearmor"
               },
               "spawn_items": {
@@ -225,12 +291,10 @@
             "target": "self"
           }
         },
-        "minecraft:is_baby": {
-        },
+        "minecraft:is_baby": {},
         "minecraft:scale": {
           "value": 0.4
         },
-
         "minecraft:ageable": {
           "duration": 1200,
           "feed_items": [
@@ -256,13 +320,11 @@
             "target": "self"
           }
         },
-
         "minecraft:behavior.follow_parent": {
           "priority": 5,
           "speed_multiplier": 1.0
         }
       },
-
       "minecraft:ostrich_adult": {
         "minecraft:spawn_entity": {
           "min_wait_time": 300,
@@ -270,7 +332,10 @@
           "spawn_sound": "plop",
           "spawn_item": "worldanimals:ostrich_egg_spawn_egg",
           "filters": {
-            "test": "rider_count", "subject": "self", "operator": "==", "value": 0
+            "test": "rider_count",
+            "subject": "self",
+            "operator": "==",
+            "value": 0
           }
         },
         "minecraft:tameable": {
@@ -292,9 +357,17 @@
             {
               "filters": {
                 "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "zombie"}
-                ] 
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "skeleton"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "zombie"
+                  }
+                ]
               },
               "max_dist": 16
             },
@@ -360,28 +433,37 @@
               "target": "baby"
             }
           },
-          "breed_items": [ "hay_block" ]
+          "breed_items": [
+            "hay_block"
+          ]
         }
       },
-
       "minecraft:ostrich_wandering_trader": {
         "minecraft:on_friendly_anger": {
           "event": "minecraft:defend_wandering_trader",
           "target": "self"
-        }, 
+        },
         "minecraft:environment_sensor": {
           "triggers": {
             "filters": {
               "all_of": [
-                { "test": "is_leashed", "subject": "self", "value": false },
-                { "test": "has_component", "subject": "self", "operator": "!=", "value" :  "minecraft:is_tamed" }
+                {
+                  "test": "is_leashed",
+                  "subject": "self",
+                  "value": false
+                },
+                {
+                  "test": "has_component",
+                  "subject": "self",
+                  "operator": "!=",
+                  "value": "minecraft:is_tamed"
+                }
               ]
             },
             "event": "minecraft:on_tame"
           }
         }
       },
-
       "minecraft:strength_1": {
         "minecraft:strength": {
           "value": 1,
@@ -412,12 +494,7 @@
           "max": 5
         }
       },
-
-      "minecraft:ostrich_wild": {
-	  
-      },
-
-
+      "minecraft:ostrich_wild": {},
       "minecraft:ostrich_tamed": {
         "minecraft:behavior.owner_hurt_by_target": {
           "priority": 1
@@ -429,8 +506,17 @@
               "on_interact": {
                 "filters": {
                   "all_of": [
-                    { "test" :  "is_family", "subject" : "other", "value" :  "player"},
-                    { "test" :  "has_equipment", "domain": "hand","subject" : "other", "value" :  "worldanimals:elephant_saddle"}
+                    {
+                      "test": "is_family",
+                      "subject": "other",
+                      "value": "player"
+                    },
+                    {
+                      "test": "has_equipment",
+                      "domain": "hand",
+                      "subject": "other",
+                      "value": "worldanimals:elephant_saddle"
+                    }
                   ]
                 },
                 "event": "minecraft:on_saddle",
@@ -444,13 +530,11 @@
         "minecraft:behavior.owner_hurt_target": {
           "priority": 2
         },
-        "minecraft:is_tamed": {
+        "minecraft:is_tamed": {},
+        "minecraft:sittable": {},
+        "minecraft:behavior.stay_while_sitting": {
+          "priority": 3
         },
-        "minecraft:sittable": {
-        },
-      "minecraft:behavior.stay_while_sitting": {
-        "priority": 3
-      },
         "minecraft:behavior.follow_owner": {
           "priority": 6,
           "speed_multiplier": 1.0,
@@ -465,37 +549,33 @@
             "player"
           ],
           "interact_text": "action.interact.ride.horse",
-        "seats": [
-          {
-         "position": [ 0.0, 1.15, -0.15 ],
-         "min_rider_count": 0,
-         "max_rider_count": 7
-          }
-        ]
-
+          "seats": [
+            {
+              "position": [
+                0.0,
+                1.15,
+                -0.15
+              ],
+              "min_rider_count": 0,
+              "max_rider_count": 7
+            }
+          ]
         }
       },
-
       "minecraft:ostrich_saddle": {
-	          "minecraft:behavior.player_ride_tamed": {
+        "minecraft:behavior.player_ride_tamed": {},
+        "minecraft:inventory": {
+          "inventory_size": 54,
+          "container_type": "container",
+          "private": false
         },
-	  "minecraft:inventory": {
-        "inventory_size": 54,
-        "container_type": "container", 
-        "private": false
-      },
-        "minecraft:input_ground_controlled": {
-        },
-        "minecraft:can_power_jump": {
-        },
-        "minecraft:is_saddled": {
-
-        },
+        "minecraft:input_ground_controlled": {},
+        "minecraft:can_power_jump": {},
+        "minecraft:is_saddled": {},
         "minecraft:loot": {
           "table": "loot_tables/entities/ostrich/saddle.json"
         }
       },
-
       "minecraft:ostrich_angry": {
         "minecraft:angry": {
           "duration": 4,
@@ -516,8 +596,7 @@
             "target": "self"
           }
         },
-        "minecraft:on_target_acquired": {
-        }
+        "minecraft:on_target_acquired": {}
       },
       "minecraft:ostrich_defend_trader": {
         "minecraft:angry": {
@@ -534,7 +613,6 @@
           "charge_charged_trigger": 1
         }
       },
-
       "minecraft:in_caravan": {
         "minecraft:damage_sensor": {
           "triggers": {
@@ -543,79 +621,102 @@
           }
         }
       }
-
     },
-
-
     "components": {
       "minecraft:type_family": {
-        "family": [ "ostrich", "animal" ]
+        "family": [
+          "ostrich",
+          "animal"
+        ]
       },
       "minecraft:breathable": {
         "total_supply": 15,
         "suffocate_time": 0
       },
-        "minecraft:loot": {
-          "table": "loot_tables/entities/ostrich/ostrich.json"
-        },
-      "minecraft:nameable": {
+      "minecraft:loot": {
+        "table": "loot_tables/entities/ostrich/ostrich.json"
       },
+      "minecraft:nameable": {},
       "minecraft:health": {
         "value": {
           "range_min": 50,
           "range_max": 50
         }
       },
-        "minecraft:interact": {
-          "interactions": [
-				{
-					"on_interact": {
-						"event": "become_cow",
-						"target": "self",
-						"filters": {
-							"all_of": [
-								{
-									"test": "has_equipment",
-									"domain": "hand",
-									"subject": "other",
-									"value": "worldanimals:mammoth_dna"
-								}
-							]
-						}
-					},
-					"use_item": true,
-					"interact_text": "UPGRADE"
-				},
-            {
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:syringe"},
-                    { "test" :  "is_family", "subject" : "other", "value" :  "player"}
-                  ]
-                }
-              },
-              "use_item": true,
-              "transform_to_item": "worldanimals:elephant_dna",
-              "play_sounds": "milk",
-              "interact_text": "action.interact.milk"
-            }
-          ]
-        },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "event": "become_cow",
+              "target": "self",
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "domain": "hand",
+                    "subject": "other",
+                    "value": "worldanimals:mammoth_dna"
+                  }
+                ]
+              }
+            },
+            "use_item": true,
+            "interact_text": "UPGRADE"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "value": "worldanimals:syringe"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "player"
+                  }
+                ]
+              }
+            },
+            "use_item": true,
+            "transform_to_item": "worldanimals:elephant_dna",
+            "play_sounds": "milk",
+            "interact_text": "action.interact.milk"
+          }
+        ]
+      },
       "minecraft:attack": {
         "damage": 7
       },
-        "minecraft:behavior.nearest_attackable_target": {
-          "priority": 5,
-          "attack_interval": 10,
-          "entity_types": [
-            {
-              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
-              "max_dist": 16
-            }
-          ],
-          "must_see": true
-        },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "attack_interval": 16,
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "wolf"
+                },
+                {
+                  "test": "has_component",
+                  "subject": "other",
+                  "operator": "!=",
+                  "value": "minecraft:is_tamed"
+                }
+              ]
+            },
+            "max_dist": 10
+          }
+        ],
+        "must_see": false,
+        "must_reach": true
+      },
       "minecraft:behavior.melee_attack": {
         "priority": 5,
         "target_dist": 1.2,
@@ -625,7 +726,12 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -638,10 +744,8 @@
         "can_path_over_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:jump.static": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
       "minecraft:follow_range": {
         "value": 40,
         "max": 40
@@ -652,8 +756,7 @@
         "max_distance": 10.0,
         "can_be_stolen": true
       },
-      "minecraft:balloonable": {
-      },
+      "minecraft:balloonable": {},
       "minecraft:healable": {
         "items": [
           {
@@ -674,47 +777,27 @@
           }
         ]
       },
-
       "minecraft:behavior.float": {
         "priority": 0
       },
-      "minecraft:celebrate": {
-        "minecraft:behavior.celebrate": {
-          "priority": 5,
-          "celebration_sound": "celebrate",
-          "sound_interval": {
-            "range_min": 2.0,
-            "range_max": 7.0
-          },
-          "jump_interval": {
-            "range_min": 1.0,
-            "range_max": 3.5
-          },
-          "duration": 30.0,
-          "on_celebration_end_event": {
-            "event": "minecraft:stop_celebrating",
-            "target": "self"
-          }
-        }
-      },
-        "minecraft:celebrate_hunt": {
-          "celebration_targets": {
-            "all_of": [
-              {
-                "test": "is_family",
-                "value": "monster"
-              }
-            ]
-          },
-          "broadcast": true,
-          "duration": 10,
-          "celebrate_sound": "celebrate",
-          "sound_interval": {
-            "range_min": 2.0,
-            "range_max": 5.0
-          },
-          "radius": 16
+      "minecraft:celebrate_hunt": {
+        "celebration_targets": {
+          "all_of": [
+            {
+              "test": "is_family",
+              "value": "monster"
+            }
+          ]
         },
+        "broadcast": true,
+        "duration": 10,
+        "celebrate_sound": "celebrate",
+        "sound_interval": {
+          "range_min": 2.0,
+          "range_max": 5.0
+        },
+        "radius": 16
+      },
       "minecraft:behavior.run_around_like_crazy": {
         "priority": 1,
         "speed_multiplier": 1.2
@@ -731,14 +814,14 @@
       "minecraft:behavior.random_look_around": {
         "priority": 8
       },
-        "minecraft:tameable": {
-          "probability": 1.0,
-          "tame_items": "worldanimals:collar",
-          "tame_event": {
-            "event": "minecraft:on_tame",
-            "target": "self"
-          }
-        },
+      "minecraft:tameable": {
+        "probability": 1.0,
+        "tame_items": "worldanimals:collar",
+        "tame_event": {
+          "event": "minecraft:on_tame",
+          "target": "self"
+        }
+      },
       "minecraft:behavior.mount_pathing": {
         "priority": 1,
         "speed_multiplier": 1.25,
@@ -754,71 +837,71 @@
           "cause": "all",
           "deals_damage": true,
           "on_damage": {
-            "filters": { "test": "in_caravan", "value": false },
+            "filters": {
+              "test": "in_caravan",
+              "value": false
+            },
             "event": "minecraft:become_angry"
           }
         }
       },
-      "minecraft:behavior.nearest_attackable_target": {
-        "priority": 2,
-        "attack_interval": 16,
-        "entity_types": [
-          {
-            "filters": {
-                "all_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "wolf"},
-                  { "test" :  "has_component","subject" : "other", "operator": "!=", "value" :  "minecraft:is_tamed"}
-                ]
-              },
-            "max_dist": 10
-          }
-        ],
-        "must_see": false,
-        "must_reach": true
-      },
       "minecraft:on_target_acquired": {
         "filters": {
-                "all_of": [
-                  { "test" :  "is_family", "subject" : "target", "value" :  "wolf"},
-                  { "test" :  "has_component","subject" : "target", "operator": "!=", "value" :  "minecraft:is_tamed"}
-                ]
-              },
+          "all_of": [
+            {
+              "test": "is_family",
+              "subject": "target",
+              "value": "wolf"
+            },
+            {
+              "test": "has_component",
+              "subject": "target",
+              "operator": "!=",
+              "value": "minecraft:is_tamed"
+            }
+          ]
+        },
         "event": "minecraft:mad_at_wolf",
         "target": "self"
       },
       "minecraft:on_target_escape": {
         "filters": {
-                "all_of": [
-                  { "test" :  "is_family", "subject" : "target", "value" :  "wolf"},
-                  { "test" :  "has_component","subject" : "target", "operator": "!=", "value" :  "minecraft:is_tamed"}
-                ]
-              },
+          "all_of": [
+            {
+              "test": "is_family",
+              "subject": "target",
+              "value": "wolf"
+            },
+            {
+              "test": "has_component",
+              "subject": "target",
+              "operator": "!=",
+              "value": "minecraft:is_tamed"
+            }
+          ]
+        },
         "event": "minecraft:on_calm",
         "target": "self"
       },
-	    "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       }
     },
-
-
     "events": {
       "become_cow": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:mooberry_become_cow"
           ]
         },
-         "run_command": {
-              "command": [
-                "summon worldanimals:mammoth ~ ~ ~ minecraft:entity_spawned"
-             ]
-          }
+        "queue_command": {
+          "command": [
+            "summon worldanimals:mammoth ~ ~ ~ minecraft:entity_spawned"
+          ]
+        }
       },
       "minecraft:entity_spawned": {
         "sequence": [
@@ -826,8 +909,7 @@
             "randomize": [
               {
                 "weight": 90,
-                "remove": {
-                },
+                "remove": {},
                 "add": {
                   "component_groups": [
                     "minecraft:ostrich_adult",
@@ -837,13 +919,11 @@
               },
               {
                 "weight": 10,
-                "remove": {
-                },
+                "remove": {},
                 "add": {
                   "component_groups": [
                     "minecraft:ostrich_baby"
                   ]
-
                 }
               }
             ]
@@ -882,7 +962,7 @@
         "add": {
           "component_groups": [
             "minecraft:ostrich_baby",
-                "minecraft:ostrich_wild"
+            "minecraft:ostrich_wild"
           ]
         },
         "sequence": [
@@ -923,7 +1003,6 @@
           ]
         }
       },
-
       "minecraft:from_wandering_trader": {
         "sequence": [
           {
@@ -1016,7 +1095,6 @@
           }
         ]
       },
-
       "minecraft:ageable_grow_up": {
         "remove": {
           "component_groups": [
@@ -1030,7 +1108,6 @@
           ]
         }
       },
-
       "minecraft:on_tame": {
         "remove": {
           "component_groups": [
@@ -1040,7 +1117,7 @@
         "add": {
           "component_groups": [
             "minecraft:ostrich_tamed",
-			"minecraft:add_saddle"
+            "minecraft:add_saddle"
           ]
         }
       },
@@ -1088,16 +1165,14 @@
           ]
         }
       },
-
       "minecraft:on_saddle": {
         "add": {
           "component_groups": [
             "minecraft:ostrich_saddle",
-			"minecraft:add_armor"
+            "minecraft:add_armor"
           ]
         }
       },
-
       "minecraft:off_saddle": {
         "remove": {
           "component_groups": [
@@ -1114,10 +1189,10 @@
         "remove": {
           "component_groups": [
             "minecraft:yellow_flag",
-			"minecraft:blue_flag",
-			"minecraft:red_flag",
-			"minecraft:green_flag",
-			"minecraft:orange_flag"
+            "minecraft:blue_flag",
+            "minecraft:red_flag",
+            "minecraft:green_flag",
+            "minecraft:orange_flag"
           ]
         }
       },

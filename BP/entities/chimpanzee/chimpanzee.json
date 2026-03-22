@@ -7,20 +7,28 @@
       "is_summonable": true,
       "is_experimental": false
     },
-
     "component_groups": {
       "minecraft:chimpanzee_0": {
-        "minecraft:mark_variant": { "value": 0 }
+        "minecraft:mark_variant": {
+          "value": 0
+        }
       },
       "minecraft:chimpanzee_1": {
-        "minecraft:mark_variant": { "value": 1 }
+        "minecraft:mark_variant": {
+          "value": 1
+        }
       },
       "minecraft:interacciones": {
         "minecraft:interact": {
           "interactions": [
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:astronaut_0"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:astronaut_0"
+                },
                 "event": "minecraft:black_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -29,7 +37,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:astronaut_1"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:astronaut_1"
+                },
                 "event": "minecraft:blue_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -38,7 +51,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:astronaut_2"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:astronaut_2"
+                },
                 "event": "minecraft:brown_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -47,7 +65,12 @@
             },
             {
               "on_interact": {
-                "filters": { "test": "has_equipment", "subject": "other", "domain": "hand", "value": "worldanimals:astronaut_3"},
+                "filters": {
+                  "test": "has_equipment",
+                  "subject": "other",
+                  "domain": "hand",
+                  "value": "worldanimals:astronaut_3"
+                },
                 "event": "minecraft:cian_scarf_on"
               },
               "interact_text": "action.interact.armadura",
@@ -74,40 +97,34 @@
         }
       },
       "minecraft:black_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 0
         }
       },
       "minecraft:blue_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 1
         }
       },
       "minecraft:brown_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 2
         }
       },
       "minecraft:cian_scarf": {
-        "minecraft:is_saddled": {
-        },
+        "minecraft:is_saddled": {},
         "minecraft:variant": {
           "value": 3
         }
       },
       "minecraft:chimpanzee_baby": {
-        "minecraft:is_baby": {
-        },
+        "minecraft:is_baby": {},
         "minecraft:scale": {
           "value": 0.5
         },
-
         "minecraft:ageable": {
           "duration": 1200,
           "feed_items": [
@@ -120,7 +137,6 @@
           }
         }
       },
-
       "minecraft:chimpanzee_adult": {
         "minecraft:experience_reward": {
           "on_bred": "Math.Random(1,7)",
@@ -147,13 +163,12 @@
             }
           },
           "breed_items": [
-             "fortniteaddon:banana",
+            "fortniteaddon:banana",
             "minecraft:melon_slice",
             "minecraft:sweet_berries"
           ]
         }
       },
-
       "minecraft:chimpanzee_angry": {
         "minecraft:angry": {
           "duration": 25,
@@ -164,16 +179,18 @@
             "target": "self"
           }
         },
-        "minecraft:on_target_acquired": {
-        }
+        "minecraft:on_target_acquired": {}
       },
-
       "minecraft:chimpanzee_wild": {
         "minecraft:behavior.avoid_mob_type": {
           "priority": 3,
           "entity_types": [
             {
-              "filters": { "test": "is_family", "subject": "other", "value": "llama" },
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "llama"
+              },
               "max_dist": 24,
               "walk_speed_multiplier": 1.5,
               "sprint_speed_multiplier": 1.5
@@ -189,7 +206,6 @@
             "target": "self"
           }
         },
-
         "minecraft:behavior.nearest_attackable_target": {
           "priority": 4,
           "attack_interval": 10,
@@ -198,9 +214,17 @@
             {
               "filters": {
                 "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
-                  { "test" :  "is_family", "subject" : "other", "value" :  "zombie"}
-                ] 
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "skeleton"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "zombie"
+                  }
+                ]
               },
               "max_dist": 16
             },
@@ -248,12 +272,9 @@
           "target": "self"
         }
       },
-
       "minecraft:chimpanzee_tame": {
-        "minecraft:is_tamed": {
-        },
-        "minecraft:sittable": {
-        },
+        "minecraft:is_tamed": {},
+        "minecraft:sittable": {},
         "minecraft:behavior.follow_owner": {
           "priority": 6,
           "speed_multiplier": 1.0,
@@ -270,7 +291,6 @@
         "minecraft:behavior.breed": {
           "priority": 7
         },
-
         "minecraft:behavior.owner_hurt_by_target": {
           "priority": 1
         },
@@ -282,13 +302,16 @@
           "attack_interval": 10,
           "entity_types": [
             {
-              "filters": { "test" :  "is_family", "subject" : "other", "value" :  "skeleton"},
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "skeleton"
+              },
               "max_dist": 16
             }
           ],
           "must_see": true
         },
-
         "minecraft:leashable": {
           "soft_distance": 4.0,
           "hard_distance": 6.0,
@@ -304,13 +327,13 @@
         }
       }
     },
-
-
     "components": {
-      "minecraft:nameable": {
-      },
+      "minecraft:nameable": {},
       "minecraft:type_family": {
-        "family": [ "chimpanzee", "mob" ]
+        "family": [
+          "chimpanzee",
+          "mob"
+        ]
       },
       "minecraft:breathable": {
         "total_supply": 15,
@@ -327,7 +350,12 @@
       "minecraft:hurt_on_condition": {
         "damage_conditions": [
           {
-            "filters": { "test": "in_lava", "subject": "self", "operator": "==", "value": true },
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
             "cause": "lava",
             "damage_per_tick": 4
           }
@@ -340,52 +368,30 @@
         "can_path_over_water": true,
         "avoid_damage_blocks": true
       },
-      "minecraft:movement.basic": {
-      },
-      "minecraft:jump.static": {
-      },
-      "minecraft:can_climb": {
-      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
       "minecraft:attack": {
         "damage": 9
       },
-      "minecraft:celebrate": {
-        "minecraft:behavior.celebrate": {
-          "priority": 5,
-          "celebration_sound": "celebrate",
-          "sound_interval": {
-            "range_min": 2.0,
-            "range_max": 7.0
-          },
-          "jump_interval": {
-            "range_min": 1.0,
-            "range_max": 3.5
-          },
-          "duration": 30.0,
-          "on_celebration_end_event": {
-            "event": "minecraft:stop_celebrating",
-            "target": "self"
-          }
-        }
-      },
-        "minecraft:celebrate_hunt": {
-          "celebration_targets": {
-            "all_of": [
-              {
-                "test": "is_family",
-                "value": "monster"
-              }
-            ]
-          },
-          "broadcast": true,
-          "duration": 10,
-          "celebrate_sound": "celebrate",
-          "sound_interval": {
-            "range_min": 2.0,
-            "range_max": 5.0
-          },
-          "radius": 16
+      "minecraft:celebrate_hunt": {
+        "celebration_targets": {
+          "all_of": [
+            {
+              "test": "is_family",
+              "value": "monster"
+            }
+          ]
         },
+        "broadcast": true,
+        "duration": 10,
+        "celebrate_sound": "celebrate",
+        "sound_interval": {
+          "range_min": 2.0,
+          "range_max": 5.0
+        },
+        "radius": 16
+      },
       "minecraft:healable": {
         "items": [
           {
@@ -432,29 +438,31 @@
       "minecraft:behavior.beg": {
         "priority": 9,
         "look_distance": 8,
-        "look_time": [ 2, 4 ],
-        "items": [ "minecraft:cod", "minecraft:salmon", "minecraft:tropical_fish" ]
+        "look_time": [
+          2,
+          4
+        ],
+        "items": [
+          "minecraft:cod",
+          "minecraft:salmon",
+          "minecraft:tropical_fish"
+        ]
       },
-
       "minecraft:behavior.hurt_by_target": {
         "priority": 3
       },
-	    "minecraft:physics": {
-      },
+      "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
       }
     },
-
-
     "events": {
       "minecraft:entity_spawned": {
         "randomize": [
           {
             "weight": 4,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:chimpanzee_adult",
@@ -465,49 +473,41 @@
           },
           {
             "weight": 1,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:chimpanzee_baby",
                 "minecraft:chimpanzee_wild",
                 "minecraft:chimpanzee_0"
               ]
-
             }
           },
           {
             "weight": 4,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:chimpanzee_adult",
                 "minecraft:chimpanzee_wild",
                 "minecraft:chimpanzee_1"
               ]
-
             }
           },
           {
             "weight": 1,
-            "remove": {
-            },
+            "remove": {},
             "add": {
               "component_groups": [
                 "minecraft:chimpanzee_baby",
                 "minecraft:chimpanzee_wild",
                 "minecraft:chimpanzee_1"
               ]
-
             }
           }
         ]
       },
-
       "minecraft:entity_born": {
-        "remove": {
-        },
+        "remove": {},
         "add": {
           "component_groups": [
             "minecraft:chimpanzee_baby",
@@ -516,7 +516,6 @@
           ]
         }
       },
-
       "minecraft:ageable_grow_up": {
         "remove": {
           "component_groups": [
@@ -529,7 +528,6 @@
           ]
         }
       },
-
       "minecraft:ageable_set_baby": {
         "remove": {
           "component_groups": [
@@ -542,7 +540,6 @@
           ]
         }
       },
-
       "minecraft:on_tame": {
         "remove": {
           "component_groups": [

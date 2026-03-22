@@ -1,21 +1,30 @@
 {
-	"format_version" : "1.10.0",
-	"animation_controllers" : {
-		"controller.animation.deer.baby" : {
-			"initial_state" : "default",
-			"states" : {
-				"ground" : {
-					"transitions" : [
+	"format_version": "1.10.0",
+	"animation_controllers": {
+		"controller.animation.deer.baby": {
+			"initial_state": "default",
+			"states": {
+				"ground": {
+					"transitions": [
 						{
-							"baby" : "query.is_baby || query.mark_variant == 1"
+							"baby": "query.is_baby || query.mark_variant == 1"
 						}
 					]
 				},
-				"baby" : {
-					"animations" : [ "baby" ],
-					"transitions" : [
+				"baby": {
+					"animations": [
+						"baby"
+					],
+					"transitions": [
 						{
-							"ground" : "!query.is_baby && query.mark_variant == 0"
+							"ground": "!query.is_baby && query.mark_variant == 0"
+						}
+					]
+				},
+				"default": {
+					"transitions": [
+						{
+							"baby": "query.is_baby || query.mark_variant == 1"
 						}
 					]
 				}

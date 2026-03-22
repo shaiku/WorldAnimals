@@ -55,6 +55,10 @@
 				"seconds_to_destroy": 0.5
 			},
 			"minecraft:map_color": "#bbbbbb",
+			"minecraft:tick": {
+				"interval_range": [20, 20],
+				"looping": true
+			},
 			"worldanimals:palm_sapling": {}
 		}
 	}

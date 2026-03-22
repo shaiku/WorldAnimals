@@ -321,9 +321,7 @@
                   "sound" : "mob.fox.screech",
                   "volume" : 2
                },
-               "sleep" : "mob.fox.sleep",
-               "sniff" : "mob.fox.sniff",
-               "spit" : "mob.fox.spit"
+               "sleep" : "mob.fox.sleep"
             },
             "pitch" : [ 0.80, 1.20 ],
             "volume" : 1.0
