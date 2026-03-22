@@ -11,12 +11,12 @@ Minimum engine version: 1.21.20. Uses `@minecraft/server` v2.0.0 Script API for 
 ## Environment
 
 - Python is invoked with `py` (not `python` or `python3`) on this system.
-- Deploy to Minecraft: `npm run deploy` (copies BP/, RP/, BP_structures/ to `%APPDATA%/Minecraft Bedrock/Users/Shared/games/com.mojang` development packs)
+- Deploy to Minecraft: `npm run deploy` (copies BP/ and RP/ to `%APPDATA%/Minecraft Bedrock/Users/Shared/games/com.mojang` development packs)
 - Build .mcaddon: `npm run build` (creates dist/worldanimals_v2.0.0.mcaddon)
 
 ## Architecture
 
-Three separate addon packs with short directory names:
+Two addon packs (BP depends on RP, installing BP auto-installs RP):
 
 ### BP/ — Behavior Pack
 - **scripts/main.js** — Script API custom components (ore_xp, turkey_eat, palm_sapling)
@@ -40,9 +40,6 @@ Three separate addon packs with short directory names:
 - **sounds/** — Sound files and sound_definitions.json (format 1.20.20)
 - **sounds.json** — Entity sound event mappings
 - **blocks.json** — Block sound assignments
-
-### BP_structures/ — Structure Generation Behavior Pack
-- Separate pack for structure template features and feature rules
 
 ## Script API (BP/scripts/main.js)
 

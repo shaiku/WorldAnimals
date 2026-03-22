@@ -130,7 +130,6 @@ mkdirSync("dist", { recursive: true });
 
 const bpPath = `dist/${name}_bp_v${version}.mcpack`;
 const rpPath = `dist/${name}_rp_v${version}.mcpack`;
-const bpStructPath = `dist/${name}_structures_bp_v${version}.mcpack`;
 const addonPath = `dist/${name}_v${version}.mcaddon`;
 
 console.log(`Building ${name} v${version}...`);
@@ -141,15 +140,11 @@ console.log(`  BP → ${bpPath}`);
 await buildPack("RP", rpPath);
 console.log(`  RP → ${rpPath}`);
 
-await buildPack("BP_structures", bpStructPath);
-console.log(`  BP_structures → ${bpStructPath}`);
-
-// mcaddon is a zip containing the three mcpacks
+// mcaddon is a zip containing the two mcpacks
 const addonStream = createWriteStream(addonPath);
 const addonZip = new ZipWriter(addonStream);
 addonZip.addFile(`${name}_bp_v${version}.mcpack`, readFileSync(bpPath));
 addonZip.addFile(`${name}_rp_v${version}.mcpack`, readFileSync(rpPath));
-addonZip.addFile(`${name}_structures_bp_v${version}.mcpack`, readFileSync(bpStructPath));
 addonZip.finish();
 await new Promise(resolve => addonStream.on("close", resolve));
 
