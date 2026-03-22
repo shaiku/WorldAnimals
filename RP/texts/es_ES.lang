@@ -424,3 +424,15 @@ action.hint.exit.worldanimals:turkey=Presiona Saltar para desmontar
 action.hint.exit.worldanimals:vulture=Presiona Saltar para desmontar
 action.hint.exit.worldanimals:white_lion=Presiona Saltar para desmontar
 action.hint.exit.worldanimals:white_tiger=Presiona Saltar para desmontar
+
+## Butterfly Elytra
+item.worldanimals:butterfly_elytra0.name=Élitros de Mariposa 0
+item.worldanimals:butterfly_elytra0=Élitros de Mariposa 0
+item.worldanimals:butterfly_elytra1.name=Élitros de Mariposa 1
+item.worldanimals:butterfly_elytra1=Élitros de Mariposa 1
+item.worldanimals:butterfly_elytra2.name=Élitros de Mariposa 2
+item.worldanimals:butterfly_elytra2=Élitros de Mariposa 2
+item.worldanimals:butterfly_elytra3.name=Élitros de Mariposa 3
+item.worldanimals:butterfly_elytra3=Élitros de Mariposa 3
+item.worldanimals:butterfly_elytra4.name=Élitros de Mariposa 4
+item.worldanimals:butterfly_elytra4=Élitros de Mariposa 4
