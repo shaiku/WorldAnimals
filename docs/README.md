@@ -43,6 +43,39 @@ Explore a diverse ecosystem of animals across multiple biomes:
 
 > **Note:** Holiday Creator Features are **NOT required**. This remaster uses stable Minecraft Bedrock APIs for maximum compatibility.
 
+## Updating an Existing World
+
+If you previously used an older version of World Animals (v1.x), your existing worlds will need a one-time entity refresh. This is because Minecraft Bedrock caches entity data when they spawn — animals that already exist in your world will keep their old (broken) definitions until they are re-created.
+
+### How to Refresh
+
+After installing the updated addon on an existing world, open the chat and run:
+
+```
+/scriptevent worldanimals:refresh
+```
+
+This command will:
+1. Find all World Animals entities across all dimensions
+2. Save their state (tamed status, name tags, saddles, armor, tags)
+3. Remove the old entities
+4. Spawn fresh replacements with the updated definitions
+5. Restore their saved state (tamed animals stay tamed, equipped armor is re-applied)
+
+You'll see a message confirming how many entities were refreshed.
+
+### Alternative: Full Despawn
+
+If you prefer to start fresh and let animals respawn naturally:
+
+```
+/scriptevent worldanimals:despawnall
+```
+
+This removes all World Animals entities without replacing them. New animals will spawn naturally as you explore.
+
+> **New worlds** do not need either command — animals will spawn with the correct definitions automatically.
+
 ## Quick Start Guide
 
 ### Taming Animals
