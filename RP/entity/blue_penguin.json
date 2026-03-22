@@ -3,7 +3,10 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:blue_penguin",
-      "materials": { "default": "slime", "armor": "stray_clothes" },
+      "materials": {
+        "default": "slime",
+        "armor": "stray_clothes"
+      },
       "textures": {
         "default": "textures/entity/penguin/blue_penguin",
         "black": "textures/entity/penguin/black_scarf",
@@ -30,23 +33,35 @@
       "animations": {
         "setup": "animation.blue_penguin.idle",
         "walk": "animation.penguin_v2.walk",
-		"casting": "animation.penguin_v2.dance",
-		"celebrating": "animation.penguin_v2.dance",
-		"riding.legs": "animation.penguin_v2.dance",
+        "casting": "animation.penguin_v2.dance",
+        "celebrating": "animation.penguin_v2.dance",
+        "riding.legs": "animation.penguin_v2.dance",
         "look_at_target": "animation.common.look_at_target",
         "wolf_sitting": "animation.penguin_v2.sit",
-		"swim": "animation.penguin.swim"
+        "swim": "animation.penguin.swim",
+        "general": "animation.blue_penguin.idle"
       },
       "animation_controllers": [
-        { "wolf_sitting": "controller.animation.wolf.sitting" },
-        { "move": "controller.animation.llama.move" },
-        { "baby": "controller.animation.llama.baby" },
-				{
-					"general": "controller.animation.subaru_duck.general" 
-				},
-        { "swim": "controller.animation.penguin.swim" }
+        {
+          "wolf_sitting": "controller.animation.wolf.sitting"
+        },
+        {
+          "move": "controller.animation.llama.move"
+        },
+        {
+          "baby": "controller.animation.llama.baby"
+        },
+        {
+          "general": "controller.animation.subaru_duck.general"
+        },
+        {
+          "swim": "controller.animation.penguin.swim"
+        }
       ],
-      "render_controllers": [ "controller.render.default", "controller.render.penguin_scarf" ],
+      "render_controllers": [
+        "controller.render.default",
+        "controller.render.penguin_scarf"
+      ],
       "spawn_egg": {
         "texture": "egg_blue_penguin",
         "texture_index": 0

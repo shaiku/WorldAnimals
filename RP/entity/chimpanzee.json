@@ -3,10 +3,13 @@
   "minecraft:client_entity": {
     "description": {
       "identifier": "worldanimals:chimpanzee",
-      "materials": { "default": "slime", "armor": "stray_clothes" },
+      "materials": {
+        "default": "slime",
+        "armor": "stray_clothes"
+      },
       "textures": {
         "chimpanzee_0": "textures/entity/chimpanzee/chimpanzee",
-		"chimpanzee_1": "textures/entity/chimpanzee/chimpanzee_1",
+        "chimpanzee_1": "textures/entity/chimpanzee/chimpanzee_1",
         "orange": "textures/entity/chimpanzee/astronaut_0",
         "blue": "textures/entity/chimpanzee/astronaut_1",
         "white": "textures/entity/chimpanzee/astronaut_2",
@@ -19,21 +22,32 @@
       "animations": {
         "setup": "animation.chimpanzee.idle",
         "walk": "animation.chimpanzee.walk",
-		"casting": "animation.chimpanzee.dance",
-		"celebrating": "animation.chimpanzee.dance",
-		"riding.legs": "animation.chimpanzee.dance",
+        "casting": "animation.chimpanzee.dance",
+        "celebrating": "animation.chimpanzee.dance",
+        "riding.legs": "animation.chimpanzee.dance",
         "look_at_target": "animation.common.look_at_target",
-        "wolf_sitting": "animation.chimpanzee.sit"
+        "wolf_sitting": "animation.chimpanzee.sit",
+        "general": "animation.chimpanzee.idle"
       },
       "animation_controllers": [
-        { "wolf_sitting": "controller.animation.wolf.sitting" },
-        { "move": "controller.animation.llama.move" },
-        { "baby": "controller.animation.llama.baby" },
-				{
-					"general": "controller.animation.subaru_duck.general" 
-				}
+        {
+          "wolf_sitting": "controller.animation.wolf.sitting"
+        },
+        {
+          "move": "controller.animation.llama.move"
+        },
+        {
+          "baby": "controller.animation.llama.baby"
+        },
+        {
+          "general": "controller.animation.subaru_duck.general"
+        }
       ],
-      "render_controllers": [ "controller.render.chimpanzee_0", "controller.render.chimpanzee_1", "controller.render.chimpanzee_astronaut_suit" ],
+      "render_controllers": [
+        "controller.render.chimpanzee_0",
+        "controller.render.chimpanzee_1",
+        "controller.render.chimpanzee_astronaut_suit"
+      ],
       "spawn_egg": {
         "texture": "egg_chimpanzee",
         "texture_index": 0
