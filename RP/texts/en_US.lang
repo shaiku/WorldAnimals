@@ -439,14 +439,14 @@ action.hint.exit.worldanimals:vulture=Press Jump to dismount
 action.hint.exit.worldanimals:white_lion=Press Jump to dismount
 action.hint.exit.worldanimals:white_tiger=Press Jump to dismount
 
-## Butterfly Elytra
-item.worldanimals:butterfly_elytra0.name=Purple Butterfly §dElytra
-item.worldanimals:butterfly_elytra0=Purple Butterfly §dElytra
-item.worldanimals:butterfly_elytra1.name=Orange Butterfly §dElytra
-item.worldanimals:butterfly_elytra1=Orange Butterfly §dElytra
-item.worldanimals:butterfly_elytra2.name=Teal Butterfly §dElytra
-item.worldanimals:butterfly_elytra2=Teal Butterfly §dElytra
-item.worldanimals:butterfly_elytra3.name=Magenta Butterfly §dElytra
-item.worldanimals:butterfly_elytra3=Magenta Butterfly §dElytra
-item.worldanimals:butterfly_elytra4.name=Red Butterfly §dElytra
-item.worldanimals:butterfly_elytra4=Red Butterfly §dElytra
+## Butterfly Wings
+item.worldanimals:butterfly_elytra0.name=Purple Butterfly Wings
+item.worldanimals:butterfly_elytra0=Purple Butterfly Wings
+item.worldanimals:butterfly_elytra1.name=Orange Butterfly Wings
+item.worldanimals:butterfly_elytra1=Orange Butterfly Wings
+item.worldanimals:butterfly_elytra2.name=Teal Butterfly Wings
+item.worldanimals:butterfly_elytra2=Teal Butterfly Wings
+item.worldanimals:butterfly_elytra3.name=Magenta Butterfly Wings
+item.worldanimals:butterfly_elytra3=Magenta Butterfly Wings
+item.worldanimals:butterfly_elytra4.name=Red Butterfly Wings
+item.worldanimals:butterfly_elytra4=Red Butterfly Wings

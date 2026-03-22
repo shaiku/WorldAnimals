@@ -420,14 +420,14 @@ action.hint.exit.worldanimals:vulture=Pressione Saltar para desmontar
 action.hint.exit.worldanimals:white_lion=Pressione Saltar para desmontar
 action.hint.exit.worldanimals:white_tiger=Pressione Saltar para desmontar
 
-## Butterfly Elytra
-item.worldanimals:butterfly_elytra0.name=§dÉlitros§r de Borboleta Roxa
-item.worldanimals:butterfly_elytra0=§dÉlitros§r de Borboleta Roxa
-item.worldanimals:butterfly_elytra1.name=§dÉlitros§r de Borboleta Laranja
-item.worldanimals:butterfly_elytra1=§dÉlitros§r de Borboleta Laranja
-item.worldanimals:butterfly_elytra2.name=§dÉlitros§r de Borboleta Turquesa
-item.worldanimals:butterfly_elytra2=§dÉlitros§r de Borboleta Turquesa
-item.worldanimals:butterfly_elytra3.name=§dÉlitros§r de Borboleta Magenta
-item.worldanimals:butterfly_elytra3=§dÉlitros§r de Borboleta Magenta
-item.worldanimals:butterfly_elytra4.name=§dÉlitros§r de Borboleta Vermelha
-item.worldanimals:butterfly_elytra4=§dÉlitros§r de Borboleta Vermelha
+## Butterfly Wings
+item.worldanimals:butterfly_elytra0.name=Asas de Borboleta Roxa
+item.worldanimals:butterfly_elytra0=Asas de Borboleta Roxa
+item.worldanimals:butterfly_elytra1.name=Asas de Borboleta Laranja
+item.worldanimals:butterfly_elytra1=Asas de Borboleta Laranja
+item.worldanimals:butterfly_elytra2.name=Asas de Borboleta Turquesa
+item.worldanimals:butterfly_elytra2=Asas de Borboleta Turquesa
+item.worldanimals:butterfly_elytra3.name=Asas de Borboleta Magenta
+item.worldanimals:butterfly_elytra3=Asas de Borboleta Magenta
+item.worldanimals:butterfly_elytra4.name=Asas de Borboleta Vermelha
+item.worldanimals:butterfly_elytra4=Asas de Borboleta Vermelha
