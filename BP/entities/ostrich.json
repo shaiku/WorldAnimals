@@ -560,13 +560,6 @@
               "max_rider_count": 7
             }
           ]
-        },
-        "minecraft:type_family": {
-          "family": [
-            "ostrich",
-            "animal",
-            "tamed"
-          ]
         }
       },
       "minecraft:ostrich_saddle": {
@@ -627,9 +620,6 @@
             "deals_damage": true
           }
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -1263,13 +1253,6 @@
         "add": {
           "component_groups": [
             "minecraft:orange_flag"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

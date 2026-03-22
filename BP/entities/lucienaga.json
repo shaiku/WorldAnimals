@@ -39,9 +39,6 @@
         "minecraft:variant": {
           "value": 1
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -147,13 +144,6 @@
         "remove": {
           "component_groups": [
             "minecraft:off"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

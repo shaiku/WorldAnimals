@@ -106,9 +106,6 @@
           "is_pushable": true,
           "is_pushable_by_piston": true
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -223,13 +220,6 @@
         "remove": {
           "component_groups": [
             "fly_off"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

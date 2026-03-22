@@ -82,9 +82,6 @@
             }
           ]
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -295,13 +292,6 @@
         "add": {
           "component_groups": [
             "minecraft:ballena_aggressive"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

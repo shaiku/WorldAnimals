@@ -241,16 +241,7 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
-        },
-        "minecraft:type_family": {
-          "family": [
-            "cougar",
-            "tamed"
-          ]
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -527,13 +518,6 @@
         "add": {
           "component_groups": [
             "minecraft:cougar_chested"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

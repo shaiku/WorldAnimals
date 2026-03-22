@@ -210,14 +210,7 @@
         "minecraft:behavior.owner_hurt_target": {
           "priority": 2
         },
-        "minecraft:is_tamed": {},
-        "minecraft:type_family": {
-          "family": [
-            "deer",
-            "animal",
-            "tamed"
-          ]
-        }
+        "minecraft:is_tamed": {}
       },
       "minecraft:deer_unchested": {},
       "minecraft:deer_chested": {
@@ -271,9 +264,6 @@
             "deals_damage": true
           }
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -622,13 +612,6 @@
         "add": {
           "component_groups": [
             "minecraft:deer_chested"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

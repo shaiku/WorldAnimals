@@ -69,9 +69,6 @@
             }
           ]
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -217,13 +214,6 @@
         "add": {
           "component_groups": [
             "minecraft:pink_dolphin_aggressive"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

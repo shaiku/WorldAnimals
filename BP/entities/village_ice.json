@@ -36,9 +36,6 @@
             "target": "self"
           }
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -365,13 +362,6 @@
         "remove": {
           "component_groups": [
             "minecraft:scared"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

@@ -144,9 +144,6 @@
           "effect_name": "poison",
           "effect_duration": 15
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -422,13 +419,6 @@
         "add": {
           "component_groups": [
             "minecraft:spider_neutral"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

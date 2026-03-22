@@ -85,9 +85,6 @@
             "value": 0
           }
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -236,13 +233,6 @@
         "add": {
           "component_groups": [
             "minecraft:squirrel_adult"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

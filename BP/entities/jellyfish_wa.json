@@ -94,9 +94,6 @@
         "minecraft:variant": {
           "value": 4
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -308,13 +305,6 @@
         "add": {
           "component_groups": [
             "minecraft:jellyfish_wa_aggressive"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

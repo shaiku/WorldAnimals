@@ -47,9 +47,6 @@
         "minecraft:loot": {
           "table": "loot_tables/entities/butterfly/butterfly_elytra4.json"
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -160,13 +157,6 @@
             }
           }
         ]
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
-          ]
-        }
       }
     }
   }

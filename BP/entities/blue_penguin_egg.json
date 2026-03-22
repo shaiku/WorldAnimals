@@ -12,9 +12,6 @@
         "minecraft:transformation": {
           "into": "worldanimals:blue_penguin"
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "events": {
@@ -22,13 +19,6 @@
         "add": {
           "component_groups": [
             "minecraft:agea"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

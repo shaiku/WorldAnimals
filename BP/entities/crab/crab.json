@@ -116,9 +116,6 @@
           "track_target": true,
           "require_complete_path": true
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -316,13 +313,6 @@
         "add": {
           "component_groups": [
             "minecraft:baby_scared"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

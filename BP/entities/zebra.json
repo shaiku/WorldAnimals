@@ -180,14 +180,7 @@
         "minecraft:behavior.owner_hurt_target": {
           "priority": 2
         },
-        "minecraft:is_tamed": {},
-        "minecraft:type_family": {
-          "family": [
-            "zebra",
-            "mob",
-            "tamed"
-          ]
-        }
+        "minecraft:is_tamed": {}
       },
       "minecraft:zebra_unchested": {},
       "minecraft:zebra_chested": {
@@ -241,9 +234,6 @@
             "deals_damage": true
           }
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -708,13 +698,6 @@
         "add": {
           "component_groups": [
             "minecraft:zebra_chested"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

@@ -289,17 +289,7 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
-        },
-        "minecraft:type_family": {
-          "family": [
-            "seal",
-            "mob",
-            "tamed"
-          ]
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -581,13 +571,6 @@
         "add": {
           "component_groups": [
             "minecraft:seal_chested"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

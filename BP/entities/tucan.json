@@ -113,13 +113,6 @@
         }
       },
       "minecraft:tucan_tame": {
-        "minecraft:type_family": {
-          "family": [
-            "tucan_tame",
-            "mob",
-            "tamed"
-          ]
-        },
         "minecraft:is_tamed": {},
         "minecraft:behavior.follow_owner": {
           "priority": 2,
@@ -139,9 +132,6 @@
           "target_needed": false,
           "mount_distance": 2.0
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -336,13 +326,6 @@
         "add": {
           "component_groups": [
             "minecraft:tucan_tame"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

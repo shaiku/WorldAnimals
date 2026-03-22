@@ -561,17 +561,7 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
-        },
-        "minecraft:type_family": {
-          "family": [
-            "penguin_african",
-            "mob",
-            "tamed"
-          ]
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -1037,13 +1027,6 @@
         "add": {
           "component_groups": [
             "minecraft:yellow_scarf"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

@@ -14,13 +14,6 @@
             "kill @s"
           ]
         }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
-          ]
-        }
       }
     },
     "components": {
@@ -62,10 +55,6 @@
         "height": 0.5
       }
     },
-    "component_groups": {
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
-      }
-    }
+    "component_groups": {}
   }
 }

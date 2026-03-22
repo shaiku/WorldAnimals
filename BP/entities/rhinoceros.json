@@ -877,17 +877,7 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
-        },
-        "minecraft:type_family": {
-          "family": [
-            "rhinoceros",
-            "mob",
-            "tamed"
-          ]
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -1260,13 +1250,6 @@
         "add": {
           "component_groups": [
             "minecraft:netherite_armor"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

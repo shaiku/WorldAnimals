@@ -311,13 +311,6 @@
               -0.1
             ]
           }
-        },
-        "minecraft:type_family": {
-          "family": [
-            "giraffe",
-            "mob",
-            "tamed"
-          ]
         }
       },
       "minecraft:giraffe_unchested": {
@@ -382,9 +375,6 @@
             "deals_damage": true
           }
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -844,13 +834,6 @@
         "add": {
           "component_groups": [
             "minecraft:giraffe_chested"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

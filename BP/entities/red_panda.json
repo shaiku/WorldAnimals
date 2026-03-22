@@ -183,17 +183,7 @@
             "event": "minecraft:on_unleash",
             "target": "self"
           }
-        },
-        "minecraft:type_family": {
-          "family": [
-            "red_panda",
-            "mob",
-            "tamed"
-          ]
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -409,13 +399,6 @@
         "add": {
           "component_groups": [
             "minecraft:red_panda_wild"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }

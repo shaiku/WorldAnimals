@@ -69,9 +69,6 @@
             }
           ]
         }
-      },
-      "worldanimals:despawn": {
-        "minecraft:instant_despawn": {}
       }
     },
     "components": {
@@ -225,13 +222,6 @@
         "add": {
           "component_groups": [
             "minecraft:tiger_shark_aggressive"
-          ]
-        }
-      },
-      "worldanimals:despawn": {
-        "add": {
-          "component_groups": [
-            "worldanimals:despawn"
           ]
         }
       }
