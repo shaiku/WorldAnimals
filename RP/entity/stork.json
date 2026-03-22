@@ -20,7 +20,8 @@
 		"ground": "animation.stork.no_fly",
         "fly": "animation.stork.fly",
         "baby_transform": "animation.stork.baby",
-        "bag_off": "animation.stork.bag_off"
+        "bag_off": "animation.stork.bag_off",
+        "water": "animation.stork.idle"
       },
       "animation_controllers": [
 	    { "attack": "controller.animation.animals.attack" },

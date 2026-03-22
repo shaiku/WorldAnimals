@@ -24,7 +24,8 @@
         "wolf_sitting": "animation.cyanocitta_cristata.sit",
         "fly": "animation.cyanocitta_cristata.fly",
 		
-        "look_at_target": "animation.common.look_at_target"
+        "look_at_target": "animation.common.look_at_target",
+        "loop": "animation.cyanocitta_cristata.idle"
       },
       "animation_controllers": [
 	  { "wolf_sitting": "controller.animation.wolf.sitting" },
